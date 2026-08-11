@@ -476,19 +476,38 @@
     </div>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(20px, 3vw, 40px); align-items: start;">
       <div style="display: flex; align-items: center; justify-content: center; min-height: 440px; padding: clamp(24px, 4vw, 48px); background: #FFFFFF; border: 1px solid rgba(20,23,26,0.12);">
-        <sc-if value="{{ viewSrc }}" hint-placeholder-val="{{ false }}">
-          <img src="{{ viewSrc }}" alt="{{ viewAlt }}" style="max-height: 460px; width: auto; max-width: 100%;" />
-        </sc-if>
+        <img src="assets/h001-hero-3q.png" alt="WaterSource H001 water purifier, three-quarter front view showing the champagne-gold dispensing column, touch panel and side vent detail" style="{{ stage0 }}" />
+        <img src="assets/h001-front-display.png" alt="WaterSource H001 water purifier, front view showing the status display, temperature keys and hydrogen visualization window" style="{{ stage1 }}" />
+        <img src="assets/h001-side.png" alt="WaterSource H001 water purifier, side profile showing the depth of the cabinet and the dispensing nozzle" style="{{ stage2 }}" />
+        <img src="assets/h001-rear.png" alt="WaterSource H001 water purifier, rear view showing the water inlet and outlet connections" style="{{ stage3 }}" />
+        <img src="assets/control-panel.png" alt="H001 touch control panel with status display, temperature keys, cup-size keys, child lock, intelligent wash and filter reset" style="{{ stage4 }}" />
+        <img src="assets/h001-visual-window.png" alt="H001 dispensing area and hydrogen visualization window in close-up" style="{{ stage5 }}" />
       </div>
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 12px;">
-        <sc-for list="{{ views }}" as="v" hint-placeholder-count="6">
-          <button type="button" onClick="{{ v.select }}" aria-pressed="{{ v.pressed }}" style="{{ v.style }}" style-hover="border-color: rgba(20,23,26,0.4);">
-            <sc-if value="{{ v.src }}" hint-placeholder-val="{{ false }}">
-              <img src="{{ v.src }}" alt="" style="height: 88px; width: auto; margin: 0 auto 10px;" />
-            </sc-if>
-            <span style="display: block; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: #4C5259;">{{ v.label }}</span>
-          </button>
-        </sc-for>
+        <button type="button" onClick="{{ pick0 }}" aria-pressed="{{ on0 }}" style="{{ thumb0 }}" style-hover="border-color: rgba(20,23,26,0.4);">
+          <img src="assets/h001-hero-3q.png" alt="" style="height: 88px; width: auto; margin: 0 auto 10px;" />
+          <span style="display: block; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: #4C5259;">Three-quarter</span>
+        </button>
+        <button type="button" onClick="{{ pick1 }}" aria-pressed="{{ on1 }}" style="{{ thumb1 }}" style-hover="border-color: rgba(20,23,26,0.4);">
+          <img src="assets/h001-front-display.png" alt="" style="height: 88px; width: auto; margin: 0 auto 10px;" />
+          <span style="display: block; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: #4C5259;">Front</span>
+        </button>
+        <button type="button" onClick="{{ pick2 }}" aria-pressed="{{ on2 }}" style="{{ thumb2 }}" style-hover="border-color: rgba(20,23,26,0.4);">
+          <img src="assets/h001-side.png" alt="" style="height: 88px; width: auto; margin: 0 auto 10px;" />
+          <span style="display: block; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: #4C5259;">Side</span>
+        </button>
+        <button type="button" onClick="{{ pick3 }}" aria-pressed="{{ on3 }}" style="{{ thumb3 }}" style-hover="border-color: rgba(20,23,26,0.4);">
+          <img src="assets/h001-rear.png" alt="" style="height: 88px; width: auto; margin: 0 auto 10px;" />
+          <span style="display: block; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: #4C5259;">Rear</span>
+        </button>
+        <button type="button" onClick="{{ pick4 }}" aria-pressed="{{ on4 }}" style="{{ thumb4 }}" style-hover="border-color: rgba(20,23,26,0.4);">
+          <img src="assets/control-panel.png" alt="" style="height: 88px; width: auto; margin: 0 auto 10px;" />
+          <span style="display: block; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: #4C5259;">Control panel</span>
+        </button>
+        <button type="button" onClick="{{ pick5 }}" aria-pressed="{{ on5 }}" style="{{ thumb5 }}" style-hover="border-color: rgba(20,23,26,0.4);">
+          <img src="assets/h001-visual-window.png" alt="" style="height: 88px; width: auto; margin: 0 auto 10px;" />
+          <span style="display: block; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: #4C5259;">Dispensing</span>
+        </button>
       </div>
     </div>
   </section>
@@ -692,15 +711,30 @@ class Component extends DCLogic {
         style: tempBtn(this.state.temp === i),
         select: () => this.setState({ temp: i })
       })),
-      views: views.map((v, i) => ({
-        label: v.label,
-        src: v.src,
-        pressed: this.state.view === i ? 'true' : 'false',
-        style: viewBtn(this.state.view === i),
-        select: () => this.setState({ view: i })
-      })),
-      viewSrc: active.src,
-      viewAlt: active.alt,
+      stage0: 'max-height: 460px; width: auto; max-width: 100%; display: ' + (this.state.view === 0 ? 'block' : 'none') + ';',
+      stage1: 'max-height: 460px; width: auto; max-width: 100%; display: ' + (this.state.view === 1 ? 'block' : 'none') + ';',
+      stage2: 'max-height: 460px; width: auto; max-width: 100%; display: ' + (this.state.view === 2 ? 'block' : 'none') + ';',
+      stage3: 'max-height: 460px; width: auto; max-width: 100%; display: ' + (this.state.view === 3 ? 'block' : 'none') + ';',
+      stage4: 'max-height: 460px; width: auto; max-width: 100%; display: ' + (this.state.view === 4 ? 'block' : 'none') + ';',
+      stage5: 'max-height: 460px; width: auto; max-width: 100%; display: ' + (this.state.view === 5 ? 'block' : 'none') + ';',
+      on0: this.state.view === 0 ? 'true' : 'false',
+      on1: this.state.view === 1 ? 'true' : 'false',
+      on2: this.state.view === 2 ? 'true' : 'false',
+      on3: this.state.view === 3 ? 'true' : 'false',
+      on4: this.state.view === 4 ? 'true' : 'false',
+      on5: this.state.view === 5 ? 'true' : 'false',
+      thumb0: viewBtn(this.state.view === 0),
+      thumb1: viewBtn(this.state.view === 1),
+      thumb2: viewBtn(this.state.view === 2),
+      thumb3: viewBtn(this.state.view === 3),
+      thumb4: viewBtn(this.state.view === 4),
+      thumb5: viewBtn(this.state.view === 5),
+      pick0: () => this.setState({ view: 0 }),
+      pick1: () => this.setState({ view: 1 }),
+      pick2: () => this.setState({ view: 2 }),
+      pick3: () => this.setState({ view: 3 }),
+      pick4: () => this.setState({ view: 4 }),
+      pick5: () => this.setState({ view: 5 }),
       viewCaption: active.caption,
       faqs: this.faqData().map(([q, a], i) => {
         const open = this.state.open === i;
