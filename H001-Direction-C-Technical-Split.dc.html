@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  body { margin: 0; background: #FBFBFA; color: #14171A; -webkit-font-smoothing: antialiased; }
+  a { color: #0B6E93; text-decoration: none; }
+  a:hover { color: #084F6A; }
+  img { display: block; max-width: 100%; }
+</style>
+</helmet>
+<div style="font-family: 'Archivo', system-ui, sans-serif; background: #FBFBFA; color: #14171A;">
+
+  <header style="display: flex; align-items: center; justify-content: space-between; gap: 32px; padding: 18px clamp(20px, 3vw, 48px); border-bottom: 1px solid #E2E1DD; position: sticky; top: 0; background: rgba(251,251,250,0.94); backdrop-filter: blur(14px); z-index: 20;">
+    <a href="#top" style="display: flex; align-items: center;"><img src="assets/logo-watersource.png" alt="WaterSource — Life in Every Drop" style="height: 34px; width: auto;" /></a>
+    <nav style="display: flex; gap: 26px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #5C6268;">
+      <a href="#overview" style="color: #5C6268;">Overview</a>
+      <a href="#technology" style="color: #5C6268;">Technology</a>
+      <a href="#filtration" style="color: #5C6268;">Filtration</a>
+      <a href="#features" style="color: #5C6268;">Features</a>
+      <a href="#specifications" style="color: #5C6268;">Specs</a>
+      <a href="#faq" style="color: #5C6268;">FAQ</a>
+    </nav>
+    <a href="#enquire" style="display: inline-flex; align-items: center; height: 42px; padding: 0 20px; background: #0B6E93; color: #fff; font-size: 14px; font-weight: 600;">Enquire About H001</a>
+  </header>
+
+  <section id="top" style="display: grid; grid-template-columns: minmax(340px, 1fr) minmax(340px, 1fr); min-height: 640px;">
+    <div style="background: #14171A; color: #F4F4F2; padding: clamp(40px, 5vw, 80px) clamp(24px, 3.5vw, 64px); display: flex; flex-direction: column; justify-content: space-between; gap: 40px;">
+      <div>
+        <p style="margin: 0 0 26px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #4FB8DC;">Model H001 — Alkaline Hydrogen-Rich Water Purifier</p>
+        <h1 style="margin: 0 0 22px; font-size: clamp(40px, 4.8vw, 72px); font-weight: 700; line-height: 1.0; letter-spacing: -0.035em; text-wrap: pretty;">Purify. Enrich. Heat. All from one intelligent system.</h1>
+        <p style="margin: 0; max-width: 46ch; font-size: 17px; line-height: 1.65; color: rgba(244,244,242,0.66);">Three-stage reverse osmosis purification, SuperMix hydrogen-rich water generation and 3-second instant heating in a single countertop appliance.</p>
+      </div>
+      <dl style="margin: 0; display: grid; grid-template-columns: repeat(2, minmax(120px, 1fr)); gap: 1px; background: rgba(244,244,242,0.14); border: 1px solid rgba(244,244,242,0.14);">
+        <div style="background: #14171A; padding: 16px 18px;">
+          <dt style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(244,244,242,0.5);">Heating</dt>
+          <dd style="margin: 6px 0 0; font-size: 19px; font-weight: 600; letter-spacing: -0.01em;">3 seconds</dd>
+        </div>
+        <div style="background: #14171A; padding: 16px 18px;">
+          <dt style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(244,244,242,0.5);">Membrane</dt>
+          <dd style="margin: 6px 0 0; font-size: 19px; font-weight: 600; letter-spacing: -0.01em;">200G RO</dd>
+        </div>
+        <div style="background: #14171A; padding: 16px 18px;">
+          <dt style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(244,244,242,0.5);">Hydrogen</dt>
+          <dd style="margin: 6px 0 0; font-size: 19px; font-weight: 600; letter-spacing: -0.01em;">SuperMix</dd>
+        </div>
+        <div style="background: #14171A; padding: 16px 18px;">
+          <dt style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(244,244,242,0.5);">Sterilization</dt>
+          <dd style="margin: 6px 0 0; font-size: 19px; font-weight: 600; letter-spacing: -0.01em;">UVC LED</dd>
+        </div>
+      </dl>
+      <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px 28px;">
+        <div style="display: flex; align-items: baseline; gap: 12px;">
+          <span style="font-size: 38px; font-weight: 700; letter-spacing: -0.03em;">$2,888</span>
+          <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: rgba(244,244,242,0.55);">usual <span style="text-decoration: line-through;">$3,388</span></span>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+          <a href="#enquire" style="display: inline-flex; align-items: center; height: 50px; padding: 0 26px; background: #4FB8DC; color: #06222E; font-size: 15px; font-weight: 600;">Enquire About H001</a>
+          <a href="#technology" style="display: inline-flex; align-items: center; height: 50px; padding: 0 26px; border: 1px solid rgba(244,244,242,0.3); color: #F4F4F2; font-size: 15px; font-weight: 500;">See the technology</a>
+        </div>
+      </div>
+      <p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 11px; line-height: 1.6; color: rgba(244,244,242,0.42);">1-year on-site warranty. Pricing and promotional validity to be confirmed with WaterSource before publication.</p>
+    </div>
+    <div style="position: relative; background: linear-gradient(180deg, #FFFFFF 0%, #EFF1F2 100%); display: flex; align-items: center; justify-content: center; padding: clamp(32px, 4vw, 72px); overflow: hidden;">
+      <div style="position: absolute; inset: 0; background-image: linear-gradient(to right, rgba(20,23,26,0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(20,23,26,0.05) 1px, transparent 1px); background-size: 56px 56px;"></div>
+      <img src="assets/h001-front-display.png" alt="WaterSource H001 water purifier, front view showing the status display, touch controls and hydrogen visualization window" style="position: relative; width: min(100%, 460px); height: auto; filter: drop-shadow(0 30px 50px rgba(20,23,26,0.22));" />
+      <p style="position: absolute; top: clamp(24px, 3vw, 44px); right: clamp(24px, 3vw, 44px); margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #7C838A;">Front elevation</p>
+      <div style="position: absolute; left: clamp(24px, 3vw, 44px); top: 50%; transform: translateY(-50%); display: flex; align-items: center; gap: 10px;">
+        <span style="display: block; width: 1px; height: 120px; background: #4FB8DC;"></span>
+        <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.08em; color: #0B6E93;">H 240 mm</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="overview" style="padding: clamp(56px, 7vw, 112px) clamp(24px, 3.5vw, 64px); border-bottom: 1px solid #E2E1DD;">
+    <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 20px; padding-bottom: 20px; border-bottom: 2px solid #14171A;">
+      <h2 style="margin: 0; font-size: clamp(30px, 3.6vw, 48px); font-weight: 700; letter-spacing: -0.03em;">One machine. Three systems.</h2>
+      <p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: #5C6268;">Purify / Enrich / Heat</p>
+    </div>
+    <p style="margin: 24px 0 clamp(36px, 4vw, 64px); max-width: 78ch; font-size: 18px; line-height: 1.65; color: #4C5259;">Water is purified first, then enriched with hydrogen or heated on demand. Every glass is drawn from freshly filtered water rather than a repeatedly reheated tank.</p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1px; background: #E2E1DD; border: 1px solid #E2E1DD;">
+      <article style="background: #FBFBFA; padding: clamp(24px, 3vw, 40px); display: flex; flex-direction: column; gap: 18px;">
+        <p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #0B6E93;">01 / PURIFY</p>
+        <h3 style="margin: 0; font-size: 24px; font-weight: 600; letter-spacing: -0.02em;">Three-grade, four-layer filtration</h3>
+        <img src="assets/filters-3stage-plate.png" alt="H001 three-stage filter assembly: PAC composite filter, 200G RO membrane and mineralized carbon rod filter on the integrated waterway plate" style="width: 100%; height: 150px; object-fit: contain;" />
+        <p style="margin: 0; font-size: 16px; line-height: 1.65; color: #4C5259;">A PAC composite filter removes sediment, rust and residual chlorine. A 200G high-flux RO membrane follows. A natural trace mineralized carbon rod returns minerals such as strontium, potassium, calcium and magnesium.</p>
+        <p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; line-height: 1.6; color: #7C838A;">TAP → PAC → 200G RO → MINERALIZED CARBON → DRINKING WATER</p>
+      </article>
+      <article style="background: #FBFBFA; padding: clamp(24px, 3vw, 40px); display: flex; flex-direction: column; gap: 18px;">
+        <p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #0B6E93;">02 / ENRICH</p>
+        <h3 style="margin: 0; font-size: 24px; font-weight: 600; letter-spacing: -0.02em;">Hydrogen dissolved by SuperMix</h3>
+        <img src="assets/supermix-bubbles.png" alt="Macro photograph of hydrogen-rich water produced by the H001 SuperMix system, dense with fine hydrogen nano-bubbles" style="width: 100%; height: 150px; object-fit: cover;" />
+        <p style="margin: 0; font-size: 16px; line-height: 1.65; color: #4C5259;">An independent electrolysis module generates hydrogen from purified water. SuperMix gas-liquid mixing shears it into micro- and sub-micron bubbles and dissolves it into the water under pressure.</p>
+        <p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; line-height: 1.6; color: #7C838A;">ELECTROLYSIS → SUPERMIX → HYDROGEN-RICH WATER</p>
+      </article>
+      <article style="background: #FBFBFA; padding: clamp(24px, 3vw, 40px); display: flex; flex-direction: column; gap: 18px;">
+        <p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #0B6E93;">03 / HEAT</p>
+        <h3 style="margin: 0; font-size: 24px; font-weight: 600; letter-spacing: -0.02em;">Temperature in three seconds</h3>
+        <img src="assets/heating-core.png" alt="H001 explosion-proof refined steel thick-film heating core, the component behind 3-second instant heating" style="width: 100%; height: 150px; object-fit: contain; background: #14171A;" />
+        <p style="margin: 0; font-size: 16px; line-height: 1.65; color: #4C5259;">Third-generation rare-earth thick-film heating brings water to temperature on demand, across six stages: room temperature, warm, milk, coffee, tea and boiling.</p>
+        <p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; line-height: 1.6; color: #7C838A;">6 TEMPERATURE STAGES · 150 / 300 / 500 ML PRESETS</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="features" style="padding: clamp(56px, 7vw, 112px) clamp(24px, 3.5vw, 64px);">
+    <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 20px; padding-bottom: 20px; border-bottom: 2px solid #14171A;">
+      <h2 style="margin: 0; font-size: clamp(30px, 3.6vw, 48px); font-weight: 700; letter-spacing: -0.03em;">Why H001</h2>
+      <p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: #5C6268;">Feature / Benefit / Technology</p>
+    </div>
+    <div style="display: grid; grid-template-columns: minmax(200px, 1fr) minmax(220px, 1.2fr) minmax(200px, 1fr); gap: 0;">
+      <div style="padding: 14px 0; border-bottom: 1px solid #14171A; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #7C838A;">Feature</div>
+      <div style="padding: 14px 0 14px 24px; border-bottom: 1px solid #14171A; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #7C838A;">What it means at home</div>
+      <div style="padding: 14px 0 14px 24px; border-bottom: 1px solid #14171A; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #7C838A;">Technology</div>
+
+      <div style="padding: 22px 24px 22px 0; border-bottom: 1px solid #E2E1DD; font-size: 18px; font-weight: 600; letter-spacing: -0.01em;">Hydrogen-rich water on tap</div>
+      <div style="padding: 22px 24px; border-bottom: 1px solid #E2E1DD; font-size: 16px; line-height: 1.6; color: #4C5259;">Dispense hydrogen-rich water at home instead of buying it bottled.</div>
+      <div style="padding: 22px 0 22px 24px; border-bottom: 1px solid #E2E1DD; font-family: 'IBM Plex Mono', monospace; font-size: 13px; line-height: 1.6; color: #0B6E93;">Electrolysis module + SuperMix, up to 3000–5000 ppb</div>
+
+      <div style="padding: 22px 24px 22px 0; border-bottom: 1px solid #E2E1DD; font-size: 18px; font-weight: 600; letter-spacing: -0.01em;">Hot water without the wait</div>
+      <div style="padding: 22px 24px; border-bottom: 1px solid #E2E1DD; font-size: 16px; line-height: 1.6; color: #4C5259;">No kettle, and no tank of water reheated over and over through the day.</div>
+      <div style="padding: 22px 0 22px 24px; border-bottom: 1px solid #E2E1DD; font-family: 'IBM Plex Mono', monospace; font-size: 13px; line-height: 1.6; color: #0B6E93;">Third-generation rare-earth thick-film heating</div>
+
+      <div style="padding: 22px 24px 22px 0; border-bottom: 1px solid #E2E1DD; font-size: 18px; font-weight: 600; letter-spacing: -0.01em;">Minerals kept, contaminants removed</div>
+      <div style="padding: 22px 24px; border-bottom: 1px solid #E2E1DD; font-size: 16px; line-height: 1.6; color: #4C5259;">Water stays weakly alkaline between pH 7.0 and 8.5.</div>
+      <div style="padding: 22px 0 22px 24px; border-bottom: 1px solid #E2E1DD; font-family: 'IBM Plex Mono', monospace; font-size: 13px; line-height: 1.6; color: #0B6E93;">200G RO membrane + mineralized carbon rod</div>
+
+      <div style="padding: 22px 24px 22px 0; border-bottom: 1px solid #E2E1DD; font-size: 18px; font-weight: 600; letter-spacing: -0.01em;">One appliance for the whole day</div>
+      <div style="padding: 22px 24px; border-bottom: 1px solid #E2E1DD; font-size: 16px; line-height: 1.6; color: #4C5259;">Milk, coffee, tea and boiling water from the same panel.</div>
+      <div style="padding: 22px 0 22px 24px; border-bottom: 1px solid #E2E1DD; font-family: 'IBM Plex Mono', monospace; font-size: 13px; line-height: 1.6; color: #0B6E93;">6-stage temperature control · 150/300/500 ml</div>
+
+      <div style="padding: 22px 24px 22px 0; border-bottom: 1px solid #E2E1DD; font-size: 18px; font-weight: 600; letter-spacing: -0.01em;">A tank you can actually clean</div>
+      <div style="padding: 22px 24px; border-bottom: 1px solid #E2E1DD; font-size: 16px; line-height: 1.6; color: #4C5259;">The 2-litre built-in tank opens for cleaning, and UVC runs inside it.</div>
+      <div style="padding: 22px 0 22px 24px; border-bottom: 1px solid #E2E1DD; font-family: 'IBM Plex Mono', monospace; font-size: 13px; line-height: 1.6; color: #0B6E93;">Built-in UVC LED with visual indication</div>
+
+      <div style="padding: 22px 24px 22px 0; border-bottom: 1px solid #E2E1DD; font-size: 18px; font-weight: 600; letter-spacing: -0.01em;">Maintenance you don't track</div>
+      <div style="padding: 22px 24px; border-bottom: 1px solid #E2E1DD; font-size: 16px; line-height: 1.6; color: #4C5259;">The panel tells you when a filter is near the end of its life.</div>
+      <div style="padding: 22px 0 22px 24px; border-bottom: 1px solid #E2E1DD; font-family: 'IBM Plex Mono', monospace; font-size: 13px; line-height: 1.6; color: #0B6E93;">Filter-life indicator · PAC 6–12 mo / RO 12–24 mo / CF 6–12 mo</div>
+    </div>
+  </section>
+</div>
+
+</x-dc>
+</body>
+</html>

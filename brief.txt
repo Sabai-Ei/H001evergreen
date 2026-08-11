@@ -1,0 +1,571 @@
+WATERSOURCE  /  PRODUCT EXPERIENCE
+H001 PRODUCT LANDING PAGE
+DESIGN &amp; DEVELOPMENT BRIEF
+PurposeCreate a premium, conversion-focused, search-ready product landing page that clearly explains H001, builds trust in the technology, and guides visitors toward enquiry or purchase.
+Prepared from:
+
+H001 product documentation
+H001 quotation / commercial information
+Important: Pricing, promotional validity, product dimensions, and any health-related claims must be verified with WaterSource before publication.
+
+
+
+Strategy  |  UX/UI  |  SEO  |  AEO  |  GEO  |  Next.js
+
+CONTENTS
+Brief Structure
+01
+Role &amp; mandate
+02
+Project &amp; source of truth
+03
+Product foundation
+04
+Tech stack
+05
+Design &amp; brand direction
+06
+Objectives &amp; audience
+07
+Landing page information architecture
+08
+SEO strategy
+09
+AEO strategy
+10
+GEO strategy
+11
+Structured data
+12
+Conversion strategy
+13
+UX requirements
+14
+Visual design &amp; claim rules
+15
+Motion, performance &amp; accessibility
+16
+Design system
+17
+Deliverables
+18
+Figma-to-code &amp; development rules
+1. ROLE
+Act as:
+Senior Creative Director - Pentagram / DesignStudio / Instrument level
+Senior UX/UI Designer
+Senior Product Landing Page Designer
+Senior Product Marketing &amp; CRO Strategist
+Senior Next.js Architect
+Senior Frontend Engineer
+Senior SEO Strategist
+Senior AEO - Answer Engine Optimization Specialist
+Senior GEO - Generative Engine Optimization Specialist
+Senior Content Strategist
+Senior Accessibility &amp; Web Performance Specialist
+MANDATEDo not approach this project as simply "design a beautiful product page." The landing page must work as a coordinated product, conversion, search, content, and engineering system.
+
+The goal is to create a high-performing product landing page that:
+1. Makes H001 understandable within seconds.
+2. Establishes WaterSource as a credible premium water-technology brand.
+3. Communicates the differences between H001 and an ordinary water purifier.
+4. Turns product technology into customer-understandable benefits.
+5. Builds trust before asking visitors to buy or enquire.
+6. Converts visitors into enquiries or purchases.
+7. Performs strongly in Google Search.
+8. Is structured clearly for Google AI Overviews and answer engines.
+9. Is understandable and citation-friendly for ChatGPT, Gemini, Claude, Perplexity, and other generative search systems.
+10. Works exceptionally well on mobile.
+11. Feels premium, modern, and technologically advanced.
+12. Loads quickly and performs well against Core Web Vitals.
+13. Avoids exaggerated or unsupported health or medical claims.
+2. PROJECT
+Design and develop a dedicated landing page for WaterSource H001.
+Product
+Name: H001
+Category: Alkaline Hydrogen-Rich Water Purifier / Water Generator
+Core proposition: An all-in-one system combining water purification, hydrogen-rich water generation, and fast heating.
+The page should not feel like a PDF converted into a website. It should transform technical documentation into a clear, persuasive, premium digital product experience.
+3. SOURCE OF TRUTH
+Use the following provided materials as the primary product sources:
+H001 product PDF
+WaterSource branding within the PDF
+H001 quotation screenshot
+Provided H001 product photography
+Product technical diagrams
+Filter diagrams
+Control-panel diagrams
+WaterSource logo and existing brand assets
+Do not invent product specifications, certifications, awards, testimonials, scientific studies, or health benefits.
+Where supplied materials contain conflicting technical information, flag the conflict rather than silently selecting one version. Product dimensions in particular should be verified before publication.
+4. PRODUCT FOUNDATION
+The page needs to communicate that H001 is more than a conventional purifier. The supplied product material highlights:
+Hydrogen-rich water generation
+SuperMix gas-liquid mixing
+Nano-bubble hydrogen technology
+Reverse osmosis purification
+Multi-stage filtration
+3-second instant heating
+Multiple temperature settings
+UVC sterilization
+Built-in water tank
+Quantitative dispensing
+Touch controls
+Filter-life reminders
+CENTRAL IDEAOne intelligent system for purification, hydrogen-rich water, and instant temperature control.
+
+Do not overwhelm visitors with technology immediately. Start with customer value, then progressively reveal the technology behind it.
+5. TECH STACK
+Next.js 16
+App Router
+TypeScript
+Tailwind CSS
+Framer Motion
+shadcn/ui where appropriate
+Responsive, mobile-first implementation
+Semantic HTML
+Accessible components
+Optimized responsive images and modern formats where appropriate
+Server Components where appropriate
+Minimal unnecessary client-side JavaScript
+SEO-ready metadata architecture
+Structured data / JSON-LD
+Optimized Core Web Vitals
+The finished site must be production-ready, not prototype code.
+6. DESIGN DIRECTION
+Direction A - Premium Consumer Technology
+Inspired by the digital presentation quality of Apple, Dyson, LG Signature, and Samsung premium appliances.
+Characteristics:
+Product-first storytelling
+Large product renders
+Precise typography
+Sophisticated whitespace
+Strong visual hierarchy
+Technology explained visually
+Minimal interface clutter
+Refined interactions
+Premium presentation
+H001 should feel like a high-value technology product, rather than a generic household water dispenser.
+Direction B - Clean Water &amp; Wellness Editorial
+Characteristics:
+Clean
+Fresh
+Trustworthy
+Scientific but understandable
+Water-focused
+Calm
+Premium
+Human
+Modern
+Use water imagery, macro bubbles, purified-water visual language, subtle aqua/cyan accents, clean typography, technical diagrams, carefully controlled gradients, and generous spacing.
+DESIGN FEELClean water + advanced technology + everyday convenience.
+
+7. BRAND DIRECTION
+WaterSource branding remains the source of truth. Do not redesign the WaterSource identity unless specifically requested.
+The existing PDF uses dark backgrounds and gold accents heavily. The landing page does not need to copy that presentation literally. Evolve it into a modern digital environment using:
+White / light neutral areas for readability
+Deep charcoal for premium technology sections
+WaterSource cyan/blue accents
+Controlled gold accents where appropriate
+Water-inspired visual elements
+Avoid turning every section dark. Use contrast intentionally to create rhythm throughout the page.
+8. PRIMARY OBJECTIVE
+The landing page should quickly answer:
+What is H001?
+Why is it different?
+What problem does it solve?
+How does it purify water?
+What is hydrogen-rich water?
+How does the hydrogen system work?
+How quickly does it heat water?
+What temperature options are available?
+How easy is it to operate?
+How is the system maintained?
+What does it cost?
+Why should the customer choose H001?
+9. TARGET AUDIENCE
+Primary audience
+Health-conscious households
+People looking for a more advanced home water solution.
+Families
+Families that regularly need different water temperatures for drinking, milk preparation, coffee, tea, and hot water.
+Convenience-focused users
+People who want purification, heating, and dispensing from one appliance rather than several separate systems.
+Premium home-appliance buyers
+Customers willing to pay more for technology, convenience, design, automation, and water-quality features.
+Secondary audience
+Small offices
+Wellness environments
+Premium workplaces
+Do not make B2B messaging dominant unless WaterSource confirms commercial buyers are an important target segment.
+10. LANDING PAGE INFORMATION ARCHITECTURE
+This should be a single conversion-focused landing page, not a multi-page sitemap.
+01 - Header
+Keep navigation extremely simple: Overview, Technology, Filtration, Features, Specifications, FAQ.
+Primary CTA: Enquire Now or Order H001, depending on the confirmed sales flow.
+Consider a sticky mobile CTA.
+02 - Hero
+Immediately communicate: H001 Alkaline Hydrogen-Rich Water Purifier.
+Positioning direction: "Purify. Enrich. Heat. All from one intelligent system."
+Use a large H001 product image, product name, strong value proposition, 3-4 key benefit indicators, pricing, promotional pricing if still valid, warranty information, primary CTA, and secondary CTA.
+Quick feature row direction: 3-sec heating / RO purification / Hydrogen-rich water / UVC sterilization.
+Do not fill the hero with technical paragraphs.
+03 - One Machine. Multiple Functions.
+Introduce the product mental model through three systems: Purify, Enrich, Heat.
+Purify: advanced multi-stage filtration.
+Enrich: hydrogen-rich water using dedicated hydrogen technology.
+Heat: instant access to different temperatures.
+04 - Why H001
+Create a visually scannable benefit section.
+Potential highlights: hydrogen-rich water, 3-second heating, multi-stage filtration, multiple temperature options, UVC sterilization, intelligent maintenance reminders.
+Translate each item as Feature -&gt; Benefit -&gt; Evidence / Technology rather than copying PDF bullet points.
+05 - Advanced Hydrogen Technology
+Signature section explaining the process visually.
+Suggested flow: Purified water -&gt; Electrolysis -&gt; Hydrogen -&gt; SuperMix -&gt; Hydrogen-rich water.
+Use restrained motion such as animated water paths, subtle bubbles, or progressive diagram reveal.
+Avoid gimmicky particle effects that reduce performance or readability.
+06 - SuperMix Technology
+Dedicated technical storytelling block.
+Headline direction: "Engineered to Keep More Hydrogen in the Water."
+Explain the gas-liquid mixing technology visually rather than using the highly technical source wording.
+If the 3000-5000 ppb concentration claim is published, keep the unit visible, explain what it refers to, ensure WaterSource confirms it, and avoid presenting it as a medical outcome.
+07 - Water Purification System
+Make this one of the clearest technical sections.
+Show Stage 1 PAC Composite Filter, Stage 2 200G RO Membrane, and Stage 3 Natural Trace Mineralized Carbon Filter.
+Use a flow diagram: Tap Water -&gt; PAC -&gt; RO -&gt; Mineralized Carbon -&gt; Drinking Water.
+Desktop may use an animated horizontal journey; mobile should become a clear vertical stepper.
+08 - 3-Second Instant Heating
+Make this highly visual.
+Headline direction: "Hot Water Without the Wait."
+Potential micro-interaction: Tap -&gt; 3 -&gt; 2 -&gt; 1 -&gt; Ready.
+Keep animation fast and restrained.
+09 - Water for Every Moment
+Show why multiple temperature modes matter instead of presenting only a technical label.
+Use cases can include room-temperature drinking water, warm water, milk preparation, coffee, tea, and hot water.
+Make the appliance feel relevant to everyday life.
+10 - Clean Water, Clean System
+Focus on hygiene and maintainability.
+Include UVC sterilization, removable / cleanable water tank, and water-system hygiene.
+Build trust without using fear-based tap-water marketing.
+11 - Smart Touch Control
+Use an enlarged product-interface image.
+Highlight status display, Normal, Warm, Milk, Coffee, Tea, Boiling, child lock, small cup, big cup, intelligent washing, filter reset, and status indicators.
+UX message: advanced technology should still feel simple to use.
+12 - Precise Water Dispensing
+Explain quantitative dispensing using 150 ml, 300 ml, and 500 ml presets.
+Show the quantities visually using different vessel sizes rather than another generic feature card.
+13 - Smart Filter Maintenance
+Headline direction: "H001 Tells You When It's Time."
+Show the filter status visually.
+Expected source intervals: PAC 6-12 months, RO 12-24 months, mineralized carbon 6-12 months.
+Make maintenance feel simple rather than technical.
+14 - Product Details
+Use high-quality product renders: front, side, rear, detail, control panel, dispensing area.
+Prefer subtle hover or scroll interactions over complicated 3D unless appropriate assets exist.
+15 - Technical Specifications
+Create a clean specification table.
+Include verified fields such as model, rated water yield, water discharge, voltage/frequency, rated power, power consumption, water source, applicable water temperature, filter types, material, and product dimensions.
+Do not publish dimensions until conflicting supplied measurements are confirmed.
+16 - Offer / Purchase
+Create a strong commercial section near the bottom.
+Supplied quotation states usual price $3,388, promotion price $2,888, and 1-year on-site warranty; verify these before deployment.
+CTA direction: Enquire About H001 or Get H001 Today.
+Secondary CTA may be WhatsApp Us if WhatsApp is part of WaterSource's confirmed sales journey.
+17 - FAQ
+Use FAQ to support UX, SEO, AEO, and GEO.
+Example intents: What is H001? What does it do? What is hydrogen-rich water? How is hydrogen-rich water produced? Does it filter tap water? What filtration system is used? How fast is hot water produced? What temperatures are available? Does it use UVC? How often are filters replaced? How is filter replacement indicated? Is installation required?
+For questions not answered by the supplied product material, obtain confirmation rather than inventing an answer.
+18 - Final CTA
+End with a strong product shot.
+Headline direction: "Upgrade the Way You Drink Water."
+Supporting message: purification, hydrogen-rich water, and instant heating in one intelligent system.
+Primary CTA: Enquire About H001. Secondary: Speak With WaterSource.
+11. SEO STRATEGY
+SEO must be considered before finalizing page copy, not after development.
+Research and define:
+1. Primary search intent
+2. Primary product keyword
+3. Supporting informational keywords
+4. Commercial-intent keywords
+5. Branded keywords
+6. Long-tail questions
+Initial keyword themes to validate
+H001 water purifier
+WaterSource H001
+hydrogen water purifier Singapore
+hydrogen-rich water purifier
+alkaline hydrogen water purifier
+instant hot water purifier
+RO water purifier Singapore
+hydrogen water dispenser Singapore
+These are seed themes, not final researched keyword targets.
+For the landing page provide
+Primary keyword
+Secondary keywords
+Search intent
+Meta title
+Meta description
+H1
+H2/H3 structure
+Image alt-text strategy
+Internal linking recommendations
+Semantic entity structure
+Structured-data requirements
+Avoid keyword stuffing. Write naturally for humans first.
+12. AEO STRATEGY
+Structure content so answer engines can extract a clear answer without reconstructing meaning from marketing language.
+Definition blocks
+A concise "What is H001?" answer block
+How-it-works sections
+Numbered processes
+Feature comparison blocks
+Specification tables
+FAQs
+Short summaries beneath technical sections
+AEO PRINCIPLEProvide the direct factual answer first, then expand. Avoid hiding important information inside animation-only elements.
+
+13. GEO STRATEGY
+Optimize content so generative AI systems can clearly understand the following entities and relationships.
+Brand entity
+WaterSource
+Product entity
+H001 Alkaline Hydrogen-Rich Water Purifier
+Category
+Water purifier / hydrogen-rich water system
+Technology entities
+Reverse osmosis
+PAC filtration
+Mineralized carbon filtration
+Hydrogen generation
+SuperMix
+UVC
+Instant heating
+Capabilities
+Purification
+Hydrogen enrichment
+Heating
+Temperature control
+Quantitative dispensing
+Maintenance alerts
+Content qualities
+Entity-rich
+Context-rich
+Factually explicit
+Easy to quote
+Easy to summarize
+Structured
+Consistent in terminology
+Free from unnecessary marketing ambiguity
+Do not refer to important technologies only with vague language such as "our revolutionary system." Name the actual system and components whenever the source supports them.
+14. STRUCTURED DATA
+Plan appropriate JSON-LD for:
+Product
+Brand
+Offer
+Organization
+BreadcrumbList
+FAQ content where appropriate
+Structured information must match visible page content. Never insert ratings, reviews, pricing, availability, or claims that are not actually displayed and verified.
+15. CONVERSION STRATEGY
+Every major section should progressively answer a purchase objection.
+CONVERSION FLOWWhat is it?  -&gt;  Why should I care?  -&gt;  Why is it different?  -&gt;  How does it work?  -&gt;  Can I trust the technology?  -&gt;  Is it easy to use?  -&gt;  How do I maintain it?  -&gt;  What does it cost?  -&gt;  How do I get it?
+
+Primary CTA wording should remain consistent across the page. Avoid using many different CTA labels for the same action.
+16. UX REQUIREMENTS
+Mobile-first design
+Clear information hierarchy
+Easy scanning
+Reduced information overload
+Progressive disclosure for technical content
+Visible CTAs
+Keyboard navigation
+Accessible color contrast
+Appropriately sized touch targets
+Descriptive alt text
+Respect for reduced-motion preferences
+Technical diagrams that remain understandable on mobile
+Excellent readability
+Controlled text widths
+Visual breaks in long sections
+The mobile experience must be intentionally designed; do not simply stack the desktop layout vertically.
+17. VISUAL DESIGN
+Use:
+Large product photography
+Macro water visuals
+Refined grid systems
+Strong typography
+Generous whitespace
+Premium dark technology sections
+Light explanatory sections
+WaterSource blue/cyan accents
+Controlled gold detailing
+Clean diagrams
+Real product UI details
+Subtle depth
+High-quality iconography
+Deliberate section transitions
+Avoid
+Excessive glassmorphism
+Excessive gradients
+Generic blue-wave templates
+Cheap water-droplet graphics
+Heavy glowing effects
+Excessive bubbles everywhere
+Generic medical imagery
+Generic stock doctors
+Overly futuristic sci-fi UI
+Long technical text copied directly from the PDF
+Huge amounts of text over photography
+Gimmicky scroll effects
+Autoplay audio
+Unnecessary video backgrounds
+Fake scientific graphics
+Fake awards
+Fake reviews
+Unsupported medical claims
+The landing page should feel premium without becoming visually noisy.
+18. HEALTH &amp; CLAIMS RULE
+Some supplied materials contain claims related to antioxidant activity, free radicals, absorption, and other health-related properties. Do not automatically turn those statements into stronger marketing claims.
+Before publishing health-related copy:
+Verify the claim
+Confirm WaterSource approval
+Confirm whether supporting evidence exists
+Avoid implying disease prevention, treatment, or cure
+Avoid transforming technical hydrogen characteristics into guaranteed health outcomes
+Prefer product-focused statements about technology, purification process, hydrogen generation, temperature, convenience, hygiene features, and operation unless stronger claims are properly substantiated.
+19. MOTION DESIGN
+Use Framer Motion carefully. Recommended interactions include:
+Product reveal
+Text fade/slide
+Filtration process progression
+Water-flow animation
+Hydrogen bubble movement
+Number counters
+Diagram highlights
+Sticky product storytelling where useful
+Animations should support understanding, feel subtle and premium, remain performant, and respect prefers-reduced-motion. Do not animate simply because animation is available.
+20. PERFORMANCE
+Target excellent Core Web Vitals. Prioritize:
+Hero LCP optimization
+Proper image sizing
+next/image
+Optimized font loading
+Lazy loading below-the-fold media
+Minimal client JavaScript
+Limited motion-library usage
+Efficient responsive images
+Avoiding oversized videos
+Avoiding layout shifts
+The premium visual experience must not come at the cost of performance.
+21. ACCESSIBILITY
+Target WCAG-compliant implementation. Include:
+Semantic heading hierarchy
+Proper buttons and links
+Keyboard navigation
+Visible focus states
+Sufficient color contrast
+Form labels
+Accessible accordions
+Accessible FAQ components
+Meaningful alt text
+Reduced-motion support
+Logical reading order
+Accessibility is part of UX quality, not an afterthought.
+22. DESIGN SYSTEM
+Color system
+WaterSource primary colors
+Neutral colors
+Premium dark surfaces
+Accent colors
+Functional colors
+Typography
+Display
+H1
+H2
+H3
+Body large
+Body
+Caption
+Label
+Spacing
+Use a consistent spacing system across desktop and mobile.
+Reusable components
+Buttons
+Header
+Product feature cards
+Technology sections
+Process steps
+Specification tables
+FAQ accordions
+CTA blocks
+Price block
+Trust indicators
+Footer
+23. DELIVERABLES
+1. Product positioning strategy
+2. Target-audience definition
+3. Landing-page information architecture
+4. Content hierarchy
+5. SEO strategy
+6. AEO strategy
+7. GEO strategy
+8. Keyword strategy
+9. Metadata recommendations
+10. Structured-data plan
+11. Desktop wireframe
+12. Mobile wireframe
+13. High-fidelity landing-page design
+14. Responsive design
+15. Design system
+16. Color system
+17. Typography system
+18. Component library
+19. Motion / interaction plan
+20. Conversion strategy
+21. CTA strategy
+22. Next.js component architecture
+23. Performance plan
+24. Accessibility plan
+25. Production-ready implementation
+QUALITY BARThink like a world-class product design and digital-performance team building a landing page that needs to outperform competing water-purifier products in Design + Product Communication + UX + Conversion + SEO + AEO + GEO + Performance.
+
+24. FIGMA -&gt; CODE
+Once the H001 Figma design is approved, convert it into a production-ready Next.js application.
+Requirements
+Next.js 16 App Router
+TypeScript
+Tailwind CSS
+Framer Motion
+shadcn/ui where appropriate
+Responsive mobile-first
+SEO optimized
+AEO/GEO-friendly semantic structure
+WCAG-aware
+Clean component architecture
+Reusable components
+Production-ready code
+25. DEVELOPMENT RULES
+Do not
+Export the Figma page as one giant image
+Embed an SVG screenshot as the website
+Recreate text as image content
+Use absolute positioning for the entire page
+Hard-code desktop-only dimensions
+Hide SEO-critical content inside images
+Sacrifice accessibility for visual fidelity
+Instead
+Create real HTML elements
+Create reusable React components
+Keep text selectable
+Use semantic HTML
+Make buttons functional
+Make forms functional
+Implement responsive behavior intentionally
+Optimize images
+Follow Next.js best practices
+Match the approved Figma design closely
+Maintain strong Lighthouse performance
+H001 JOURNEYAwareness  -&gt;  Product understanding  -&gt;  Technology trust  -&gt;  Product desire  -&gt;  Commercial confidence  -&gt;  Enquiry / purchase
+
+Source note
+This brief is based on the provided H001 product documentation, quotation, product imagery, and WaterSource brand materials. Any facts not explicitly confirmed in those materials should be verified with WaterSource before production use.
