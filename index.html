@@ -36,7 +36,7 @@
 {"@type":"Question","name":"How often do the filters need replacing?","acceptedAnswer":{"@type":"Answer","text":"Based on the manufacturer material: PAC composite filter 6–12 months, 200G RO membrane 12–24 months, and natural trace mineralized carbon rod filter 6–12 months."}},
 {"@type":"Question","name":"How does the H001 indicate filter replacement?","acceptedAnswer":{"@type":"Answer","text":"The filter-life indicator stays unlit in normal use. At 80% of a filter's service life it flashes orange, and once the filter is due it stays lit orange."}},
 {"@type":"Question","name":"Can the water tank be cleaned?","acceptedAnswer":{"@type":"Answer","text":"Yes. The built-in 2-litre tank is removable and its cover opens so the inside of the tank can be cleaned."}},
-{"@type":"Question","name":"Can I dispense a measured amount of water?","acceptedAnswer":{"@type":"Answer","text":"Yes. Quantitative dispensing offers 150 ml, 300 ml and 500 ml presets, selected with the small-cup and big-cup keys."}}]}]}
+{"@type":"Question","name":"Can I dispense a measured amount of water?","acceptedAnswer":{"@type":"Answer","text":"Yes. Quantitative dispensing offers 150 ml, 300 ml and 1000 ml presets, selected with the small-cup and big-cup keys."}}]}]}
 </script>
 </helmet>
 <div style="font-family: 'Manrope', system-ui, sans-serif; background: #0B0D0F; color: #F2F1EE;">
@@ -173,7 +173,7 @@
           <h3 style="margin: 0; font-family: 'Sora', sans-serif; font-size: 20px; font-weight: 500; letter-spacing: -0.015em;">One appliance for the whole day</h3>
           <div>
             <p style="margin: 0 0 8px; font-size: 16px; line-height: 1.6; color: #4C5259;">Milk, coffee, tea and boiling water from the same panel, in measured amounts.</p>
-            <p style="margin: 0; font-size: 13px; letter-spacing: 0.05em; text-transform: uppercase; color: #9A7F45;">6-stage temperature control · 150 / 300 / 500 ml</p>
+            <p style="margin: 0; font-size: 13px; letter-spacing: 0.05em; text-transform: uppercase; color: #9A7F45;">6-stage temperature control · 150 / 300 / 1000 ml</p>
           </div>
         </article>
         <article style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px clamp(20px, 3vw, 48px); padding: 26px 0; border-top: 1px solid rgba(20,23,26,0.14);">
@@ -348,7 +348,7 @@
             <dd style="margin: 0; font-size: 16px; color: #4C5259;">A large glass</dd>
           </div>
           <div style="display: flex; align-items: baseline; gap: 14px;">
-            <dt style="font-family: 'Sora', sans-serif; font-size: 20px; font-weight: 600; min-width: 92px;">500 ml</dt>
+            <dt style="font-family: 'Sora', sans-serif; font-size: 20px; font-weight: 600; min-width: 92px;">1000 ml</dt>
             <dd style="margin: 0; font-size: 16px; color: #4C5259;">A bottle or jug, without leaving the tap running</dd>
           </div>
         </dl>
@@ -363,8 +363,8 @@
           <p style="margin: 0; font-size: 14px; font-weight: 600;">300 ml</p>
         </div>
         <div style="text-align: center;">
-          <div style="width: 92px; height: 148px; margin: 0 auto 12px; border: 1px solid rgba(20,23,26,0.3); border-top: none; background: linear-gradient(180deg, rgba(111,210,240,0) 18%, rgba(79,184,220,0.48) 18%);"></div>
-          <p style="margin: 0; font-size: 14px; font-weight: 600;">500 ml</p>
+          <div style="width: 108px; height: 168px; margin: 0 auto 12px; border: 1px solid rgba(20,23,26,0.3); border-top: none; background: linear-gradient(180deg, rgba(111,210,240,0) 10%, rgba(79,184,220,0.48) 10%);"></div>
+          <p style="margin: 0; font-size: 14px; font-weight: 600;">1000 ml</p>
         </div>
       </div>
     </div>
@@ -418,7 +418,7 @@
         </div>
         <div style="padding: 20px 0; border-top: 1px solid rgba(20,23,26,0.14);">
           <h3 style="margin: 0 0 6px; font-family: 'Sora', sans-serif; font-size: 18px; font-weight: 500;">Small Cup and Big Cup</h3>
-          <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4C5259;">Quantitative dispensing keys for the 150 ml, 300 ml and 500 ml presets.</p>
+          <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4C5259;">Quantitative dispensing keys for the 150 ml, 300 ml and 1000 ml presets.</p>
         </div>
         <div style="padding: 20px 0; border-top: 1px solid rgba(20,23,26,0.14);">
           <h3 style="margin: 0 0 6px; font-family: 'Sora', sans-serif; font-size: 18px; font-weight: 500;">Child lock</h3>
@@ -690,7 +690,7 @@ class Component extends DCLogic {
       ['Does it use UVC sterilization?', 'Yes. A built-in UVC LED sterilizes inside the water tank and shows a visual indication on the panel when it is running.'],
       ['How often do the filters need replacing?', 'Based on the manufacturer material: PAC composite filter 6–12 months, 200G RO membrane 12–24 months, and natural trace mineralized carbon rod filter 6–12 months. Actual life depends on local water quality and usage.'],
       ['How does the machine indicate filter replacement?', 'The filter-life indicator stays unlit in normal use. At 80% of a filter\u2019s service life it flashes orange, and once the filter is due it stays lit orange. Filters are quick-connect and can be installed yourself, and the Filter Reset key clears the counter afterwards.'],
-      ['Can I dispense a measured amount of water?', 'Yes. Quantitative dispensing offers 150 ml, 300 ml and 500 ml presets, selected with the Small Cup and Big Cup keys.'],
+      ['Can I dispense a measured amount of water?', 'Yes. Quantitative dispensing offers 150 ml, 300 ml and 1000 ml presets, selected with the Small Cup and Big Cup keys.'],
       ['Is installation required?', 'The H001 connects to a tap water supply and runs on 220V~/50Hz mains power. Installation arrangements for your home are confirmed by WaterSource when you enquire.']
     ];
   }
