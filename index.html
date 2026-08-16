@@ -20,6 +20,9 @@
   @keyframes h001-rise { 0% { transform: translateY(14px); opacity: 0; } 60% { opacity: 0.9; } 100% { transform: translateY(-46px); opacity: 0; } }
   @keyframes h001-sweep { 0% { transform: translateX(-100%); } 100% { transform: translateX(100%); } }
   @media (max-width: 900px) { #h001-sticky-cta[data-on="1"] { display: flex !important; } }
+  .h001-benefits-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  @media (max-width: 1020px) { .h001-benefits-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 640px) { .h001-benefits-grid { grid-template-columns: 1fr; } }
   @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
 </style>
 <script type="application/ld+json">
@@ -45,9 +48,11 @@
     <a href="#top" style="display: flex; align-items: center; flex: none;"><img src="assets/logo-watersource.png" alt="WaterSource — Life in Every Drop" style="height: 34px; width: auto; filter: brightness(0) invert(1);" /></a>
     <nav aria-label="Section navigation" style="display: flex; flex-wrap: wrap; gap: 8px 26px; font-size: 14px;">
       <a href="#overview" style="color: rgba(242,241,238,0.7);">Overview</a>
+      <a href="#science" style="color: rgba(242,241,238,0.7);">Wellness</a>
       <a href="#hydrogen" style="color: rgba(242,241,238,0.7);">Technology</a>
       <a href="#filtration" style="color: rgba(242,241,238,0.7);">Filtration</a>
       <a href="#features" style="color: rgba(242,241,238,0.7);">Features</a>
+      <a href="#benefits" style="color: rgba(242,241,238,0.7);">Benefits</a>
       <a href="#specifications" style="color: rgba(242,241,238,0.7);">Specifications</a>
       <a href="#faq" style="color: rgba(242,241,238,0.7);">FAQ</a>
     </nav>
@@ -100,6 +105,40 @@
     <div style="display: flex; flex-wrap: wrap; gap: 12px;">
       <a href="#enquire" style="display: inline-flex; align-items: center; height: 52px; padding: 0 30px; border-radius: 4px; background: #C9A96A; color: #14100A; font-size: 15px; font-weight: 600;" style-hover="background: #DBBE84;">Enquire About H001</a>
       <a href="#enquire" style="display: inline-flex; align-items: center; height: 52px; padding: 0 30px; border-radius: 4px; border: 1px solid rgba(242,241,238,0.28); color: #F2F1EE; font-size: 15px; font-weight: 500;" style-hover="border-color: rgba(242,241,238,0.6);">WhatsApp Us</a>
+    </div>
+  </section>
+
+  <section id="science" style="position: relative; overflow: hidden; padding: clamp(56px, 7vw, 112px) clamp(20px, 4vw, 72px); background: #0B0D0F; border-bottom: 1px solid rgba(242,241,238,0.1);">
+    <div style="position: absolute; inset: auto -10% -40% auto; width: min(720px, 80vw); height: min(720px, 80vw); background: radial-gradient(circle, rgba(111,210,240,0.16) 0%, rgba(11,13,15,0) 68%); pointer-events: none;"></div>
+    <div style="position: relative; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(28px, 5vw, 72px); align-items: start;">
+      <div>
+        <p style="margin: 0 0 16px; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #C9A96A;">From the H001 health brochure</p>
+        <h2 style="margin: 0 0 20px; font-family: 'Sora', sans-serif; font-weight: 300; font-size: clamp(32px, 4.2vw, 56px); line-height: 1.08; letter-spacing: -0.03em;">Designed around the idea of <span style="font-weight: 600;">right water</span></h2>
+        <p style="margin: 0 0 18px; font-size: clamp(16px, 1.2vw, 18px); line-height: 1.7; color: rgba(242,241,238,0.68);">The H001 brochure positions hydrogen-rich water as a daily wellness habit: clean, weakly alkaline, mineral-supporting drinking water with dissolved molecular hydrogen, made conveniently at home or in the office.</p>
+        <p style="margin: 0; font-size: 14px; line-height: 1.65; color: rgba(242,241,238,0.46);">Hydrogen-rich water is not medicine. The wellness notes on this page are educational and supportive in nature, and are not intended to diagnose, treat, cure or prevent disease.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); border-top: 1px solid rgba(242,241,238,0.12); border-left: 1px solid rgba(242,241,238,0.12);">
+        <article style="padding: clamp(22px, 3vw, 34px); border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);">
+          <p style="margin: 0 0 12px; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #6FD2F0;">Research context</p>
+          <h3 style="margin: 0 0 10px; font-family: 'Sora', sans-serif; font-size: 24px; font-weight: 500; letter-spacing: -0.02em;">1,000+ reports</h3>
+          <p style="margin: 0; font-size: 15px; line-height: 1.6; color: rgba(242,241,238,0.6);">The brochure cites extensive global research interest in hydrogen water, including science publications and clinical observations.</p>
+        </article>
+        <article style="padding: clamp(22px, 3vw, 34px); border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);">
+          <p style="margin: 0 0 12px; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #6FD2F0;">Good water profile</p>
+          <h3 style="margin: 0 0 10px; font-family: 'Sora', sans-serif; font-size: 24px; font-weight: 500; letter-spacing: -0.02em;">6 standards</h3>
+          <p style="margin: 0; font-size: 15px; line-height: 1.6; color: rgba(242,241,238,0.6);">Clean water, small water molecules, weak alkalinity, negative ions, ionised minerals and suitable oxygen content are highlighted in the brochure.</p>
+        </article>
+        <article style="padding: clamp(22px, 3vw, 34px); border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);">
+          <p style="margin: 0 0 12px; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #C9A96A;">H001 functions</p>
+          <h3 style="margin: 0 0 10px; font-family: 'Sora', sans-serif; font-size: 24px; font-weight: 500; letter-spacing: -0.02em;">Hydrogen + minerals</h3>
+          <p style="margin: 0; font-size: 15px; line-height: 1.6; color: rgba(242,241,238,0.6);">The PDF highlights added hydrogen, weak alkalinity, ionic minerals, oxygenation and fine micro-cluster characteristics.</p>
+        </article>
+        <article style="padding: clamp(22px, 3vw, 34px); border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);">
+          <p style="margin: 0 0 12px; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #C9A96A;">Home convenience</p>
+          <h3 style="margin: 0 0 10px; font-family: 'Sora', sans-serif; font-size: 24px; font-weight: 500; letter-spacing: -0.02em;">Made on demand</h3>
+          <p style="margin: 0; font-size: 15px; line-height: 1.6; color: rgba(242,241,238,0.6);">Instead of travelling to natural spring sources, H001 brings hydrogen-rich water generation into daily family drinking routines.</p>
+        </article>
+      </div>
     </div>
   </section>
 
@@ -191,6 +230,66 @@
           </div>
         </article>
       </div>
+    </div>
+  </section>
+
+  <section id="benefits" style="position: relative; overflow: hidden; padding: clamp(56px, 8vw, 128px) clamp(20px, 4vw, 72px); background: #0E1114; border-top: 1px solid rgba(242,241,238,0.1); border-bottom: 1px solid rgba(242,241,238,0.1);">
+    <div style="position: absolute; top: -18%; right: -12%; width: min(780px, 82vw); height: min(780px, 82vw); background: radial-gradient(circle, rgba(201,169,106,0.15) 0%, rgba(14,17,20,0) 68%); pointer-events: none;"></div>
+    <div style="position: relative; max-width: 820px; margin: 0 auto clamp(36px, 5vw, 64px); text-align: center;">
+      <p style="margin: 0 0 16px; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #C9A96A;">Nine health-supporting benefits of hydrogen</p>
+      <h2 style="margin: 0 0 20px; font-family: 'Sora', sans-serif; font-weight: 300; font-size: clamp(32px, 4.2vw, 56px); line-height: 1.08; letter-spacing: -0.03em;">Gentle daily support for the body's <span style="font-weight: 600;">natural balance</span></h2>
+      <p style="margin: 0 auto; max-width: 70ch; font-size: clamp(16px, 1.2vw, 18px); line-height: 1.7; color: rgba(242,241,238,0.68);">Molecular hydrogen is studied for its potential role in oxidative stress, inflammation regulation and long-term wellness support. The H001 makes hydrogen-rich water fresh from purified water, so this support can become part of everyday drinking.</p>
+    </div>
+    <div class="h001-benefits-grid" style="position: relative; border-top: 1px solid rgba(242,241,238,0.12); border-left: 1px solid rgba(242,241,238,0.12);">
+      <article style="padding: clamp(24px, 3vw, 38px); border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);">
+        <p style="margin: 0 0 14px; font-family: 'Sora', sans-serif; font-size: 14px; color: #6FD2F0;">01</p>
+        <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: 21px; font-weight: 500; letter-spacing: -0.015em;">Chronic health risk management</h3>
+        <p style="margin: 0; font-size: 16px; line-height: 1.65; color: rgba(242,241,238,0.68);">May help regulate oxidative stress, support anti-inflammatory responses and maintain normal cellular function as part of early daily wellness care.</p>
+      </article>
+      <article style="padding: clamp(24px, 3vw, 38px); border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);">
+        <p style="margin: 0 0 14px; font-family: 'Sora', sans-serif; font-size: 14px; color: #6FD2F0;">02</p>
+        <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: 21px; font-weight: 500; letter-spacing: -0.015em;">Metabolism and weight management</h3>
+        <p style="margin: 0; font-size: 16px; line-height: 1.65; color: rgba(242,241,238,0.68);">May support energy metabolism, mitochondrial function, balanced lipid metabolism and healthy blood sugar regulation.</p>
+      </article>
+      <article style="padding: clamp(24px, 3vw, 38px); border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);">
+        <p style="margin: 0 0 14px; font-family: 'Sora', sans-serif; font-size: 14px; color: #6FD2F0;">03</p>
+        <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: 21px; font-weight: 500; letter-spacing: -0.015em;">Vascular health and circulation</h3>
+        <p style="margin: 0; font-size: 16px; line-height: 1.65; color: rgba(242,241,238,0.68);">Research has explored molecular hydrogen for lipid oxidation, vascular endothelial support and a more stable circulatory environment.</p>
+      </article>
+      <article style="padding: clamp(24px, 3vw, 38px); border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);">
+        <p style="margin: 0 0 14px; font-family: 'Sora', sans-serif; font-size: 14px; color: #C9A96A;">04</p>
+        <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: 21px; font-weight: 500; letter-spacing: -0.015em;">Gut health and immune balance</h3>
+        <p style="margin: 0; font-size: 16px; line-height: 1.65; color: rgba(242,241,238,0.68);">Hydrogen-rich water studies have focused on microbiome balance, digestive comfort and inflammatory responses in the gut.</p>
+      </article>
+      <article style="padding: clamp(24px, 3vw, 38px); border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);">
+        <p style="margin: 0 0 14px; font-family: 'Sora', sans-serif; font-size: 14px; color: #C9A96A;">05</p>
+        <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: 21px; font-weight: 500; letter-spacing: -0.015em;">Brain and cognitive function</h3>
+        <p style="margin: 0; font-size: 16px; line-height: 1.65; color: rgba(242,241,238,0.68);">Because molecular hydrogen is extremely small, research has explored its potential support for nerve-cell antioxidant protection and cognitive stability.</p>
+      </article>
+      <article style="padding: clamp(24px, 3vw, 38px); border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);">
+        <p style="margin: 0 0 14px; font-family: 'Sora', sans-serif; font-size: 14px; color: #C9A96A;">06</p>
+        <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: 21px; font-weight: 500; letter-spacing: -0.015em;">Cellular health and repair environment</h3>
+        <p style="margin: 0; font-size: 16px; line-height: 1.65; color: rgba(242,241,238,0.68);">Supports a healthier internal environment by helping the body manage oxidative stress around cells and natural repair processes.</p>
+      </article>
+      <article style="padding: clamp(24px, 3vw, 38px); border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);">
+        <p style="margin: 0 0 14px; font-family: 'Sora', sans-serif; font-size: 14px; color: #6FD2F0;">07</p>
+        <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: 21px; font-weight: 500; letter-spacing: -0.015em;">Skin health and radiance</h3>
+        <p style="margin: 0; font-size: 16px; line-height: 1.65; color: rgba(242,241,238,0.68);">Daily hydrogen-rich water may provide antioxidant and soothing support for hydrated, softer, healthier-looking skin.</p>
+      </article>
+      <article style="padding: clamp(24px, 3vw, 38px); border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);">
+        <p style="margin: 0 0 14px; font-family: 'Sora', sans-serif; font-size: 14px; color: #6FD2F0;">08</p>
+        <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: 21px; font-weight: 500; letter-spacing: -0.015em;">Reproductive and hormonal balance</h3>
+        <p style="margin: 0; font-size: 16px; line-height: 1.65; color: rgba(242,241,238,0.68);">Current research has explored links between oxidative stress, inflammation responses and reproductive-system balance.</p>
+      </article>
+      <article style="padding: clamp(24px, 3vw, 38px); border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);">
+        <p style="margin: 0 0 14px; font-family: 'Sora', sans-serif; font-size: 14px; color: #6FD2F0;">09</p>
+        <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: 21px; font-weight: 500; letter-spacing: -0.015em;">Nervous system and stress management</h3>
+        <p style="margin: 0; font-size: 16px; line-height: 1.65; color: rgba(242,241,238,0.68);">May help reduce feelings of fatigue, support nervous-system stability and encourage a more restorative daily rhythm.</p>
+      </article>
+    </div>
+    <div style="position: relative; margin-top: clamp(24px, 4vw, 48px); display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(20px, 3vw, 36px); align-items: center; padding: clamp(22px, 3vw, 34px); border: 1px solid rgba(201,169,106,0.28); background: linear-gradient(135deg, rgba(201,169,106,0.08), rgba(111,210,240,0.05));">
+      <p style="margin: 0; font-family: 'Sora', sans-serif; font-size: clamp(22px, 2.4vw, 32px); line-height: 1.18; letter-spacing: -0.025em;">Hydrogen does not force the body to change.</p>
+      <p style="margin: 0; font-size: 16px; line-height: 1.7; color: rgba(242,241,238,0.66);">Its role is positioned as gentle support for the body's own self-regulation. When the internal environment is right, cells and body systems can function more effectively over time.</p>
     </div>
   </section>
 
@@ -631,6 +730,8 @@
       </div>
       <nav aria-label="Footer navigation" style="display: flex; flex-wrap: wrap; gap: 10px 28px; font-size: 15px;">
         <a href="#overview" style="color: rgba(242,241,238,0.6);">Overview</a>
+        <a href="#science" style="color: rgba(242,241,238,0.6);">Wellness</a>
+        <a href="#benefits" style="color: rgba(242,241,238,0.6);">Benefits</a>
         <a href="#hydrogen" style="color: rgba(242,241,238,0.6);">Technology</a>
         <a href="#filtration" style="color: rgba(242,241,238,0.6);">Filtration</a>
         <a href="#specifications" style="color: rgba(242,241,238,0.6);">Specifications</a>
