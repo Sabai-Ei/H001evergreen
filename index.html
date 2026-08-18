@@ -58,6 +58,8 @@
     #final-cta > div,
     #enquire > div,
     #who-for > div:first-of-type,
+    #comparison > div > div:first-child,
+    #comparison > div > div:nth-child(3),
     #trust > div > div:first-child,
     #trust > div > div:last-child {
       grid-template-columns: 1fr !important;
@@ -81,6 +83,9 @@
     #specifications th { padding: 16px 0 4px !important; border-bottom: 0 !important; }
     #specifications td { padding: 0 0 16px !important; }
     #who-for > div[style*="repeat(auto-fit, minmax(min(100%, 420px)"] { grid-template-columns: 1fr !important; }
+    #comparison [role="list"] { grid-template-columns: 1fr !important; }
+    #comparison [aria-label="Comparison decision rows"] > div { grid-template-columns: 1fr !important; gap: 10px !important; }
+    #comparison [aria-label="Comparison decision rows"] > div > p:first-child { border-bottom: 1px solid rgba(242,241,238,0.08); padding-bottom: 10px !important; }
     #trust [aria-label="Real customer reviews carousel"] article { min-height: 500px !important; padding: 24px 20px 48px !important; }
     #trust [aria-label="Real customer reviews carousel"] h3 { max-width: 100% !important; font-size: clamp(24px, 7vw, 32px) !important; letter-spacing: -0.035em !important; }
     #enquire { background: linear-gradient(180deg, #0B0D0F 0%, #101820 58%, #F5F4F1 58%, #F5F4F1 100%) !important; }
@@ -122,6 +127,7 @@
       <a href="#hydrogen" style="color: rgba(242,241,238,0.7);">Technology</a>
       <a href="#filtration" style="color: rgba(242,241,238,0.7);">Filtration</a>
       <a href="#benefits" style="color: rgba(242,241,238,0.7);">Benefits</a>
+      <a href="#comparison" style="color: rgba(242,241,238,0.7);">Compare</a>
       <a href="#who-for" style="color: rgba(242,241,238,0.7);">Who It's For</a>
       <a href="#trust" style="color: rgba(242,241,238,0.7);">Trust</a>
       <a href="#specifications" style="color: rgba(242,241,238,0.7);">Specifications</a>
@@ -722,6 +728,90 @@
     </table>
   </section>
 
+
+  <section id="comparison" style="position: relative; overflow: hidden; padding: clamp(64px, 8vw, 136px) clamp(20px, 4vw, 72px); background: #101318; color: #F2F1EE; border-top: 1px solid rgba(242,241,238,0.1); border-bottom: 1px solid rgba(242,241,238,0.1);">
+    <div style="position: absolute; inset: -18% auto auto -16%; width: min(720px, 82vw); height: min(720px, 82vw); background: radial-gradient(circle, rgba(201,169,106,0.16) 0%, rgba(16,19,24,0) 68%); pointer-events: none;"></div>
+    <div style="position: absolute; inset: auto -16% -26% auto; width: min(780px, 86vw); height: min(780px, 86vw); background: radial-gradient(circle, rgba(111,210,240,0.14) 0%, rgba(16,19,24,0) 68%); pointer-events: none;"></div>
+    <div style="position: relative; max-width: 1240px; margin: 0 auto;">
+      <div style="display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(280px, 0.52fr); gap: clamp(28px, 5vw, 74px); align-items: end; margin-bottom: clamp(34px, 5vw, 64px);">
+        <div>
+          <p style="margin: 0 0 16px; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #C9A96A;">Compare your water routine</p>
+          <h2 style="margin: 0; font-family: 'Sora', sans-serif; font-weight: 300; font-size: clamp(34px, 4.8vw, 66px); line-height: 1.04; letter-spacing: -0.04em;">Why H001 costs more than a basic purifier.</h2>
+        </div>
+        <p style="margin: 0; font-size: clamp(16px, 1.25vw, 18px); line-height: 1.72; color: rgba(242,241,238,0.66);">A normal purifier can be enough if you only want filtered drinking water. H001 is designed for customers who want purification, hydrogen-rich hydration, instant hot water, hygiene support and daily convenience from one premium system.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: clamp(18px, 2.4vw, 28px); margin-bottom: clamp(28px, 4vw, 52px);">
+        <article style="position: relative; overflow: hidden; padding: clamp(24px, 3.2vw, 38px); border: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.035);">
+          <div style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(242,241,238,0.04), transparent 46%); pointer-events: none;"></div>
+          <div style="position: relative; display: grid; gap: 18px;">
+            <div style="width: 54px; height: 54px; border-radius: 50%; display: grid; place-items: center; background: rgba(242,241,238,0.08); color: rgba(242,241,238,0.72); font-size: 24px;">○</div>
+            <div>
+              <p style="margin: 0 0 10px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(242,241,238,0.48);">Basic purifier</p>
+              <h3 style="margin: 0; font-family: 'Sora', sans-serif; font-size: clamp(24px, 2.4vw, 34px); line-height: 1.08; letter-spacing: -0.03em; font-weight: 500;">Filters water only</h3>
+            </div>
+            <ul style="margin: 0; padding: 0; list-style: none; display: grid; gap: 13px; font-size: 15px; line-height: 1.58; color: rgba(242,241,238,0.58);">
+              <li style="display: flex; gap: 10px;"><span style="color: rgba(242,241,238,0.32);">—</span><span>Usually no hydrogen-rich water generation</span></li>
+              <li style="display: flex; gap: 10px;"><span style="color: rgba(242,241,238,0.32);">—</span><span>May still need a kettle or hot-water dispenser</span></li>
+              <li style="display: flex; gap: 10px;"><span style="color: rgba(242,241,238,0.32);">—</span><span>Tank hygiene and filter reminders depend on the model</span></li>
+              <li style="display: flex; gap: 10px;"><span style="color: rgba(242,241,238,0.32);">—</span><span>RO water may taste flat if minerals are not balanced back</span></li>
+            </ul>
+          </div>
+        </article>
+
+        <article style="position: relative; overflow: hidden; padding: clamp(24px, 3.2vw, 38px); border: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.035);">
+          <div style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(111,210,240,0.08), transparent 46%); pointer-events: none;"></div>
+          <div style="position: relative; display: grid; gap: 18px;">
+            <div style="width: 54px; height: 54px; border-radius: 50%; display: grid; place-items: center; background: rgba(111,210,240,0.12); color: #6FD2F0; font-size: 23px;">＋</div>
+            <div>
+              <p style="margin: 0 0 10px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: #6FD2F0;">Separate devices</p>
+              <h3 style="margin: 0; font-family: 'Sora', sans-serif; font-size: clamp(24px, 2.4vw, 34px); line-height: 1.08; letter-spacing: -0.03em; font-weight: 500;">More countertop clutter</h3>
+            </div>
+            <ul style="margin: 0; padding: 0; list-style: none; display: grid; gap: 13px; font-size: 15px; line-height: 1.58; color: rgba(242,241,238,0.58);">
+              <li style="display: flex; gap: 10px;"><span style="color: #6FD2F0;">•</span><span>Purifier, kettle, dispenser and bottled water can become a scattered routine</span></li>
+              <li style="display: flex; gap: 10px;"><span style="color: #6FD2F0;">•</span><span>More appliances to clean, refill, maintain and explain to family members</span></li>
+              <li style="display: flex; gap: 10px;"><span style="color: #6FD2F0;">•</span><span>Hot water may still involve waiting or repeatedly reheating water</span></li>
+              <li style="display: flex; gap: 10px;"><span style="color: #6FD2F0;">•</span><span>Bottled hydrogen water adds storage, cost and freshness questions</span></li>
+            </ul>
+          </div>
+        </article>
+
+        <article style="position: relative; overflow: hidden; padding: clamp(24px, 3.2vw, 38px); border: 1px solid rgba(201,169,106,0.34); background: linear-gradient(135deg, rgba(201,169,106,0.18), rgba(111,210,240,0.08)); box-shadow: 0 28px 90px rgba(0,0,0,0.26);">
+          <div style="position: absolute; inset: 0; background: radial-gradient(circle at 18% 10%, rgba(201,169,106,0.22), transparent 36%), radial-gradient(circle at 86% 86%, rgba(111,210,240,0.16), transparent 38%); pointer-events: none;"></div>
+          <div style="position: relative; display: grid; gap: 18px;">
+            <div style="width: 54px; height: 54px; border-radius: 50%; display: grid; place-items: center; background: #C9A96A; color: #14100A; font-size: 22px; font-weight: 900;">✓</div>
+            <div>
+              <p style="margin: 0 0 10px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A96A;">H001 complete system</p>
+              <h3 style="margin: 0; font-family: 'Sora', sans-serif; font-size: clamp(24px, 2.4vw, 34px); line-height: 1.08; letter-spacing: -0.03em; font-weight: 500;">One premium daily water routine</h3>
+            </div>
+            <ul style="margin: 0; padding: 0; list-style: none; display: grid; gap: 13px; font-size: 15px; line-height: 1.58; color: rgba(242,241,238,0.72);">
+              <li style="display: flex; gap: 10px;"><span style="color: #C9A96A;">✓</span><span>3-stage RO purification with mineral support for cleaner-tasting water</span></li>
+              <li style="display: flex; gap: 10px;"><span style="color: #C9A96A;">✓</span><span>Hydrogen-rich water generated fresh for everyday wellness habits</span></li>
+              <li style="display: flex; gap: 10px;"><span style="color: #C9A96A;">✓</span><span>3-second instant heating for warm water, milk, coffee, tea and boiling water</span></li>
+              <li style="display: flex; gap: 10px;"><span style="color: #C9A96A;">✓</span><span>Built-in UVC tank sterilisation, removable tank and filter-life reminders</span></li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <div style="display: grid; grid-template-columns: minmax(0, 0.72fr) minmax(280px, 0.28fr); gap: clamp(18px, 2.6vw, 28px); align-items: stretch;">
+        <div aria-label="Comparison decision rows" style="border: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.035);">
+          <div style="display: grid; grid-template-columns: 1.05fr 0.72fr 0.72fr; gap: 18px; padding: 18px clamp(18px, 2.2vw, 28px); border-bottom: 1px solid rgba(242,241,238,0.1); color: rgba(242,241,238,0.5); font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase;"><p style="margin: 0;">Buying question</p><p style="margin: 0;">Normal purifier</p><p style="margin: 0; color: #C9A96A;">H001</p></div>
+          <div style="display: grid; grid-template-columns: 1.05fr 0.72fr 0.72fr; gap: 18px; padding: 18px clamp(18px, 2.2vw, 28px); border-bottom: 1px solid rgba(242,241,238,0.08); align-items: start;"><p style="margin: 0; font-weight: 700; color: #F2F1EE;">Can it replace more than one appliance?</p><p style="margin: 0; color: rgba(242,241,238,0.56); line-height: 1.6;">Usually focused on filtration only.</p><p style="margin: 0; color: rgba(242,241,238,0.78); line-height: 1.6;">Purifier, hydrogen-rich water system and instant hot-water dispenser in one.</p></div>
+          <div style="display: grid; grid-template-columns: 1.05fr 0.72fr 0.72fr; gap: 18px; padding: 18px clamp(18px, 2.2vw, 28px); border-bottom: 1px solid rgba(242,241,238,0.08); align-items: start;"><p style="margin: 0; font-weight: 700; color: #F2F1EE;">Does it help justify a premium price?</p><p style="margin: 0; color: rgba(242,241,238,0.56); line-height: 1.6;">Lower entry price, but may need extra appliances or bottled water.</p><p style="margin: 0; color: rgba(242,241,238,0.78); line-height: 1.6;">Higher investment, but combines daily convenience, support features and premium presentation.</p></div>
+          <div style="display: grid; grid-template-columns: 1.05fr 0.72fr 0.72fr; gap: 18px; padding: 18px clamp(18px, 2.2vw, 28px); border-bottom: 1px solid rgba(242,241,238,0.08); align-items: start;"><p style="margin: 0; font-weight: 700; color: #F2F1EE;">Is it easy for the whole family?</p><p style="margin: 0; color: rgba(242,241,238,0.56); line-height: 1.6;">Depends on the purifier and separate appliances used.</p><p style="margin: 0; color: rgba(242,241,238,0.78); line-height: 1.6;">One touch panel, temperature stages and measured dispensing for different daily routines.</p></div>
+          <div style="display: grid; grid-template-columns: 1.05fr 0.72fr 0.72fr; gap: 18px; padding: 18px clamp(18px, 2.2vw, 28px); align-items: start;"><p style="margin: 0; font-weight: 700; color: #F2F1EE;">What should buyers confirm?</p><p style="margin: 0; color: rgba(242,241,238,0.56); line-height: 1.6;">Filter type, hot-water needs and after-sales support.</p><p style="margin: 0; color: rgba(242,241,238,0.78); line-height: 1.6;">Installation fit, package details, warranty and preferred daily use cases with WaterSource.</p></div>
+        </div>
+
+        <aside style="padding: clamp(22px, 3vw, 34px); border: 1px solid rgba(201,169,106,0.28); background: rgba(201,169,106,0.10); display: grid; align-content: center; gap: 14px;">
+          <p style="margin: 0; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A96A;">Best value if</p>
+          <h3 style="margin: 0; font-family: 'Sora', sans-serif; font-size: clamp(24px, 2.4vw, 34px); line-height: 1.08; letter-spacing: -0.03em; font-weight: 500;">You want fewer devices and a better daily water habit.</h3>
+          <p style="margin: 0; font-size: 16px; line-height: 1.68; color: rgba(242,241,238,0.66);">This section helps visitors compare H001 against the choices they already know, so the S$2,888 offer feels easier to understand before they reach the enquiry form.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
   <section id="who-for" style="position: relative; overflow: hidden; background: #F5F4F1; color: #14171A; padding: clamp(64px, 8vw, 136px) clamp(20px, 4vw, 72px);">
     <div style="position: absolute; inset: -22% auto auto -14%; width: min(700px, 82vw); height: min(700px, 82vw); background: radial-gradient(circle, rgba(201,169,106,0.18) 0%, rgba(245,244,241,0) 68%); pointer-events: none;"></div>
     <div style="position: absolute; inset: auto -14% -26% auto; width: min(760px, 86vw); height: min(760px, 86vw); background: radial-gradient(circle, rgba(111,210,240,0.18) 0%, rgba(245,244,241,0) 68%); pointer-events: none;"></div>
@@ -1060,6 +1150,7 @@
         <a href="#hydrogen" style="color: rgba(242,241,238,0.6);">Technology</a>
         <a href="#filtration" style="color: rgba(242,241,238,0.6);">Filtration</a>
         <a href="#specifications" style="color: rgba(242,241,238,0.6);">Specifications</a>
+        <a href="#comparison" style="color: rgba(242,241,238,0.6);">Compare</a>
         <a href="#who-for" style="color: rgba(242,241,238,0.6);">Who it's for</a>
         <a href="#trust" style="color: rgba(242,241,238,0.6);">Trust</a>
         <a href="#faq" style="color: rgba(242,241,238,0.6);">FAQ</a>
