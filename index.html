@@ -19,6 +19,15 @@
   img { display: block; max-width: 100%; }
   @keyframes h001-rise { 0% { transform: translateY(14px); opacity: 0; } 60% { opacity: 0.9; } 100% { transform: translateY(-46px); opacity: 0; } }
   @keyframes h001-sweep { 0% { transform: translateX(-100%); } 100% { transform: translateX(100%); } }
+  @keyframes h001-testimonial-slide {
+    0%, 12% { transform: translateX(0%); }
+    16.6%, 28.6% { transform: translateX(-100%); }
+    33.2%, 45.2% { transform: translateX(-200%); }
+    49.8%, 61.8% { transform: translateX(-300%); }
+    66.4%, 78.4% { transform: translateX(-400%); }
+    83%, 95% { transform: translateX(-500%); }
+    100% { transform: translateX(0%); }
+  }
   @media (max-width: 900px) { #h001-sticky-cta[data-on="1"] { display: flex !important; } }
   .h001-benefits-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
   @media (max-width: 1020px) { .h001-benefits-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
@@ -51,8 +60,9 @@
       <a href="#science" style="color: rgba(242,241,238,0.7);">Wellness</a>
       <a href="#hydrogen" style="color: rgba(242,241,238,0.7);">Technology</a>
       <a href="#filtration" style="color: rgba(242,241,238,0.7);">Filtration</a>
-      <a href="#features" style="color: rgba(242,241,238,0.7);">Features</a>
       <a href="#benefits" style="color: rgba(242,241,238,0.7);">Benefits</a>
+      <a href="#who-for" style="color: rgba(242,241,238,0.7);">Who It's For</a>
+      <a href="#trust" style="color: rgba(242,241,238,0.7);">Trust</a>
       <a href="#specifications" style="color: rgba(242,241,238,0.7);">Specifications</a>
       <a href="#faq" style="color: rgba(242,241,238,0.7);">FAQ</a>
     </nav>
@@ -62,83 +72,207 @@
     </div>
   </header>
 
-  <section id="top" style="position: relative; overflow: hidden; padding: clamp(48px, 6vw, 96px) clamp(20px, 4vw, 72px) 0; text-align: center;">
-    <div style="position: absolute; top: -8%; left: 50%; transform: translateX(-50%); width: min(1100px, 130%); height: 780px; background: radial-gradient(ellipse at 50% 40%, rgba(72,150,190,0.30) 0%, rgba(30,60,80,0.16) 42%, rgba(11,13,15,0) 72%); pointer-events: none;"></div>
-    <div style="position: relative; max-width: 1000px; margin: 0 auto;">
-      <p style="margin: 0 0 20px; font-size: 12px; letter-spacing: 0.24em; text-transform: uppercase; color: #C9A96A;">WaterSource H001 · Alkaline Hydrogen-Rich Water Purifier</p>
-      <h1 style="margin: 0 0 22px; font-family: 'Sora', system-ui, sans-serif; font-weight: 300; font-size: clamp(40px, 6vw, 88px); line-height: 1.02; letter-spacing: -0.035em; text-wrap: pretty;">Purify. Enrich. Heat.<br /><span style="font-weight: 600;">All from one intelligent system.</span></h1>
-      <p style="margin: 0 auto; max-width: 62ch; font-size: clamp(16px, 1.3vw, 19px); line-height: 1.65; color: rgba(242,241,238,0.68);">The H001 combines three-stage reverse osmosis purification, SuperMix hydrogen-rich water generation and 3-second instant heating in a single countertop appliance.</p>
-    </div>
-    <div style="position: relative; margin: clamp(20px, 3vw, 40px) auto 0; width: min(100%, 760px);">
-      <div style="position: absolute; left: 50%; bottom: 4%; transform: translateX(-50%); width: 70%; height: 90px; background: radial-gradient(ellipse at center, rgba(111,210,240,0.22) 0%, rgba(11,13,15,0) 70%);"></div>
-      <img src="assets/h001-hero-3q.png" alt="WaterSource H001 alkaline hydrogen-rich water purifier, three-quarter view showing the champagne-gold dispensing column and touch control panel" width="858" height="919" style="position: relative; width: 100%; height: auto; filter: drop-shadow(0 50px 70px rgba(0,0,0,0.65));" />
-    </div>
-  </section>
-
-  <section aria-label="Key capabilities" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); border-top: 1px solid rgba(201,169,106,0.22); border-bottom: 1px solid rgba(242,241,238,0.1);">
-    <div style="padding: clamp(20px, 2.6vw, 34px) clamp(18px, 2.6vw, 40px); border-right: 1px solid rgba(242,241,238,0.1);">
-      <p style="margin: 0 0 6px; font-family: 'Sora', sans-serif; font-size: 26px; font-weight: 500; letter-spacing: -0.02em;">3 seconds</p>
-      <p style="margin: 0; font-size: 14px; color: rgba(242,241,238,0.55);">Instant heating, on demand</p>
-    </div>
-    <div style="padding: clamp(20px, 2.6vw, 34px) clamp(18px, 2.6vw, 40px); border-right: 1px solid rgba(242,241,238,0.1);">
-      <p style="margin: 0 0 6px; font-family: 'Sora', sans-serif; font-size: 26px; font-weight: 500; letter-spacing: -0.02em;">200G RO</p>
-      <p style="margin: 0; font-size: 14px; color: rgba(242,241,238,0.55);">Reverse osmosis purification</p>
-    </div>
-    <div style="padding: clamp(20px, 2.6vw, 34px) clamp(18px, 2.6vw, 40px); border-right: 1px solid rgba(242,241,238,0.1);">
-      <p style="margin: 0 0 6px; font-family: 'Sora', sans-serif; font-size: 26px; font-weight: 500; letter-spacing: -0.02em;">SuperMix</p>
-      <p style="margin: 0; font-size: 14px; color: rgba(242,241,238,0.55);">Hydrogen-rich water</p>
-    </div>
-    <div style="padding: clamp(20px, 2.6vw, 34px) clamp(18px, 2.6vw, 40px);">
-      <p style="margin: 0 0 6px; font-family: 'Sora', sans-serif; font-size: 26px; font-weight: 500; letter-spacing: -0.02em;">UVC LED</p>
-      <p style="margin: 0; font-size: 14px; color: rgba(242,241,238,0.55);">In-tank sterilization</p>
-    </div>
-  </section>
-
-  <section aria-label="Price and enquiry" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; padding: clamp(22px, 3vw, 34px) clamp(20px, 4vw, 72px); border-bottom: 1px solid rgba(242,241,238,0.1); background: #0E1114;">
-    <div style="display: flex; align-items: flex-end; flex-wrap: wrap; gap: 12px 24px;">
-      <p style="margin: 0; font-family: 'Sora', sans-serif; font-size: clamp(30px, 3.6vw, 44px); font-weight: 500; letter-spacing: -0.03em;">S$2,888</p>
-      <div style="padding-bottom: 6px; font-size: 14px; color: rgba(242,241,238,0.58); line-height: 1.5;">
-        <p style="margin: 0;">Promotion price · usual price <span style="text-decoration: line-through;">S$3,388</span></p>
-        <p style="margin: 0;">1-year on-site warranty</p>
+  <section id="top" style="position: relative; overflow: hidden; padding: clamp(44px, 6vw, 88px) clamp(20px, 4vw, 72px) 0;">
+    <div style="position: absolute; top: -10%; left: 52%; transform: translateX(-50%); width: min(1180px, 135%); height: 820px; background: radial-gradient(ellipse at 50% 36%, rgba(72,150,190,0.34) 0%, rgba(30,60,80,0.17) 42%, rgba(11,13,15,0) 72%); pointer-events: none;"></div>
+    <div style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(201,169,106,0.08), rgba(11,13,15,0) 34%, rgba(111,210,240,0.08)); pointer-events: none;"></div>
+    <div style="position: relative; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: clamp(28px, 5vw, 74px); align-items: center; max-width: 1240px; margin: 0 auto;">
+      <div style="text-align: left; padding-bottom: clamp(24px, 4vw, 56px);">
+        <p style="display: inline-flex; align-items: center; gap: 10px; margin: 0 0 18px; padding: 8px 12px; border: 1px solid rgba(201,169,106,0.34); border-radius: 999px; background: rgba(201,169,106,0.08); font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A96A;">WaterSource H001 · Alkaline Hydrogen-Rich Water Purifier</p>
+        <h1 style="margin: 0 0 22px; font-family: 'Sora', system-ui, sans-serif; font-weight: 300; font-size: clamp(40px, 6vw, 82px); line-height: 1.02; letter-spacing: -0.035em; text-wrap: pretty;">Purified, hydrogen-rich hot water <span style="font-weight: 600;">in one premium system.</span></h1>
+        <p style="margin: 0 0 24px; max-width: 64ch; font-size: clamp(16px, 1.3vw, 19px); line-height: 1.65; color: rgba(242,241,238,0.72);">The H001 combines three-stage reverse osmosis purification, SuperMix hydrogen-rich water generation and 3-second instant heating in a single countertop appliance for homes, offices and wellness-focused spaces.</p>
+        <div aria-label="Hero outcome highlights" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px 14px; margin: 0 0 28px; max-width: 760px;">
+          <div style="display: flex; gap: 10px; align-items: flex-start; padding: 12px 14px; border: 1px solid rgba(242,241,238,0.11); background: rgba(242,241,238,0.045); border-radius: 12px;"><span style="color: #6FD2F0; font-weight: 700;">✓</span><span style="font-size: 14px; line-height: 1.5; color: rgba(242,241,238,0.76);">Cleaner daily drinking water through 200G RO purification</span></div>
+          <div style="display: flex; gap: 10px; align-items: flex-start; padding: 12px 14px; border: 1px solid rgba(242,241,238,0.11); background: rgba(242,241,238,0.045); border-radius: 12px;"><span style="color: #6FD2F0; font-weight: 700;">✓</span><span style="font-size: 14px; line-height: 1.5; color: rgba(242,241,238,0.76);">Hydrogen-rich water to support everyday wellness habits</span></div>
+          <div style="display: flex; gap: 10px; align-items: flex-start; padding: 12px 14px; border: 1px solid rgba(242,241,238,0.11); background: rgba(242,241,238,0.045); border-radius: 12px;"><span style="color: #6FD2F0; font-weight: 700;">✓</span><span style="font-size: 14px; line-height: 1.5; color: rgba(242,241,238,0.76);">Hot water in 3 seconds for tea, coffee, milk and warm water</span></div>
+          <div style="display: flex; gap: 10px; align-items: flex-start; padding: 12px 14px; border: 1px solid rgba(242,241,238,0.11); background: rgba(242,241,238,0.045); border-radius: 12px;"><span style="color: #6FD2F0; font-weight: 700;">✓</span><span style="font-size: 14px; line-height: 1.5; color: rgba(242,241,238,0.76);">UVC LED tank sterilisation plus filter-life reminders</span></div>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px;">
+          <a href="#enquire" style="display: inline-flex; align-items: center; justify-content: center; min-height: 54px; padding: 0 30px; border-radius: 6px; background: #C9A96A; color: #14100A; font-size: 15px; font-weight: 700;" style-hover="background: #DBBE84;">Chat to Claim Promotion</a>
+          <a href="#enquire" style="display: inline-flex; align-items: center; justify-content: center; min-height: 54px; padding: 0 30px; border-radius: 6px; border: 1px solid rgba(242,241,238,0.30); color: #F2F1EE; font-size: 15px; font-weight: 600;" style-hover="border-color: rgba(242,241,238,0.6);">Book a Product Walkthrough</a>
+          <p style="margin: 0; font-size: 13px; line-height: 1.5; color: rgba(242,241,238,0.50);">Or WhatsApp us to ask about package details.</p>
+        </div>
+      </div>
+      <div style="position: relative; min-height: 520px; display: flex; align-items: flex-end; justify-content: center;">
+        <div style="position: absolute; right: 2%; top: 2%; width: min(250px, 52vw); padding: 18px; border: 1px solid rgba(201,169,106,0.35); border-radius: 18px; background: rgba(14,17,20,0.78); backdrop-filter: blur(14px); box-shadow: 0 24px 70px rgba(0,0,0,0.34); z-index: 2;">
+          <p style="margin: 0 0 6px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A96A;">Campaign offer</p>
+          <p style="margin: 0; font-family: 'Sora', sans-serif; font-size: clamp(30px, 3.4vw, 42px); font-weight: 600; letter-spacing: -0.04em; color: #F2F1EE;">S$2,888</p>
+          <p style="margin: 4px 0 0; font-size: 14px; line-height: 1.5; color: rgba(242,241,238,0.62);">Usual price <span style="text-decoration: line-through;">S$3,388</span> · Save S$500</p>
+          <p style="margin: 8px 0 0; font-size: 13px; line-height: 1.5; color: rgba(242,241,238,0.58);">Includes 1-year on-site warranty</p>
+        </div>
+        <div style="position: absolute; left: 50%; bottom: 5%; transform: translateX(-50%); width: 78%; height: 100px; background: radial-gradient(ellipse at center, rgba(111,210,240,0.24) 0%, rgba(11,13,15,0) 70%);"></div>
+        <img src="assets/h001-hero-3q.png" alt="WaterSource H001 alkaline hydrogen-rich water purifier, three-quarter view showing the champagne-gold dispensing column and touch control panel" width="858" height="919" style="position: relative; width: min(100%, 650px); height: auto; filter: drop-shadow(0 50px 70px rgba(0,0,0,0.65));" />
       </div>
     </div>
-    <div style="display: flex; flex-wrap: wrap; gap: 12px;">
-      <a href="#enquire" style="display: inline-flex; align-items: center; height: 52px; padding: 0 30px; border-radius: 4px; background: #C9A96A; color: #14100A; font-size: 15px; font-weight: 600;" style-hover="background: #DBBE84;">Enquire About H001</a>
-      <a href="#enquire" style="display: inline-flex; align-items: center; height: 52px; padding: 0 30px; border-radius: 4px; border: 1px solid rgba(242,241,238,0.28); color: #F2F1EE; font-size: 15px; font-weight: 500;" style-hover="border-color: rgba(242,241,238,0.6);">WhatsApp Us</a>
+  </section>
+
+
+  <section id="problem" style="position: relative; overflow: hidden; padding: clamp(56px, 7vw, 104px) clamp(20px, 4vw, 72px); background: #0B0D0F; border-bottom: 1px solid rgba(242,241,238,0.1);">
+    <div style="position: absolute; inset: -18% auto auto -12%; width: min(620px, 78vw); height: min(620px, 78vw); background: radial-gradient(circle, rgba(201,169,106,0.12) 0%, rgba(11,13,15,0) 68%); pointer-events: none;"></div>
+    <div style="position: relative; max-width: 1240px; margin: 0 auto;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr)); gap: clamp(28px, 5vw, 76px); align-items: end; margin-bottom: clamp(28px, 4vw, 52px);">
+        <div>
+          <p style="margin: 0 0 16px; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #C9A96A;">The daily water problem</p>
+          <h2 style="margin: 0; font-family: 'Sora', sans-serif; font-weight: 300; font-size: clamp(32px, 4.2vw, 56px); line-height: 1.08; letter-spacing: -0.03em;">Filtered water alone may not solve the <span style="font-weight: 600;">whole routine</span></h2>
+        </div>
+        <p style="margin: 0; font-size: clamp(16px, 1.2vw, 18px); line-height: 1.7; color: rgba(242,241,238,0.68);">Most homes and offices do not struggle with only one water issue. They need cleaner drinking water, convenient hot water, better daily hydration habits and a system that feels easy to maintain.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); border-top: 1px solid rgba(242,241,238,0.12); border-left: 1px solid rgba(242,241,238,0.12);">
+        <article style="padding: clamp(22px, 3vw, 34px); border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);">
+          <p style="margin: 0 0 12px; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #6FD2F0;">Normal purifiers</p>
+          <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: 24px; font-weight: 500; letter-spacing: -0.02em;">Often filter only</h3>
+          <p style="margin: 0; font-size: 15px; line-height: 1.65; color: rgba(242,241,238,0.62);">A standard purifier can improve water quality, but it usually does not add hydrogen-rich water or provide instant hot water for daily use.</p>
+        </article>
+        <article style="padding: clamp(22px, 3vw, 34px); border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);">
+          <p style="margin: 0 0 12px; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #6FD2F0;">Bottled routines</p>
+          <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: 24px; font-weight: 500; letter-spacing: -0.02em;">Cost and clutter add up</h3>
+          <p style="margin: 0; font-size: 15px; line-height: 1.65; color: rgba(242,241,238,0.62);">Buying bottled water or bottled hydrogen water can become inconvenient, storage-heavy and expensive over time.</p>
+        </article>
+        <article style="padding: clamp(22px, 3vw, 34px); border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);">
+          <p style="margin: 0 0 12px; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #6FD2F0;">Kettles & dispensers</p>
+          <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: 24px; font-weight: 500; letter-spacing: -0.02em;">Waiting breaks the flow</h3>
+          <p style="margin: 0; font-size: 15px; line-height: 1.65; color: rgba(242,241,238,0.62);">Tea, coffee, milk and warm water still need a separate kettle or dispenser, adding extra devices and more waiting.</p>
+        </article>
+        <article style="padding: clamp(22px, 3vw, 34px); border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);">
+          <p style="margin: 0 0 12px; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #6FD2F0;">Daily confidence</p>
+          <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: 24px; font-weight: 500; letter-spacing: -0.02em;">Maintenance is easy to forget</h3>
+          <p style="margin: 0; font-size: 15px; line-height: 1.65; color: rgba(242,241,238,0.62);">Families and workplaces need visible hygiene, filter reminders and simple upkeep, not another water appliance that is difficult to track.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="solution" style="position: relative; overflow: hidden; padding: clamp(56px, 7vw, 104px) clamp(20px, 4vw, 72px); background: #F5F4F1; color: #14171A; border-bottom: 1px solid rgba(20,23,26,0.08);">
+    <div style="position: absolute; inset: auto -14% -34% auto; width: min(700px, 82vw); height: min(700px, 82vw); background: radial-gradient(circle, rgba(111,210,240,0.22) 0%, rgba(245,244,241,0) 68%); pointer-events: none;"></div>
+    <div style="position: relative; max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr)); gap: clamp(30px, 5vw, 78px); align-items: center;">
+      <div>
+        <p style="margin: 0 0 16px; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #9B7A3A;">The H001 solution</p>
+        <h2 style="margin: 0 0 20px; font-family: 'Sora', sans-serif; font-weight: 300; font-size: clamp(32px, 4.2vw, 56px); line-height: 1.08; letter-spacing: -0.03em;">One machine for <span style="font-weight: 600;">purified, hydrogen-rich and instant hot water</span></h2>
+        <p style="margin: 0 0 24px; font-size: clamp(16px, 1.2vw, 18px); line-height: 1.7; color: rgba(20,23,26,0.68);">Instead of managing a purifier, kettle, dispenser and bottled hydrogen water separately, H001 brings the full daily water routine into one premium countertop system.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+          <a href="#enquire" style="display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 28px; border-radius: 6px; background: #C9A96A; color: #14100A; font-size: 15px; font-weight: 700;" style-hover="background: #DBBE84;">Ask About H001 Package</a>
+          <a href="#overview" style="display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 28px; border-radius: 6px; border: 1px solid rgba(20,23,26,0.18); color: #14171A; font-size: 15px; font-weight: 600;" style-hover="border-color: rgba(20,23,26,0.4);">See How It Works</a>
+        </div>
+      </div>
+      <div style="display: grid; gap: 14px;">
+        <article style="display: grid; grid-template-columns: auto 1fr; gap: 16px; align-items: start; padding: clamp(20px, 2.6vw, 30px); border: 1px solid rgba(20,23,26,0.09); border-radius: 18px; background: rgba(255,255,255,0.58); box-shadow: 0 18px 50px rgba(20,23,26,0.06);">
+          <div style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 999px; background: rgba(201,169,106,0.16); color: #9B7A3A; font-family: 'Sora', sans-serif; font-weight: 600;">01</div>
+          <div>
+            <h3 style="margin: 0 0 8px; font-family: 'Sora', sans-serif; font-size: 22px; font-weight: 500; letter-spacing: -0.02em;">Purifies first</h3>
+            <p style="margin: 0; font-size: 15px; line-height: 1.65; color: rgba(20,23,26,0.62);">Three filter stages and 200G reverse osmosis create cleaner source water before it is dispensed, enriched or heated.</p>
+          </div>
+        </article>
+        <article style="display: grid; grid-template-columns: auto 1fr; gap: 16px; align-items: start; padding: clamp(20px, 2.6vw, 30px); border: 1px solid rgba(20,23,26,0.09); border-radius: 18px; background: rgba(255,255,255,0.58); box-shadow: 0 18px 50px rgba(20,23,26,0.06);">
+          <div style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 999px; background: rgba(111,210,240,0.20); color: #1C7892; font-family: 'Sora', sans-serif; font-weight: 600;">02</div>
+          <div>
+            <h3 style="margin: 0 0 8px; font-family: 'Sora', sans-serif; font-size: 22px; font-weight: 500; letter-spacing: -0.02em;">Enriches on demand</h3>
+            <p style="margin: 0; font-size: 15px; line-height: 1.65; color: rgba(20,23,26,0.62);">The independent electrolysis module and SuperMix system generate hydrogen-rich water for a convenient daily wellness habit.</p>
+          </div>
+        </article>
+        <article style="display: grid; grid-template-columns: auto 1fr; gap: 16px; align-items: start; padding: clamp(20px, 2.6vw, 30px); border: 1px solid rgba(20,23,26,0.09); border-radius: 18px; background: rgba(255,255,255,0.58); box-shadow: 0 18px 50px rgba(20,23,26,0.06);">
+          <div style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 999px; background: rgba(201,169,106,0.16); color: #9B7A3A; font-family: 'Sora', sans-serif; font-weight: 600;">03</div>
+          <div>
+            <h3 style="margin: 0 0 8px; font-family: 'Sora', sans-serif; font-size: 22px; font-weight: 500; letter-spacing: -0.02em;">Heats instantly</h3>
+            <p style="margin: 0; font-size: 15px; line-height: 1.65; color: rgba(20,23,26,0.62);">Third-generation rare-earth thick-film heating provides hot water in three seconds across practical temperature stages.</p>
+          </div>
+        </article>
+      </div>
     </div>
   </section>
 
   <section id="science" style="position: relative; overflow: hidden; padding: clamp(56px, 7vw, 112px) clamp(20px, 4vw, 72px); background: #0B0D0F; border-bottom: 1px solid rgba(242,241,238,0.1);">
+    <div style="position: absolute; inset: -18% auto auto -16%; width: min(640px, 76vw); height: min(640px, 76vw); background: radial-gradient(circle, rgba(201,169,106,0.12) 0%, rgba(11,13,15,0) 68%); pointer-events: none;"></div>
     <div style="position: absolute; inset: auto -10% -40% auto; width: min(720px, 80vw); height: min(720px, 80vw); background: radial-gradient(circle, rgba(111,210,240,0.16) 0%, rgba(11,13,15,0) 68%); pointer-events: none;"></div>
-    <div style="position: relative; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(28px, 5vw, 72px); align-items: start;">
+    <div style="position: relative; max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: clamp(32px, 5vw, 78px); align-items: start;">
       <div>
-        <p style="margin: 0 0 16px; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #C9A96A;">Hydrogen-rich daily wellness</p>
-        <h2 style="margin: 0 0 20px; font-family: 'Sora', sans-serif; font-weight: 300; font-size: clamp(32px, 4.2vw, 56px); line-height: 1.08; letter-spacing: -0.03em;">Designed around the idea of <span style="font-weight: 600;">right water</span></h2>
-        <p style="margin: 0 0 18px; font-size: clamp(16px, 1.2vw, 18px); line-height: 1.7; color: rgba(242,241,238,0.68);">H001 turns hydrogen-rich water into a daily wellness habit: clean, weakly alkaline, mineral-supporting drinking water with dissolved molecular hydrogen, made conveniently at home or in the office.</p>
-        <p style="margin: 0; font-size: 14px; line-height: 1.65; color: rgba(242,241,238,0.46);">Hydrogen-rich water is not medicine. The wellness notes on this page are educational and supportive in nature, and are not intended to diagnose, treat, cure or prevent disease.</p>
+        <p style="margin: 0 0 16px; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #C9A96A;">Why hydrogen water / right water</p>
+        <h2 style="margin: 0 0 20px; font-family: 'Sora', sans-serif; font-weight: 300; font-size: clamp(32px, 4.2vw, 56px); line-height: 1.08; letter-spacing: -0.03em;">Why the H001 focuses on <span style="font-weight: 600;">right water</span>, not just filtered water</h2>
+        <p style="margin: 0 0 18px; font-size: clamp(16px, 1.2vw, 18px); line-height: 1.7; color: rgba(242,241,238,0.68);">Your previous H001 content explains hydrogen-rich water as water with active hydrogen, fine micro-cluster characteristics, weak alkalinity, negative potential, ionic minerals and suitable oxygen content. For the landing page, this has been simplified into one customer-friendly idea: purified water first, then upgraded into daily wellness water.</p>
+        <p style="margin: 0 0 26px; font-size: 14px; line-height: 1.65; color: rgba(242,241,238,0.46);">Hydrogen-rich water is not medicine. These wellness notes are educational and supportive in nature, and are not intended to diagnose, treat, cure or prevent disease.</p>
       </div>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); border-top: 1px solid rgba(242,241,238,0.12); border-left: 1px solid rgba(242,241,238,0.12);">
-        <article style="padding: clamp(22px, 3vw, 34px); border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);">
-          <p style="margin: 0 0 12px; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #6FD2F0;">Research context</p>
-          <h3 style="margin: 0 0 10px; font-family: 'Sora', sans-serif; font-size: 24px; font-weight: 500; letter-spacing: -0.02em;">1,000+ reports</h3>
-          <p style="margin: 0; font-size: 15px; line-height: 1.6; color: rgba(242,241,238,0.6);">Hydrogen water is supported by extensive global research interest, including science publications and clinical observations.</p>
-        </article>
-        <article style="padding: clamp(22px, 3vw, 34px); border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);">
-          <p style="margin: 0 0 12px; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #6FD2F0;">Good water profile</p>
-          <h3 style="margin: 0 0 10px; font-family: 'Sora', sans-serif; font-size: 24px; font-weight: 500; letter-spacing: -0.02em;">6 standards</h3>
-          <p style="margin: 0; font-size: 15px; line-height: 1.6; color: rgba(242,241,238,0.6);">Clean water, small water molecules, weak alkalinity, negative ions, ionised minerals and suitable oxygen content define the good-water profile.</p>
-        </article>
-        <article style="padding: clamp(22px, 3vw, 34px); border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);">
-          <p style="margin: 0 0 12px; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #C9A96A;">H001 functions</p>
-          <h3 style="margin: 0 0 10px; font-family: 'Sora', sans-serif; font-size: 24px; font-weight: 500; letter-spacing: -0.02em;">Hydrogen + minerals</h3>
-          <p style="margin: 0; font-size: 15px; line-height: 1.6; color: rgba(242,241,238,0.6);">H001 supports added hydrogen, weak alkalinity, ionic minerals, oxygenation and fine micro-cluster characteristics.</p>
-        </article>
-        <article style="padding: clamp(22px, 3vw, 34px); border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);">
-          <p style="margin: 0 0 12px; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #C9A96A;">Home convenience</p>
-          <h3 style="margin: 0 0 10px; font-family: 'Sora', sans-serif; font-size: 24px; font-weight: 500; letter-spacing: -0.02em;">Made on demand</h3>
-          <p style="margin: 0; font-size: 15px; line-height: 1.6; color: rgba(242,241,238,0.6);">Instead of travelling to natural spring sources, H001 brings hydrogen-rich water generation into daily family drinking routines.</p>
-        </article>
+      <div style="display: grid; gap: 18px;">
+        <div style="padding: clamp(22px, 3vw, 34px); border: 1px solid rgba(201,169,106,0.24); border-radius: 22px; background: linear-gradient(135deg, rgba(201,169,106,0.12), rgba(242,241,238,0.035)); box-shadow: 0 24px 70px rgba(0,0,0,0.22);">
+          <p style="margin: 0 0 12px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A96A;">The right-water sequence</p>
+          <ol style="margin: 0; padding: 0; list-style: none; display: grid; gap: 12px;">
+            <li style="display: grid; grid-template-columns: auto 1fr; gap: 14px; align-items: start;"><span style="display: inline-flex; width: 34px; height: 34px; border-radius: 999px; align-items: center; justify-content: center; background: rgba(201,169,106,0.18); color: #C9A96A; font-family: 'Sora', sans-serif; font-size: 13px;">01</span><p style="margin: 0; font-size: 15px; line-height: 1.6; color: rgba(242,241,238,0.68);"><strong style="color: #F2F1EE; font-weight: 600;">Purify:</strong> 3-stage, 4-layer filtration and 200G RO help remove sediment, rust, residual chlorine and dissolved impurities.</p></li>
+            <li style="display: grid; grid-template-columns: auto 1fr; gap: 14px; align-items: start;"><span style="display: inline-flex; width: 34px; height: 34px; border-radius: 999px; align-items: center; justify-content: center; background: rgba(111,210,240,0.18); color: #6FD2F0; font-family: 'Sora', sans-serif; font-size: 13px;">02</span><p style="margin: 0; font-size: 15px; line-height: 1.6; color: rgba(242,241,238,0.68);"><strong style="color: #F2F1EE; font-weight: 600;">Enrich:</strong> an independent electrolysis module creates hydrogen, then SuperMix dissolves fine hydrogen bubbles into the water.</p></li>
+            <li style="display: grid; grid-template-columns: auto 1fr; gap: 14px; align-items: start;"><span style="display: inline-flex; width: 34px; height: 34px; border-radius: 999px; align-items: center; justify-content: center; background: rgba(201,169,106,0.18); color: #C9A96A; font-family: 'Sora', sans-serif; font-size: 13px;">03</span><p style="margin: 0; font-size: 15px; line-height: 1.6; color: rgba(242,241,238,0.68);"><strong style="color: #F2F1EE; font-weight: 600;">Support:</strong> weak alkalinity, minerals, negative potential and dissolved hydrogen are positioned as gentle daily wellness support.</p></li>
+          </ol>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); border-top: 1px solid rgba(242,241,238,0.12); border-left: 1px solid rgba(242,241,238,0.12);">
+          <article style="padding: 22px; border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);"><p style="margin: 0 0 10px; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #6FD2F0;">Wellness support</p><h3 style="margin: 0 0 8px; font-family: 'Sora', sans-serif; font-size: 21px; font-weight: 500;">Antioxidant focus</h3><p style="margin: 0; font-size: 14px; line-height: 1.6; color: rgba(242,241,238,0.58);">Presented carefully as support for managing oxidative stress.</p></article>
+          <article style="padding: 22px; border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);"><p style="margin: 0 0 10px; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #6FD2F0;">Daily hydration</p><h3 style="margin: 0 0 8px; font-family: 'Sora', sans-serif; font-size: 21px; font-weight: 500;">Fine absorption</h3><p style="margin: 0; font-size: 14px; line-height: 1.6; color: rgba(242,241,238,0.58);">Micro-cluster water and strong penetrability are translated as easy daily hydration.</p></article>
+          <article style="padding: 22px; border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);"><p style="margin: 0 0 10px; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #C9A96A;">Fresh on demand</p><h3 style="margin: 0 0 8px; font-family: 'Sora', sans-serif; font-size: 21px; font-weight: 500;">Made fresh</h3><p style="margin: 0; font-size: 14px; line-height: 1.6; color: rgba(242,241,238,0.58);">Hydrogen is generated from purified water on demand, not stored as a bottled promise.</p></article>
+        </div>
       </div>
+    </div>
+  </section>
+
+  <section id="benefits" style="position: relative; overflow: hidden; padding: clamp(56px, 8vw, 128px) clamp(20px, 4vw, 72px); background: #0E1114; border-top: 1px solid rgba(242,241,238,0.1); border-bottom: 1px solid rgba(242,241,238,0.1);">
+    <div style="position: absolute; top: -18%; right: -12%; width: min(780px, 82vw); height: min(780px, 82vw); background: radial-gradient(circle, rgba(201,169,106,0.15) 0%, rgba(14,17,20,0) 68%); pointer-events: none;"></div>
+    <div style="position: relative; max-width: 860px; margin: 0 auto clamp(36px, 5vw, 64px); text-align: center;">
+      <p style="margin: 0 0 16px; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #C9A96A;">Nine daily wellness benefits</p>
+      <h2 style="margin: 0 0 20px; font-family: 'Sora', sans-serif; font-weight: 300; font-size: clamp(32px, 4.2vw, 56px); line-height: 1.08; letter-spacing: -0.03em;">Turn hydrogen technology into <span style="font-weight: 600;">customer-understandable outcomes</span></h2>
+      <p style="margin: 0 auto; max-width: 74ch; font-size: clamp(16px, 1.2vw, 18px); line-height: 1.7; color: rgba(242,241,238,0.68);">Instead of heavy medical claims, this section translates the nine benefits into everyday reasons to drink H001 hydrogen-rich water consistently: antioxidant support, metabolism support, circulation support, gut balance, cognitive wellness, cellular care, skin radiance, hormonal balance and stress management.</p>
+    </div>
+    <div class="h001-benefits-grid" style="position: relative; border-top: 1px solid rgba(242,241,238,0.12); border-left: 1px solid rgba(242,241,238,0.12);">
+      <article style="padding: clamp(24px, 3vw, 38px); border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);">
+        <p style="margin: 0 0 14px; font-family: 'Sora', sans-serif; font-size: 14px; color: #6FD2F0;">01 · Antioxidant support</p>
+        <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: 21px; font-weight: 500; letter-spacing: -0.015em;">Supports oxidative-stress balance</h3>
+        <p style="margin: 0 0 12px; font-size: 16px; line-height: 1.65; color: rgba(242,241,238,0.68);">Hydrogen-rich water is positioned in your source content around active hydrogen and antioxidant capacity. On the landing page, this is expressed carefully as daily support for the body's natural balance.</p>
+        <p style="margin: 0; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(242,241,238,0.38);">Benefit: everyday wellness foundation</p>
+      </article>
+      <article style="padding: clamp(24px, 3vw, 38px); border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);">
+        <p style="margin: 0 0 14px; font-family: 'Sora', sans-serif; font-size: 14px; color: #6FD2F0;">02 · Metabolism</p>
+        <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: 21px; font-weight: 500; letter-spacing: -0.015em;">Supports energy and weight-management habits</h3>
+        <p style="margin: 0 0 12px; font-size: 16px; line-height: 1.65; color: rgba(242,241,238,0.68);">May support energy metabolism, mitochondrial function, balanced lipid metabolism and healthy blood sugar regulation when paired with good daily routines.</p>
+        <p style="margin: 0; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(242,241,238,0.38);">Benefit: easier wellness consistency</p>
+      </article>
+      <article style="padding: clamp(24px, 3vw, 38px); border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);">
+        <p style="margin: 0 0 14px; font-family: 'Sora', sans-serif; font-size: 14px; color: #6FD2F0;">03 · Circulation</p>
+        <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: 21px; font-weight: 500; letter-spacing: -0.015em;">Supports vascular comfort and circulation</h3>
+        <p style="margin: 0 0 12px; font-size: 16px; line-height: 1.65; color: rgba(242,241,238,0.68);">Research has explored molecular hydrogen for lipid oxidation, endothelial support and a more stable circulatory environment.</p>
+        <p style="margin: 0; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(242,241,238,0.38);">Benefit: daily heart-conscious hydration</p>
+      </article>
+      <article style="padding: clamp(24px, 3vw, 38px); border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);">
+        <p style="margin: 0 0 14px; font-family: 'Sora', sans-serif; font-size: 14px; color: #C9A96A;">04 · Gut balance</p>
+        <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: 21px; font-weight: 500; letter-spacing: -0.015em;">Supports digestive comfort and immune balance</h3>
+        <p style="margin: 0 0 12px; font-size: 16px; line-height: 1.65; color: rgba(242,241,238,0.68);">Hydrogen-rich water studies have focused on microbiome balance, digestive comfort and inflammatory responses in the gut.</p>
+        <p style="margin: 0; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(242,241,238,0.38);">Benefit: lighter daily hydration routine</p>
+      </article>
+      <article style="padding: clamp(24px, 3vw, 38px); border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);">
+        <p style="margin: 0 0 14px; font-family: 'Sora', sans-serif; font-size: 14px; color: #C9A96A;">05 · Brain wellness</p>
+        <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: 21px; font-weight: 500; letter-spacing: -0.015em;">Supports cognitive wellness</h3>
+        <p style="margin: 0 0 12px; font-size: 16px; line-height: 1.65; color: rgba(242,241,238,0.68);">Because molecular hydrogen is extremely small, research has explored its potential support for nerve-cell antioxidant protection and cognitive stability.</p>
+        <p style="margin: 0; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(242,241,238,0.38);">Benefit: support for focus-demanding lifestyles</p>
+      </article>
+      <article style="padding: clamp(24px, 3vw, 38px); border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);">
+        <p style="margin: 0 0 14px; font-family: 'Sora', sans-serif; font-size: 14px; color: #C9A96A;">06 · Cellular care</p>
+        <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: 21px; font-weight: 500; letter-spacing: -0.015em;">Supports the body's repair environment</h3>
+        <p style="margin: 0 0 12px; font-size: 16px; line-height: 1.65; color: rgba(242,241,238,0.68);">A cleaner, hydrogen-rich hydration habit may help the body manage oxidative stress around cells and natural repair processes.</p>
+        <p style="margin: 0; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(242,241,238,0.38);">Benefit: long-term self-care ritual</p>
+      </article>
+      <article style="padding: clamp(24px, 3vw, 38px); border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);">
+        <p style="margin: 0 0 14px; font-family: 'Sora', sans-serif; font-size: 14px; color: #6FD2F0;">07 · Skin radiance</p>
+        <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: 21px; font-weight: 500; letter-spacing: -0.015em;">Supports hydrated, healthy-looking skin</h3>
+        <p style="margin: 0 0 12px; font-size: 16px; line-height: 1.65; color: rgba(242,241,238,0.68);">Daily hydrogen-rich water may provide antioxidant and soothing support for softer, more hydrated and healthier-looking skin.</p>
+        <p style="margin: 0; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(242,241,238,0.38);">Benefit: beauty-from-within positioning</p>
+      </article>
+      <article style="padding: clamp(24px, 3vw, 38px); border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);">
+        <p style="margin: 0 0 14px; font-family: 'Sora', sans-serif; font-size: 14px; color: #6FD2F0;">08 · Hormonal balance</p>
+        <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: 21px; font-weight: 500; letter-spacing: -0.015em;">Supports reproductive and hormonal balance</h3>
+        <p style="margin: 0 0 12px; font-size: 16px; line-height: 1.65; color: rgba(242,241,238,0.68);">Current research has explored links between oxidative stress, inflammatory responses and reproductive-system balance.</p>
+        <p style="margin: 0; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(242,241,238,0.38);">Benefit: gentle system support</p>
+      </article>
+      <article style="padding: clamp(24px, 3vw, 38px); border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);">
+        <p style="margin: 0 0 14px; font-family: 'Sora', sans-serif; font-size: 14px; color: #6FD2F0;">09 · Stress management</p>
+        <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: 21px; font-weight: 500; letter-spacing: -0.015em;">Supports nervous-system calm</h3>
+        <p style="margin: 0 0 12px; font-size: 16px; line-height: 1.65; color: rgba(242,241,238,0.68);">May help reduce feelings of fatigue, support nervous-system stability and encourage a more restorative daily rhythm.</p>
+        <p style="margin: 0; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(242,241,238,0.38);">Benefit: calmer daily routine</p>
+      </article>
+    </div>
+    <div style="position: relative; margin-top: clamp(24px, 4vw, 48px); display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(20px, 3vw, 36px); align-items: center; padding: clamp(22px, 3vw, 34px); border: 1px solid rgba(201,169,106,0.28); border-radius: 20px; background: linear-gradient(135deg, rgba(201,169,106,0.08), rgba(111,210,240,0.05));">
+      <p style="margin: 0; font-family: 'Sora', sans-serif; font-size: clamp(22px, 2.4vw, 32px); line-height: 1.18; letter-spacing: -0.025em;">The conversion message: make the healthy choice feel easy.</p>
+      <p style="margin: 0; font-size: 16px; line-height: 1.7; color: rgba(242,241,238,0.66);">H001 turns hydrogen-rich water from something customers have to search for into something they can drink daily at home, made from freshly purified water whenever they need it.</p>
     </div>
   </section>
 
@@ -176,120 +310,6 @@
         <p style="margin: 0; font-size: 16px; line-height: 1.7; color: rgba(242,241,238,0.64);">Third-generation rare-earth thick-film heating brings water to temperature on demand, across six stages: Normal, Warm, Milk, Coffee, Tea and Boiling.</p>
         <p style="margin: 0; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: rgba(242,241,238,0.44);">3-second heating · 6 temperature stages</p>
       </article>
-    </div>
-  </section>
-
-  <section id="features" style="background: #F5F4F1; color: #14171A; padding: clamp(56px, 8vw, 128px) clamp(20px, 4vw, 72px);">
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(28px, 5vw, 88px); align-items: start;">
-      <div style="position: sticky; top: 100px;">
-        <p style="margin: 0 0 16px; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #9A7F45;">Why H001</p>
-        <h2 style="margin: 0 0 18px; font-family: 'Sora', sans-serif; font-weight: 300; font-size: clamp(32px, 4vw, 54px); line-height: 1.06; letter-spacing: -0.03em;">More than a<br /><span style="font-weight: 600;">water purifier</span></h2>
-        <p style="margin: 0; max-width: 34ch; font-size: 17px; line-height: 1.65; color: #565C63;">Each capability, the difference it makes at home, and the technology it comes from.</p>
-      </div>
-      <div>
-        <article style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px clamp(20px, 3vw, 48px); padding: 26px 0; border-top: 1px solid rgba(20,23,26,0.14);">
-          <h3 style="margin: 0; font-family: 'Sora', sans-serif; font-size: 20px; font-weight: 500; letter-spacing: -0.015em;">Hydrogen-rich water on tap</h3>
-          <div>
-            <p style="margin: 0 0 8px; font-size: 16px; line-height: 1.6; color: #4C5259;">Dispense hydrogen-rich water at home instead of buying it bottled.</p>
-            <p style="margin: 0; font-size: 13px; letter-spacing: 0.05em; text-transform: uppercase; color: #9A7F45;">Independent electrolysis module + SuperMix</p>
-          </div>
-        </article>
-        <article style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px clamp(20px, 3vw, 48px); padding: 26px 0; border-top: 1px solid rgba(20,23,26,0.14);">
-          <h3 style="margin: 0; font-family: 'Sora', sans-serif; font-size: 20px; font-weight: 500; letter-spacing: -0.015em;">Hot water without the wait</h3>
-          <div>
-            <p style="margin: 0 0 8px; font-size: 16px; line-height: 1.6; color: #4C5259;">No kettle, and no tank of water reheated over and over through the day.</p>
-            <p style="margin: 0; font-size: 13px; letter-spacing: 0.05em; text-transform: uppercase; color: #9A7F45;">Third-generation rare-earth thick-film heating</p>
-          </div>
-        </article>
-        <article style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px clamp(20px, 3vw, 48px); padding: 26px 0; border-top: 1px solid rgba(20,23,26,0.14);">
-          <h3 style="margin: 0; font-family: 'Sora', sans-serif; font-size: 20px; font-weight: 500; letter-spacing: -0.015em;">Minerals kept, contaminants removed</h3>
-          <div>
-            <p style="margin: 0 0 8px; font-size: 16px; line-height: 1.6; color: #4C5259;">Reverse osmosis removes what you don't want; the third stage puts trace minerals back so the water tastes clean rather than flat.</p>
-            <p style="margin: 0; font-size: 13px; letter-spacing: 0.05em; text-transform: uppercase; color: #9A7F45;">200G RO membrane + mineralized carbon rod</p>
-          </div>
-        </article>
-        <article style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px clamp(20px, 3vw, 48px); padding: 26px 0; border-top: 1px solid rgba(20,23,26,0.14);">
-          <h3 style="margin: 0; font-family: 'Sora', sans-serif; font-size: 20px; font-weight: 500; letter-spacing: -0.015em;">One appliance for the whole day</h3>
-          <div>
-            <p style="margin: 0 0 8px; font-size: 16px; line-height: 1.6; color: #4C5259;">Milk, coffee, tea and boiling water from the same panel, in measured amounts.</p>
-            <p style="margin: 0; font-size: 13px; letter-spacing: 0.05em; text-transform: uppercase; color: #9A7F45;">6-stage temperature control · 150 / 300 / 1000 ml</p>
-          </div>
-        </article>
-        <article style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px clamp(20px, 3vw, 48px); padding: 26px 0; border-top: 1px solid rgba(20,23,26,0.14);">
-          <h3 style="margin: 0; font-family: 'Sora', sans-serif; font-size: 20px; font-weight: 500; letter-spacing: -0.015em;">A tank you can actually clean</h3>
-          <div>
-            <p style="margin: 0 0 8px; font-size: 16px; line-height: 1.6; color: #4C5259;">The 2-litre built-in tank is removable and its cover opens, and UVC runs inside it.</p>
-            <p style="margin: 0; font-size: 13px; letter-spacing: 0.05em; text-transform: uppercase; color: #9A7F45;">Built-in UVC LED with visual indication</p>
-          </div>
-        </article>
-        <article style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px clamp(20px, 3vw, 48px); padding: 26px 0; border-top: 1px solid rgba(20,23,26,0.14); border-bottom: 1px solid rgba(20,23,26,0.14);">
-          <h3 style="margin: 0; font-family: 'Sora', sans-serif; font-size: 20px; font-weight: 500; letter-spacing: -0.015em;">Maintenance you don't track</h3>
-          <div>
-            <p style="margin: 0 0 8px; font-size: 16px; line-height: 1.6; color: #4C5259;">The panel tells you when a filter is near the end of its life, and filters are quick-connect.</p>
-            <p style="margin: 0; font-size: 13px; letter-spacing: 0.05em; text-transform: uppercase; color: #9A7F45;">Filter-life indicator · self-installable filters</p>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="benefits" style="position: relative; overflow: hidden; padding: clamp(56px, 8vw, 128px) clamp(20px, 4vw, 72px); background: #0E1114; border-top: 1px solid rgba(242,241,238,0.1); border-bottom: 1px solid rgba(242,241,238,0.1);">
-    <div style="position: absolute; top: -18%; right: -12%; width: min(780px, 82vw); height: min(780px, 82vw); background: radial-gradient(circle, rgba(201,169,106,0.15) 0%, rgba(14,17,20,0) 68%); pointer-events: none;"></div>
-    <div style="position: relative; max-width: 820px; margin: 0 auto clamp(36px, 5vw, 64px); text-align: center;">
-      <p style="margin: 0 0 16px; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #C9A96A;">Nine health-supporting benefits of hydrogen</p>
-      <h2 style="margin: 0 0 20px; font-family: 'Sora', sans-serif; font-weight: 300; font-size: clamp(32px, 4.2vw, 56px); line-height: 1.08; letter-spacing: -0.03em;">Gentle daily support for the body's <span style="font-weight: 600;">natural balance</span></h2>
-      <p style="margin: 0 auto; max-width: 70ch; font-size: clamp(16px, 1.2vw, 18px); line-height: 1.7; color: rgba(242,241,238,0.68);">Molecular hydrogen is studied for its potential role in oxidative stress, inflammation regulation and long-term wellness support. The H001 makes hydrogen-rich water fresh from purified water, so this support can become part of everyday drinking.</p>
-    </div>
-    <div class="h001-benefits-grid" style="position: relative; border-top: 1px solid rgba(242,241,238,0.12); border-left: 1px solid rgba(242,241,238,0.12);">
-      <article style="padding: clamp(24px, 3vw, 38px); border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);">
-        <p style="margin: 0 0 14px; font-family: 'Sora', sans-serif; font-size: 14px; color: #6FD2F0;">01</p>
-        <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: 21px; font-weight: 500; letter-spacing: -0.015em;">Chronic health risk management</h3>
-        <p style="margin: 0; font-size: 16px; line-height: 1.65; color: rgba(242,241,238,0.68);">May help regulate oxidative stress, support anti-inflammatory responses and maintain normal cellular function as part of early daily wellness care.</p>
-      </article>
-      <article style="padding: clamp(24px, 3vw, 38px); border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);">
-        <p style="margin: 0 0 14px; font-family: 'Sora', sans-serif; font-size: 14px; color: #6FD2F0;">02</p>
-        <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: 21px; font-weight: 500; letter-spacing: -0.015em;">Metabolism and weight management</h3>
-        <p style="margin: 0; font-size: 16px; line-height: 1.65; color: rgba(242,241,238,0.68);">May support energy metabolism, mitochondrial function, balanced lipid metabolism and healthy blood sugar regulation.</p>
-      </article>
-      <article style="padding: clamp(24px, 3vw, 38px); border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);">
-        <p style="margin: 0 0 14px; font-family: 'Sora', sans-serif; font-size: 14px; color: #6FD2F0;">03</p>
-        <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: 21px; font-weight: 500; letter-spacing: -0.015em;">Vascular health and circulation</h3>
-        <p style="margin: 0; font-size: 16px; line-height: 1.65; color: rgba(242,241,238,0.68);">Research has explored molecular hydrogen for lipid oxidation, vascular endothelial support and a more stable circulatory environment.</p>
-      </article>
-      <article style="padding: clamp(24px, 3vw, 38px); border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);">
-        <p style="margin: 0 0 14px; font-family: 'Sora', sans-serif; font-size: 14px; color: #C9A96A;">04</p>
-        <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: 21px; font-weight: 500; letter-spacing: -0.015em;">Gut health and immune balance</h3>
-        <p style="margin: 0; font-size: 16px; line-height: 1.65; color: rgba(242,241,238,0.68);">Hydrogen-rich water studies have focused on microbiome balance, digestive comfort and inflammatory responses in the gut.</p>
-      </article>
-      <article style="padding: clamp(24px, 3vw, 38px); border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);">
-        <p style="margin: 0 0 14px; font-family: 'Sora', sans-serif; font-size: 14px; color: #C9A96A;">05</p>
-        <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: 21px; font-weight: 500; letter-spacing: -0.015em;">Brain and cognitive function</h3>
-        <p style="margin: 0; font-size: 16px; line-height: 1.65; color: rgba(242,241,238,0.68);">Because molecular hydrogen is extremely small, research has explored its potential support for nerve-cell antioxidant protection and cognitive stability.</p>
-      </article>
-      <article style="padding: clamp(24px, 3vw, 38px); border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);">
-        <p style="margin: 0 0 14px; font-family: 'Sora', sans-serif; font-size: 14px; color: #C9A96A;">06</p>
-        <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: 21px; font-weight: 500; letter-spacing: -0.015em;">Cellular health and repair environment</h3>
-        <p style="margin: 0; font-size: 16px; line-height: 1.65; color: rgba(242,241,238,0.68);">Supports a healthier internal environment by helping the body manage oxidative stress around cells and natural repair processes.</p>
-      </article>
-      <article style="padding: clamp(24px, 3vw, 38px); border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);">
-        <p style="margin: 0 0 14px; font-family: 'Sora', sans-serif; font-size: 14px; color: #6FD2F0;">07</p>
-        <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: 21px; font-weight: 500; letter-spacing: -0.015em;">Skin health and radiance</h3>
-        <p style="margin: 0; font-size: 16px; line-height: 1.65; color: rgba(242,241,238,0.68);">Daily hydrogen-rich water may provide antioxidant and soothing support for hydrated, softer, healthier-looking skin.</p>
-      </article>
-      <article style="padding: clamp(24px, 3vw, 38px); border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);">
-        <p style="margin: 0 0 14px; font-family: 'Sora', sans-serif; font-size: 14px; color: #6FD2F0;">08</p>
-        <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: 21px; font-weight: 500; letter-spacing: -0.015em;">Reproductive and hormonal balance</h3>
-        <p style="margin: 0; font-size: 16px; line-height: 1.65; color: rgba(242,241,238,0.68);">Current research has explored links between oxidative stress, inflammation responses and reproductive-system balance.</p>
-      </article>
-      <article style="padding: clamp(24px, 3vw, 38px); border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);">
-        <p style="margin: 0 0 14px; font-family: 'Sora', sans-serif; font-size: 14px; color: #6FD2F0;">09</p>
-        <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: 21px; font-weight: 500; letter-spacing: -0.015em;">Nervous system and stress management</h3>
-        <p style="margin: 0; font-size: 16px; line-height: 1.65; color: rgba(242,241,238,0.68);">May help reduce feelings of fatigue, support nervous-system stability and encourage a more restorative daily rhythm.</p>
-      </article>
-    </div>
-    <div style="position: relative; margin-top: clamp(24px, 4vw, 48px); display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(20px, 3vw, 36px); align-items: center; padding: clamp(22px, 3vw, 34px); border: 1px solid rgba(201,169,106,0.28); background: linear-gradient(135deg, rgba(201,169,106,0.08), rgba(111,210,240,0.05));">
-      <p style="margin: 0; font-family: 'Sora', sans-serif; font-size: clamp(22px, 2.4vw, 32px); line-height: 1.18; letter-spacing: -0.025em;">Hydrogen does not force the body to change.</p>
-      <p style="margin: 0; font-size: 16px; line-height: 1.7; color: rgba(242,241,238,0.66);">Its role is positioned as gentle support for the body's own self-regulation. When the internal environment is right, cells and body systems can function more effectively over time.</p>
     </div>
   </section>
 
@@ -641,85 +661,329 @@
     </table>
   </section>
 
-  <section id="enquire" style="background: #F5F4F1; color: #14171A; padding: clamp(56px, 8vw, 128px) clamp(20px, 4vw, 72px);">
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(28px, 5vw, 72px); align-items: start;">
+  <section id="who-for" style="position: relative; overflow: hidden; background: #F5F4F1; color: #14171A; padding: clamp(64px, 8vw, 136px) clamp(20px, 4vw, 72px);">
+    <div style="position: absolute; inset: -22% auto auto -14%; width: min(700px, 82vw); height: min(700px, 82vw); background: radial-gradient(circle, rgba(201,169,106,0.18) 0%, rgba(245,244,241,0) 68%); pointer-events: none;"></div>
+    <div style="position: absolute; inset: auto -14% -26% auto; width: min(760px, 86vw); height: min(760px, 86vw); background: radial-gradient(circle, rgba(111,210,240,0.18) 0%, rgba(245,244,241,0) 68%); pointer-events: none;"></div>
+    <div style="position: relative; display: grid; grid-template-columns: minmax(0, 0.95fr) minmax(280px, 0.55fr); gap: clamp(28px, 5vw, 72px); align-items: end; margin-bottom: clamp(32px, 5vw, 64px);">
       <div>
-        <p style="margin: 0 0 16px; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #9A7F45;">Offer</p>
-        <h2 style="margin: 0 0 20px; font-family: 'Sora', sans-serif; font-weight: 300; font-size: clamp(32px, 4.2vw, 56px); line-height: 1.06; letter-spacing: -0.03em;">Get H001 for <span style="font-weight: 600;">S$2,888</span></h2>
-        <div style="display: flex; align-items: flex-end; gap: 20px; padding: 24px 0; border-top: 1px solid rgba(20,23,26,0.14); border-bottom: 1px solid rgba(20,23,26,0.14);">
-          <p style="margin: 0; font-family: 'Sora', sans-serif; font-size: clamp(38px, 5vw, 60px); font-weight: 500; line-height: 1; letter-spacing: -0.035em;">S$2,888</p>
-          <div style="padding-bottom: 6px; font-size: 15px; color: #565C63; line-height: 1.55;">
-            <p style="margin: 0;">Usual price <span style="text-decoration: line-through;">S$3,388</span></p>
-            <p style="margin: 0;">1-year on-site warranty</p>
+        <p style="margin: 0 0 16px; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #9A7F45;">Who is this for?</p>
+        <h2 style="margin: 0; font-family: 'Sora', sans-serif; font-weight: 300; font-size: clamp(34px, 4.6vw, 64px); line-height: 1.04; letter-spacing: -0.04em;">Made for people who want one better water routine.</h2>
+      </div>
+      <p style="margin: 0; font-size: clamp(16px, 1.25vw, 18px); line-height: 1.72; color: #565C63;">H001 is best positioned for homes and professional spaces that want purified drinking water, hydrogen-rich daily hydration and instant hot water without managing several separate appliances.</p>
+    </div>
+
+    <div style="position: relative; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: clamp(18px, 2.4vw, 28px);">
+      <article style="background: #FFFFFF; border: 1px solid rgba(20,23,26,0.1); box-shadow: 0 24px 70px rgba(20,23,26,0.08); overflow: hidden;">
+        <img src="assets/h001-placeholder-family.svg" alt="Illustration of a family daily water routine with H001" width="640" height="420" style="display: block; width: 100%; height: auto;" />
+        <div style="padding: clamp(22px, 2.6vw, 32px);">
+          <p style="margin: 0 0 10px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: #9A7F45;">Families & parents</p>
+          <h3 style="margin: 0; font-family: 'Sora', sans-serif; font-size: clamp(21px, 2vw, 28px); line-height: 1.12; letter-spacing: -0.025em;">For everyday cups, warm water and milk prep</h3>
+          <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.68; color: #565C63;">A simple kitchen system for drinking water, warm water, tea, coffee and measured dispensing throughout the day.</p>
+        </div>
+      </article>
+
+      <article style="background: #FFFFFF; border: 1px solid rgba(20,23,26,0.1); box-shadow: 0 24px 70px rgba(20,23,26,0.08); overflow: hidden;">
+        <img src="assets/h001-placeholder-wellness.svg" alt="Illustration of wellness-focused daily hydration with H001" width="640" height="420" style="display: block; width: 100%; height: auto;" />
+        <div style="padding: clamp(22px, 2.6vw, 32px);">
+          <p style="margin: 0 0 10px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: #9A7F45;">Wellness-focused adults</p>
+          <h3 style="margin: 0; font-family: 'Sora', sans-serif; font-size: clamp(21px, 2vw, 28px); line-height: 1.12; letter-spacing: -0.025em;">For making hydrogen-rich water a daily habit</h3>
+          <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.68; color: #565C63;">For customers who want cleaner water first, then hydrogen-rich hydration as part of a consistent self-care routine.</p>
+        </div>
+      </article>
+
+      <article style="background: #FFFFFF; border: 1px solid rgba(20,23,26,0.1); box-shadow: 0 24px 70px rgba(20,23,26,0.08); overflow: hidden;">
+        <img src="assets/h001-placeholder-office.svg" alt="Illustration of an office, clinic or wellness centre using H001" width="640" height="420" style="display: block; width: 100%; height: auto;" />
+        <div style="padding: clamp(22px, 2.6vw, 32px);">
+          <p style="margin: 0 0 10px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: #9A7F45;">Offices & wellness spaces</p>
+          <h3 style="margin: 0; font-family: 'Sora', sans-serif; font-size: clamp(21px, 2vw, 28px); line-height: 1.12; letter-spacing: -0.025em;">For teams, guests and client-facing spaces</h3>
+          <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.68; color: #565C63;">A premium water point for offices, clinics, studios and reception areas where convenience and presentation matter.</p>
+        </div>
+      </article>
+
+      <article style="background: #FFFFFF; border: 1px solid rgba(20,23,26,0.1); box-shadow: 0 24px 70px rgba(20,23,26,0.08); overflow: hidden;">
+        <img src="assets/h001-placeholder-premium-home.svg" alt="Illustration of H001 in a premium home countertop setting" width="640" height="420" style="display: block; width: 100%; height: auto;" />
+        <div style="padding: clamp(22px, 2.6vw, 32px);">
+          <p style="margin: 0 0 10px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: #9A7F45;">Premium homes</p>
+          <h3 style="margin: 0; font-family: 'Sora', sans-serif; font-size: clamp(21px, 2vw, 28px); line-height: 1.12; letter-spacing: -0.025em;">For replacing clutter with one elegant appliance</h3>
+          <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.68; color: #565C63;">For households that currently rely on bottled water, kettles or separate devices and want a cleaner countertop experience.</p>
+        </div>
+      </article>
+    </div>
+
+    <div style="position: relative; margin-top: clamp(26px, 4vw, 44px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); border-top: 1px solid rgba(20,23,26,0.12); border-left: 1px solid rgba(20,23,26,0.12);">
+      <div style="padding: 20px; border-right: 1px solid rgba(20,23,26,0.12); border-bottom: 1px solid rgba(20,23,26,0.12); background: rgba(255,255,255,0.48);">
+        <p style="margin: 0 0 8px; font-size: 13px; font-weight: 700; color: #9A7F45;">Best fit if you want</p>
+        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #565C63;">Purification, hydrogen-rich water and hot water from one system.</p>
+      </div>
+      <div style="padding: 20px; border-right: 1px solid rgba(20,23,26,0.12); border-bottom: 1px solid rgba(20,23,26,0.12); background: rgba(255,255,255,0.48);">
+        <p style="margin: 0 0 8px; font-size: 13px; font-weight: 700; color: #9A7F45;">Good for daily routines</p>
+        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #565C63;">Normal, warm, milk, coffee, tea and boiling water use cases.</p>
+      </div>
+      <div style="padding: 20px; border-right: 1px solid rgba(20,23,26,0.12); border-bottom: 1px solid rgba(20,23,26,0.12); background: rgba(255,255,255,0.48);">
+        <p style="margin: 0 0 8px; font-size: 13px; font-weight: 700; color: #9A7F45;">Confirm before purchase</p>
+        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #565C63;">WaterSource can check installation suitability and package details.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="trust" style="position: relative; overflow: hidden; padding: clamp(64px, 8vw, 136px) clamp(20px, 4vw, 72px); background: #0B0D0F; border-top: 1px solid rgba(242,241,238,0.1); border-bottom: 1px solid rgba(242,241,238,0.1);">
+    <div style="position: absolute; inset: -18% -12% auto auto; width: min(760px, 86vw); height: min(760px, 86vw); background: radial-gradient(circle, rgba(111,210,240,0.16) 0%, rgba(11,13,15,0) 68%); pointer-events: none;"></div>
+    <div style="position: absolute; inset: auto auto -28% -16%; width: min(720px, 82vw); height: min(720px, 82vw); background: radial-gradient(circle, rgba(201,169,106,0.14) 0%, rgba(11,13,15,0) 68%); pointer-events: none;"></div>
+    <div style="position: relative; max-width: 1240px; margin: 0 auto;">
+      <div style="display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(280px, 0.55fr); gap: clamp(28px, 5vw, 74px); align-items: end; margin-bottom: clamp(34px, 5vw, 64px);">
+        <div>
+          <p style="margin: 0 0 16px; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #C9A96A;">Trust builder</p>
+          <h2 style="margin: 0; font-family: 'Sora', sans-serif; font-weight: 300; font-size: clamp(34px, 4.8vw, 66px); line-height: 1.04; letter-spacing: -0.04em;">A premium water system should feel clear before you buy.</h2>
+        </div>
+        <p style="margin: 0; font-size: clamp(16px, 1.25vw, 18px); line-height: 1.72; color: rgba(242,241,238,0.66);">H001 is a premium water system, so every buyer should understand the support, setup and everyday use experience before making a decision. WaterSource helps you confirm warranty coverage, installation suitability and product fit before you proceed.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 14px; margin-bottom: clamp(28px, 4vw, 50px);">
+        <article style="padding: clamp(22px, 3vw, 32px); border: 1px solid rgba(201,169,106,0.24); background: linear-gradient(135deg, rgba(201,169,106,0.12), rgba(242,241,238,0.035));">
+          <p style="margin: 0 0 8px; font-family: 'Sora', sans-serif; font-size: clamp(28px, 3.4vw, 44px); letter-spacing: -0.04em; color: #F2F1EE;">1-year</p>
+          <h3 style="margin: 0 0 10px; font-family: 'Sora', sans-serif; font-size: 20px; font-weight: 500;">On-site warranty</h3>
+          <p style="margin: 0; font-size: 15px; line-height: 1.65; color: rgba(242,241,238,0.62);">WaterSource support gives customers added confidence after installation, with service guidance when they need help.</p>
+        </article>
+        <article style="padding: clamp(22px, 3vw, 32px); border: 1px solid rgba(111,210,240,0.24); background: linear-gradient(135deg, rgba(111,210,240,0.10), rgba(242,241,238,0.035));">
+          <p style="margin: 0 0 8px; font-family: 'Sora', sans-serif; font-size: clamp(28px, 3.4vw, 44px); letter-spacing: -0.04em; color: #F2F1EE;">3-stage</p>
+          <h3 style="margin: 0 0 10px; font-family: 'Sora', sans-serif; font-size: 20px; font-weight: 500;">RO purification</h3>
+          <p style="margin: 0; font-size: 15px; line-height: 1.65; color: rgba(242,241,238,0.62);">Purification-first positioning gives customers a familiar quality anchor before hydrogen-rich water.</p>
+        </article>
+        <article style="padding: clamp(22px, 3vw, 32px); border: 1px solid rgba(201,169,106,0.24); background: linear-gradient(135deg, rgba(201,169,106,0.12), rgba(242,241,238,0.035));">
+          <p style="margin: 0 0 8px; font-family: 'Sora', sans-serif; font-size: clamp(28px, 3.4vw, 44px); letter-spacing: -0.04em; color: #F2F1EE;">Guide</p>
+          <h3 style="margin: 0 0 10px; font-family: 'Sora', sans-serif; font-size: 20px; font-weight: 500;">Guided product walkthrough</h3>
+          <p style="margin: 0; font-size: 15px; line-height: 1.65; color: rgba(242,241,238,0.62);">A product walkthrough helps you understand the temperature modes, hydrogen-rich dispensing and filter indicators clearly.</p>
+        </article>
+        <article style="padding: clamp(22px, 3vw, 32px); border: 1px solid rgba(111,210,240,0.24); background: linear-gradient(135deg, rgba(111,210,240,0.10), rgba(242,241,238,0.035));">
+          <p style="margin: 0 0 8px; font-family: 'Sora', sans-serif; font-size: clamp(28px, 3.4vw, 44px); letter-spacing: -0.04em; color: #F2F1EE;">Check</p>
+          <h3 style="margin: 0 0 10px; font-family: 'Sora', sans-serif; font-size: 20px; font-weight: 500;">Installation fit</h3>
+          <p style="margin: 0; font-size: 15px; line-height: 1.65; color: rgba(242,241,238,0.62);">Before purchase, WaterSource can confirm countertop space, water source and package details.</p>
+        </article>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: clamp(18px, 2.5vw, 28px); align-items: stretch; margin-bottom: clamp(30px, 4vw, 54px);">
+        <article style="border: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.035); overflow: hidden;">
+          <img src="assets/h001-trust-demo-showroom.svg" alt="H001 product walkthrough and consultation scene" width="720" height="480" style="width: 100%; height: auto;" />
+          <div style="padding: clamp(22px, 2.8vw, 32px);">
+            <p style="margin: 0 0 10px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A96A;">See before deciding</p>
+            <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: clamp(22px, 2.1vw, 30px); font-weight: 500; letter-spacing: -0.025em;">Experience the daily routine</h3>
+            <p style="margin: 0; font-size: 16px; line-height: 1.68; color: rgba(242,241,238,0.64);">Understand how H001 fits into daily routines: touch controls, instant heating modes, hydrogen-rich dispensing and filter-life reminders are explained in a simple, practical walkthrough.</p>
+          </div>
+        </article>
+        <article style="border: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.035); overflow: hidden;">
+          <img src="assets/h001-trust-installation.svg" alt="H001 installation and countertop placement checking" width="720" height="480" style="width: 100%; height: auto;" />
+          <div style="padding: clamp(22px, 2.8vw, 32px);">
+            <p style="margin: 0 0 10px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: #6FD2F0;">Clear setup expectations</p>
+            <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: clamp(22px, 2.1vw, 30px); font-weight: 500; letter-spacing: -0.025em;">Confirm fit and installation</h3>
+            <p style="margin: 0; font-size: 16px; line-height: 1.68; color: rgba(242,241,238,0.64);">This reassures high-intent buyers that space, water source, installation and package details can be checked before they commit.</p>
+          </div>
+        </article>
+        <article style="border: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.035); overflow: hidden;">
+          <img src="assets/h001-trust-support.svg" alt="H001 warranty and after-sales support" width="720" height="480" style="width: 100%; height: auto;" />
+          <div style="padding: clamp(22px, 2.8vw, 32px);">
+            <p style="margin: 0 0 10px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A96A;">After-sales confidence</p>
+            <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: clamp(22px, 2.1vw, 30px); font-weight: 500; letter-spacing: -0.025em;">Warranty and maintenance support</h3>
+            <p style="margin: 0; font-size: 16px; line-height: 1.68; color: rgba(242,241,238,0.64);">Reinforces the 1-year on-site warranty, filter-life reminders and quick-connect filter experience without over-promising.</p>
+          </div>
+        </article>
+      </div>
+
+      <div style="display: grid; grid-template-columns: minmax(0, 0.68fr) minmax(280px, 0.32fr); gap: clamp(18px, 2.6vw, 28px); align-items: stretch;">
+        <div aria-label="Real customer reviews carousel" style="position: relative; overflow: hidden; border: 1px solid rgba(242,241,238,0.13); background: linear-gradient(135deg, rgba(255,255,255,0.07), rgba(255,255,255,0.025)); box-shadow: 0 28px 80px rgba(0,0,0,0.26);">
+          <div style="position: absolute; inset: 0; background: radial-gradient(circle at 12% 18%, rgba(111,210,240,0.15), transparent 34%), radial-gradient(circle at 86% 88%, rgba(201,169,106,0.16), transparent 38%); pointer-events: none;"></div>
+          <div style="position: relative; display: flex; animation: h001-testimonial-slide 42s ease-in-out infinite;">
+            <article style="width: 100%; flex: 0 0 100%; padding: clamp(24px, 4vw, 46px); min-height: 430px; display: grid; align-content: space-between; gap: 28px;">
+              <div>
+                <p aria-label="5 out of 5 stars" style="margin: 0 0 24px; color: #F5C84B; letter-spacing: 0.18em; font-size: 18px;">★★★★★</p>
+                <p style="margin: 0 0 16px; font-size: 42px; line-height: 0.7; color: #6FD2F0; font-family: 'Sora', sans-serif;">“</p>
+                <h3 style="margin: 0 0 16px; max-width: 18ch; font-family: 'Sora', sans-serif; font-size: clamp(28px, 3vw, 44px); line-height: 1.04; letter-spacing: -0.04em; font-weight: 500; color: #F2F1EE;">Drinking hydrogen-rich water supports my daily routine.</h3>
+                <p style="margin: 0; max-width: 64ch; font-size: clamp(16px, 1.3vw, 18px); line-height: 1.72; color: rgba(242,241,238,0.68);">Leo shared that after making hydrogen-rich water part of his daily intake, he felt it helped him stay consistent with hydration and everyday wellness habits.</p>
+              </div>
+              <footer style="display: flex; align-items: center; gap: 14px;"><span aria-hidden="true" style="width: 52px; height: 52px; border-radius: 50%; background: linear-gradient(135deg, #C9A96A, #6FD2F0); display: inline-flex; align-items: center; justify-content: center; color: #0B0D0F; font-weight: 900;">L</span><span><strong style="display: block; font-size: 17px; color: #F2F1EE;">Leo</strong><span style="font-size: 14px; color: rgba(242,241,238,0.50);">Hydrogen-rich water user</span></span></footer>
+            </article>
+            <article style="width: 100%; flex: 0 0 100%; padding: clamp(24px, 4vw, 46px); min-height: 430px; display: grid; align-content: space-between; gap: 28px;">
+              <div>
+                <p aria-label="5 out of 5 stars" style="margin: 0 0 24px; color: #F5C84B; letter-spacing: 0.18em; font-size: 18px;">★★★★★</p>
+                <p style="margin: 0 0 16px; font-size: 42px; line-height: 0.7; color: #6FD2F0; font-family: 'Sora', sans-serif;">“</p>
+                <h3 style="margin: 0 0 16px; max-width: 20ch; font-family: 'Sora', sans-serif; font-size: clamp(28px, 3vw, 44px); line-height: 1.04; letter-spacing: -0.04em; font-weight: 500; color: #F2F1EE;">Our family trusts the WaterSource Hydrogen Minerals Functional Purifier daily.</h3>
+                <p style="margin: 0; max-width: 64ch; font-size: clamp(16px, 1.3vw, 18px); line-height: 1.72; color: rgba(242,241,238,0.68);">Wendy shared that her family uses it every day and appreciates a cleaner, more comfortable drinking-water routine for the whole household.</p>
+              </div>
+              <footer style="display: flex; align-items: center; gap: 14px;"><span aria-hidden="true" style="width: 52px; height: 52px; border-radius: 50%; background: linear-gradient(135deg, #6FD2F0, #C9A96A); display: inline-flex; align-items: center; justify-content: center; color: #0B0D0F; font-weight: 900;">W</span><span><strong style="display: block; font-size: 17px; color: #F2F1EE;">Wendy Yap</strong><span style="font-size: 14px; color: rgba(242,241,238,0.50);">Family customer</span></span></footer>
+            </article>
+            <article style="width: 100%; flex: 0 0 100%; padding: clamp(24px, 4vw, 46px); min-height: 430px; display: grid; align-content: space-between; gap: 28px;">
+              <div>
+                <p aria-label="5 out of 5 stars" style="margin: 0 0 24px; color: #F5C84B; letter-spacing: 0.18em; font-size: 18px;">★★★★★</p>
+                <p style="margin: 0 0 16px; font-size: 42px; line-height: 0.7; color: #6FD2F0; font-family: 'Sora', sans-serif;">“</p>
+                <h3 style="margin: 0 0 16px; max-width: 20ch; font-family: 'Sora', sans-serif; font-size: clamp(28px, 3vw, 44px); line-height: 1.04; letter-spacing: -0.04em; font-weight: 500; color: #F2F1EE;">Our mood feels much better, especially when waking up.</h3>
+                <p style="margin: 0; max-width: 64ch; font-size: clamp(16px, 1.3vw, 18px); line-height: 1.72; color: rgba(242,241,238,0.68);">Jeremy and Yean shared that they made H2 water part of their first-week routine and felt more alert, active and mobile through the day.</p>
+              </div>
+              <footer style="display: flex; align-items: center; gap: 14px;"><span aria-hidden="true" style="width: 52px; height: 52px; border-radius: 50%; background: linear-gradient(135deg, #C9A96A, #6FD2F0); display: inline-flex; align-items: center; justify-content: center; color: #0B0D0F; font-weight: 900;">JY</span><span><strong style="display: block; font-size: 17px; color: #F2F1EE;">Jeremy Loh &amp; Yean Cheong</strong><span style="font-size: 14px; color: rgba(242,241,238,0.50);">Hydrogen water users</span></span></footer>
+            </article>
+            <article style="width: 100%; flex: 0 0 100%; padding: clamp(24px, 4vw, 46px); min-height: 430px; display: grid; align-content: space-between; gap: 28px;">
+              <div>
+                <p aria-label="5 out of 5 stars" style="margin: 0 0 24px; color: #F5C84B; letter-spacing: 0.18em; font-size: 18px;">★★★★★</p>
+                <p style="margin: 0 0 16px; font-size: 42px; line-height: 0.7; color: #6FD2F0; font-family: 'Sora', sans-serif;">“</p>
+                <h3 style="margin: 0 0 16px; max-width: 20ch; font-family: 'Sora', sans-serif; font-size: clamp(28px, 3vw, 44px); line-height: 1.04; letter-spacing: -0.04em; font-weight: 500; color: #F2F1EE;">My kids are much better in their daily wellness routine.</h3>
+                <p style="margin: 0; max-width: 64ch; font-size: clamp(16px, 1.3vw, 18px); line-height: 1.72; color: rgba(242,241,238,0.68);">Jacinta shared that since having the water filter at home, her household feels more confident about daily hydration and family self-care.</p>
+              </div>
+              <footer style="display: flex; align-items: center; gap: 14px;"><span aria-hidden="true" style="width: 52px; height: 52px; border-radius: 50%; background: linear-gradient(135deg, #6FD2F0, #C9A96A); display: inline-flex; align-items: center; justify-content: center; color: #0B0D0F; font-weight: 900;">J</span><span><strong style="display: block; font-size: 17px; color: #F2F1EE;">Jacinta Lee</strong><span style="font-size: 14px; color: rgba(242,241,238,0.50);">Parent and household user</span></span></footer>
+            </article>
+            <article style="width: 100%; flex: 0 0 100%; padding: clamp(24px, 4vw, 46px); min-height: 430px; display: grid; align-content: space-between; gap: 28px;">
+              <div>
+                <p aria-label="5 out of 5 stars" style="margin: 0 0 24px; color: #F5C84B; letter-spacing: 0.18em; font-size: 18px;">★★★★★</p>
+                <p style="margin: 0 0 16px; font-size: 42px; line-height: 0.7; color: #6FD2F0; font-family: 'Sora', sans-serif;">“</p>
+                <h3 style="margin: 0 0 16px; max-width: 20ch; font-family: 'Sora', sans-serif; font-size: clamp(28px, 3vw, 44px); line-height: 1.04; letter-spacing: -0.04em; font-weight: 500; color: #F2F1EE;">I have been using WaterSource for almost 10 years.</h3>
+                <p style="margin: 0; max-width: 64ch; font-size: clamp(16px, 1.3vw, 18px); line-height: 1.72; color: rgba(242,241,238,0.68);">Dr Toh shared that WaterSource has been part of her own and client-facing water routines, with clean water and customer support as important reasons for staying with the brand.</p>
+              </div>
+              <footer style="display: flex; align-items: center; gap: 14px;"><span aria-hidden="true" style="width: 52px; height: 52px; border-radius: 50%; background: linear-gradient(135deg, #C9A96A, #6FD2F0); display: inline-flex; align-items: center; justify-content: center; color: #0B0D0F; font-weight: 900;">DT</span><span><strong style="display: block; font-size: 17px; color: #F2F1EE;">Dr Toh S.C.</strong><span style="font-size: 14px; color: rgba(242,241,238,0.50);">Natural health practitioner</span></span></footer>
+            </article>
+            <article style="width: 100%; flex: 0 0 100%; padding: clamp(24px, 4vw, 46px); min-height: 430px; display: grid; align-content: space-between; gap: 28px;">
+              <div>
+                <p aria-label="5 out of 5 stars" style="margin: 0 0 24px; color: #F5C84B; letter-spacing: 0.18em; font-size: 18px;">★★★★★</p>
+                <p style="margin: 0 0 16px; font-size: 42px; line-height: 0.7; color: #6FD2F0; font-family: 'Sora', sans-serif;">“</p>
+                <h3 style="margin: 0 0 16px; max-width: 20ch; font-family: 'Sora', sans-serif; font-size: clamp(28px, 3vw, 44px); line-height: 1.04; letter-spacing: -0.04em; font-weight: 500; color: #F2F1EE;">The latest 9090 model WaterSource machine impresses me most.</h3>
+                <p style="margin: 0; max-width: 64ch; font-size: clamp(16px, 1.3vw, 18px); line-height: 1.72; color: rgba(242,241,238,0.68);">Sharon shared that the touchscreen controls are easy to use, the front-access twin filters make changes convenient, and her family enjoys the clear, tasty water.</p>
+              </div>
+              <footer style="display: flex; align-items: center; gap: 14px;"><span aria-hidden="true" style="width: 52px; height: 52px; border-radius: 50%; background: linear-gradient(135deg, #6FD2F0, #C9A96A); display: inline-flex; align-items: center; justify-content: center; color: #0B0D0F; font-weight: 900;">S</span><span><strong style="display: block; font-size: 17px; color: #F2F1EE;">Sharon</strong><span style="font-size: 14px; color: rgba(242,241,238,0.50);">9090NT customer</span></span></footer>
+            </article>
+          </div>
+          <div aria-hidden="true" style="position: absolute; left: clamp(24px, 4vw, 46px); right: clamp(24px, 4vw, 46px); bottom: 22px; display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; opacity: 0.72;"><span style="height: 3px; background: #C9A96A;"></span><span style="height: 3px; background: rgba(242,241,238,0.22);"></span><span style="height: 3px; background: rgba(242,241,238,0.22);"></span><span style="height: 3px; background: rgba(242,241,238,0.22);"></span><span style="height: 3px; background: rgba(242,241,238,0.22);"></span><span style="height: 3px; background: rgba(242,241,238,0.22);"></span></div>
+        </div>
+        <aside style="padding: clamp(22px, 3vw, 34px); border: 1px solid rgba(201,169,106,0.26); background: linear-gradient(135deg, rgba(201,169,106,0.14), rgba(111,210,240,0.07)); display: grid; align-content: center; gap: 14px;">
+          <p style="margin: 0; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A96A;">Real customer voices</p>
+          <h3 style="margin: 0; font-family: 'Sora', sans-serif; font-size: clamp(24px, 2.4vw, 34px); line-height: 1.08; letter-spacing: -0.03em; font-weight: 500; color: #F2F1EE;">Six verified review stories, shown one at a time.</h3>
+          <p style="margin: 0; font-size: 16px; line-height: 1.68; color: rgba(242,241,238,0.68);">The testimonial area now uses real customer names and review themes while keeping the landing page premium, focused and easy to read before the enquiry form.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="enquire" style="position: relative; overflow: hidden; background: linear-gradient(135deg, #0B0D0F 0%, #101820 48%, #F5F4F1 48%, #F5F4F1 100%); color: #F2F1EE; padding: clamp(56px, 8vw, 128px) clamp(20px, 4vw, 72px);">
+    <div style="position: absolute; inset: 0; background: radial-gradient(circle at 18% 20%, rgba(201,169,106,0.18), transparent 34%), radial-gradient(circle at 42% 70%, rgba(72,150,190,0.18), transparent 36%); pointer-events: none;"></div>
+    <div style="position: relative; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: clamp(28px, 5vw, 72px); align-items: stretch;">
+      <div style="display: grid; align-content: start; gap: clamp(22px, 3vw, 34px); padding: clamp(24px, 4vw, 54px); border: 1px solid rgba(201,169,106,0.22); background: rgba(11,13,15,0.92); box-shadow: 0 28px 80px rgba(0,0,0,0.32); backdrop-filter: blur(14px);">
+        <div>
+          <p style="margin: 0 0 16px; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #C9A96A;">Promotion</p>
+          <h2 style="margin: 0; font-family: 'Sora', sans-serif; font-weight: 300; font-size: clamp(34px, 4.6vw, 62px); line-height: 1.04; letter-spacing: -0.035em;">Claim the H001 launch offer at <span style="font-weight: 600; color: #FFFFFF;">S$2,888</span></h2>
+          <p style="margin: 18px 0 0; max-width: 58ch; font-size: clamp(16px, 1.25vw, 18px); line-height: 1.68; color: rgba(242,241,238,0.68);">A complete countertop water system for families who want purified water, hydrogen-rich water and instant hot water from one intelligent appliance.</p>
+        </div>
+
+        <div style="display: grid; gap: 18px; padding: clamp(22px, 3vw, 32px); background: linear-gradient(135deg, rgba(201,169,106,0.18), rgba(255,255,255,0.04)); border: 1px solid rgba(201,169,106,0.32);">
+          <div>
+            <p style="margin: 0 0 6px; font-size: 13px; color: rgba(242,241,238,0.6);">Promotion price</p>
+            <p style="margin: 0; font-family: 'Sora', sans-serif; font-size: clamp(46px, 6vw, 78px); font-weight: 600; line-height: 0.95; letter-spacing: -0.055em; color: #FFFFFF;">S$2,888</p>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px; line-height: 1.45; color: rgba(242,241,238,0.68);">
+            <span style="padding: 7px 10px; background: rgba(255,255,255,0.06);">Usual price <span style="text-decoration: line-through; color: rgba(242,241,238,0.45);">S$3,388</span></span>
+            <span style="padding: 7px 10px; background: rgba(201,169,106,0.16); color: #C9A96A;">Save S$500</span>
+            <span style="padding: 7px 10px; background: rgba(255,255,255,0.06);">1-year on-site warranty</span>
           </div>
         </div>
-        <ul style="margin: 24px 0 0; padding: 0; list-style: none; display: grid; grid-template-columns: 1fr; gap: 12px; font-size: 16px; color: #4C5259;">
-          <li style="display: flex; gap: 12px;"><span aria-hidden="true" style="color: #9A7F45;">—</span>Three-stage filtration set installed with the unit</li>
-          <li style="display: flex; gap: 12px;"><span aria-hidden="true" style="color: #9A7F45;">—</span>Hydrogen-rich water generation and 3-second heating</li>
-          <li style="display: flex; gap: 12px;"><span aria-hidden="true" style="color: #9A7F45;">—</span>1-year on-site warranty</li>
-        </ul>
-        <p style="margin: 24px 0 0; font-size: 14px; line-height: 1.6; color: #7C838A;">Promotional price and validity to be confirmed with WaterSource before publication.</p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 160px), 1fr)); gap: 12px;">
+          <div style="padding: 18px; border: 1px solid rgba(242,241,238,0.12); background: rgba(255,255,255,0.035);">
+            <p style="margin: 0 0 8px; color: #C9A96A; font-size: 13px; font-weight: 700;">Included</p>
+            <p style="margin: 0; font-size: 15px; line-height: 1.55; color: rgba(242,241,238,0.72);">Three-stage filtration set installed with the unit.</p>
+          </div>
+          <div style="padding: 18px; border: 1px solid rgba(242,241,238,0.12); background: rgba(255,255,255,0.035);">
+            <p style="margin: 0 0 8px; color: #C9A96A; font-size: 13px; font-weight: 700;">One appliance</p>
+            <p style="margin: 0; font-size: 15px; line-height: 1.55; color: rgba(242,241,238,0.72);">Purification, hydrogen-rich water and 3-second heating.</p>
+          </div>
+          <div style="padding: 18px; border: 1px solid rgba(242,241,238,0.12); background: rgba(255,255,255,0.035);">
+            <p style="margin: 0 0 8px; color: #C9A96A; font-size: 13px; font-weight: 700;">Next step</p>
+            <p style="margin: 0; font-size: 15px; line-height: 1.55; color: rgba(242,241,238,0.72);">WaterSource confirms availability, installation and payment options.</p>
+          </div>
+        </div>
+
+        <p style="margin: 0; font-size: 13px; line-height: 1.6; color: rgba(242,241,238,0.48);">Promotion details and validity should be confirmed with WaterSource before publication.</p>
       </div>
-      <form onSubmit="{{ onSubmit }}" style="background: #FFFFFF; border: 1px solid rgba(20,23,26,0.12); padding: clamp(24px, 3vw, 40px); display: grid; grid-template-columns: 1fr; gap: 18px;">
-        <h3 style="margin: 0; font-family: 'Sora', sans-serif; font-size: 22px; font-weight: 500; letter-spacing: -0.015em;">Enquire About H001</h3>
-        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #565C63;">Send your details and WaterSource will follow up with availability, installation and payment options.</p>
+
+      <form onSubmit="{{ onSubmit }}" style="align-self: stretch; background: #FFFFFF; color: #14171A; border: 1px solid rgba(20,23,26,0.12); padding: clamp(24px, 3vw, 40px); display: grid; grid-template-columns: 1fr; gap: 17px; box-shadow: 0 30px 80px rgba(20,23,26,0.16);">
+        <div style="display: flex; align-items: start; justify-content: space-between; gap: 18px;">
+          <div>
+            <p style="margin: 0 0 10px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: #9A7F45;">Fast enquiry</p>
+            <h3 style="margin: 0; font-family: 'Sora', sans-serif; font-size: clamp(24px, 2.4vw, 34px); line-height: 1.12; font-weight: 500; letter-spacing: -0.025em;">Check your H001 package details</h3>
+          </div>
+          <span aria-hidden="true" style="flex: none; width: 48px; height: 48px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; background: #F5F4F1; color: #9A7F45; font-size: 22px;">→</span>
+        </div>
+        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #565C63;">Leave your contact details and WaterSource can help you confirm the promotion, home installation suitability and payment options.</p>
         <div style="display: grid; grid-template-columns: 1fr; gap: 7px;">
           <label for="h001-name" style="font-size: 14px; font-weight: 600;">Name</label>
-          <input id="h001-name" name="name" type="text" required="" style="height: 48px; padding: 0 14px; font: inherit; font-size: 16px; color: #14171A; background: #FBFAF8; border: 1px solid rgba(20,23,26,0.2);" />
+          <input id="h001-name" name="name" type="text" required="" placeholder="Your name" style="height: 50px; padding: 0 14px; font: inherit; font-size: 16px; color: #14171A; background: #FBFAF8; border: 1px solid rgba(20,23,26,0.18);" />
         </div>
         <div style="display: grid; grid-template-columns: 1fr; gap: 7px;">
           <label for="h001-email" style="font-size: 14px; font-weight: 600;">Email</label>
-          <input id="h001-email" name="email" type="email" required="" style="height: 48px; padding: 0 14px; font: inherit; font-size: 16px; color: #14171A; background: #FBFAF8; border: 1px solid rgba(20,23,26,0.2);" />
+          <input id="h001-email" name="email" type="email" required="" placeholder="you@example.com" style="height: 50px; padding: 0 14px; font: inherit; font-size: 16px; color: #14171A; background: #FBFAF8; border: 1px solid rgba(20,23,26,0.18);" />
         </div>
         <div style="display: grid; grid-template-columns: 1fr; gap: 7px;">
-          <label for="h001-phone" style="font-size: 14px; font-weight: 600;">Mobile</label>
-          <input id="h001-phone" name="phone" type="tel" style="height: 48px; padding: 0 14px; font: inherit; font-size: 16px; color: #14171A; background: #FBFAF8; border: 1px solid rgba(20,23,26,0.2);" />
+          <label for="h001-phone" style="font-size: 14px; font-weight: 600;">Mobile / WhatsApp</label>
+          <input id="h001-phone" name="phone" type="tel" placeholder="Your mobile number" style="height: 50px; padding: 0 14px; font: inherit; font-size: 16px; color: #14171A; background: #FBFAF8; border: 1px solid rgba(20,23,26,0.18);" />
         </div>
         <div style="display: grid; grid-template-columns: 1fr; gap: 7px;">
-          <label for="h001-message" style="font-size: 14px; font-weight: 600;">Message <span style="font-weight: 400; color: #7C838A;">(optional)</span></label>
-          <textarea id="h001-message" name="message" rows="3" style="padding: 12px 14px; font: inherit; font-size: 16px; color: #14171A; background: #FBFAF8; border: 1px solid rgba(20,23,26,0.2); resize: vertical;"></textarea>
+          <label for="h001-message" style="font-size: 14px; font-weight: 600;">What would you like to confirm? <span style="font-weight: 400; color: #7C838A;">(optional)</span></label>
+          <textarea id="h001-message" name="message" rows="3" placeholder="Promotion, installation, filter replacement, payment options..." style="padding: 12px 14px; font: inherit; font-size: 16px; color: #14171A; background: #FBFAF8; border: 1px solid rgba(20,23,26,0.18); resize: vertical;"></textarea>
         </div>
-        <button type="submit" style="height: 52px; border: none; background: #14171A; color: #F5F4F1; font: inherit; font-size: 15px; font-weight: 600; cursor: pointer;" style-hover="background: #2A2F35;">Enquire About H001</button>
-        <a href="#enquire" style="display: inline-flex; align-items: center; justify-content: center; height: 52px; border: 1px solid rgba(20,23,26,0.24); color: #14171A; font-size: 15px; font-weight: 500;" style-hover="border-color: rgba(20,23,26,0.5);">WhatsApp Us</a>
-        <p style="margin: 0; font-size: 13px; color: #7C838A;">Enquiries are routed to WaterSource. Form endpoint to be connected during development.</p>
+        <button type="submit" style="height: 54px; border: none; background: #14171A; color: #F5F4F1; font: inherit; font-size: 15px; font-weight: 700; cursor: pointer;" style-hover="background: #2A2F35;">Claim Promotion Details</button>
+        <a href="#enquire" style="display: inline-flex; align-items: center; justify-content: center; height: 52px; border: 1px solid rgba(20,23,26,0.22); color: #14171A; font-size: 15px; font-weight: 600;" style-hover="border-color: rgba(20,23,26,0.5);">WhatsApp WaterSource</a>
+        <p style="margin: 0; font-size: 13px; line-height: 1.55; color: #7C838A;">Low-friction enquiry only. Form endpoint to be connected during development.</p>
       </form>
     </div>
   </section>
 
-  <section id="faq" style="padding: clamp(56px, 8vw, 128px) clamp(20px, 4vw, 72px);">
-    <div style="max-width: 720px; margin: 0 0 clamp(28px, 4vw, 48px);">
-      <p style="margin: 0 0 16px; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #C9A96A;">FAQ</p>
-      <h2 style="margin: 0; font-family: 'Sora', sans-serif; font-weight: 300; font-size: clamp(32px, 4.2vw, 56px); line-height: 1.08; letter-spacing: -0.03em;">Questions about <span style="font-weight: 600;">H001</span></h2>
-    </div>
-    <div style="max-width: 900px;">
-      <sc-for list="{{ faqs }}" as="f" hint-placeholder-count="10">
-        <div style="border-top: 1px solid rgba(242,241,238,0.12);">
-          <h3 style="margin: 0;">
-            <button type="button" onClick="{{ f.toggle }}" aria-expanded="{{ f.expanded }}" style="width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 24px 0; background: none; border: none; color: #F2F1EE; font: inherit; font-family: 'Sora', sans-serif; font-size: clamp(17px, 1.5vw, 21px); font-weight: 500; letter-spacing: -0.015em; text-align: left; cursor: pointer;">
-              <span>{{ f.q }}</span>
-              <span aria-hidden="true" style="{{ f.iconStyle }}">+</span>
-            </button>
-          </h3>
-          <div style="{{ f.panelStyle }}">
-            <p style="margin: 0 0 24px; max-width: 76ch; font-size: 17px; line-height: 1.7; color: rgba(242,241,238,0.68);">{{ f.a }}</p>
-          </div>
+  <section id="faq" style="position: relative; overflow: hidden; padding: clamp(56px, 8vw, 128px) clamp(20px, 4vw, 72px); background: #0B0D0F;">
+    <div style="position: absolute; inset: auto -10% 0 auto; width: 520px; height: 520px; background: radial-gradient(circle, rgba(72,150,190,0.16), transparent 68%); pointer-events: none;"></div>
+    <div style="position: relative; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: clamp(28px, 5vw, 72px); align-items: start;">
+      <div style="position: sticky; top: 96px;">
+        <p style="margin: 0 0 16px; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #C9A96A;">FAQ</p>
+        <h2 style="margin: 0; font-family: 'Sora', sans-serif; font-weight: 300; font-size: clamp(34px, 4.4vw, 60px); line-height: 1.06; letter-spacing: -0.035em;">Questions that help you decide</h2>
+        <p style="margin: 20px 0 0; max-width: 42ch; font-size: 16px; line-height: 1.7; color: rgba(242,241,238,0.62);">Clear answers on price, installation, hydrogen-rich water, filters and daily use before you speak with WaterSource.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px; margin: 26px 0 0;">
+          <span style="padding: 8px 12px; border: 1px solid rgba(201,169,106,0.32); color: #C9A96A; font-size: 13px;">Package</span>
+          <span style="padding: 8px 12px; border: 1px solid rgba(242,241,238,0.14); color: rgba(242,241,238,0.68); font-size: 13px;">Installation</span>
+          <span style="padding: 8px 12px; border: 1px solid rgba(242,241,238,0.14); color: rgba(242,241,238,0.68); font-size: 13px;">Maintenance</span>
         </div>
-      </sc-for>
-      <div style="border-top: 1px solid rgba(242,241,238,0.12);"></div>
+      </div>
+      <div style="border: 1px solid rgba(242,241,238,0.12); background: rgba(255,255,255,0.025);">
+        <sc-for list="{{ faqs }}" as="f" hint-placeholder-count="10">
+          <div style="border-bottom: 1px solid rgba(242,241,238,0.1);">
+            <h3 style="margin: 0;">
+              <button type="button" onClick="{{ f.toggle }}" aria-expanded="{{ f.expanded }}" style="width: 100%; display: grid; grid-template-columns: auto minmax(0,1fr) auto; align-items: center; gap: 18px; padding: clamp(20px, 2.4vw, 28px); background: none; border: none; color: #F2F1EE; font: inherit; font-family: 'Sora', sans-serif; font-size: clamp(17px, 1.45vw, 21px); font-weight: 500; letter-spacing: -0.015em; text-align: left; cursor: pointer;">
+                <span style="font-family: Manrope, sans-serif; font-size: 12px; letter-spacing: 0.12em; color: rgba(201,169,106,0.78);">{{ f.no }}</span>
+                <span>{{ f.q }}</span>
+                <span aria-hidden="true" style="{{ f.iconStyle }}">+</span>
+              </button>
+            </h3>
+            <div style="{{ f.panelStyle }}">
+              <p style="margin: -8px 72px 28px clamp(58px, 6vw, 76px); max-width: 78ch; font-size: 16px; line-height: 1.75; color: rgba(242,241,238,0.66);">{{ f.a }}</p>
+            </div>
+          </div>
+        </sc-for>
+      </div>
     </div>
   </section>
 
-  <section style="position: relative; overflow: hidden; text-align: center; padding: clamp(56px, 8vw, 120px) clamp(20px, 4vw, 72px) clamp(40px, 5vw, 80px);">
-    <div style="position: absolute; top: 10%; left: 50%; transform: translateX(-50%); width: min(900px, 120%); height: 620px; background: radial-gradient(ellipse at 50% 40%, rgba(72,150,190,0.24) 0%, rgba(11,13,15,0) 70%); pointer-events: none;"></div>
-    <div style="position: relative; max-width: 820px; margin: 0 auto;">
-      <h2 style="margin: 0 0 20px; font-family: 'Sora', sans-serif; font-weight: 300; font-size: clamp(34px, 5vw, 72px); line-height: 1.04; letter-spacing: -0.035em;">Upgrade the way <span style="font-weight: 600;">you drink water</span></h2>
-      <p style="margin: 0 auto 32px; max-width: 58ch; font-size: clamp(16px, 1.3vw, 19px); line-height: 1.65; color: rgba(242,241,238,0.68);">Purification, hydrogen-rich water and instant heating in one intelligent system.</p>
-      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px;">
-        <a href="#enquire" style="display: inline-flex; align-items: center; height: 54px; padding: 0 32px; border-radius: 4px; background: #C9A96A; color: #14100A; font-size: 15px; font-weight: 600;" style-hover="background: #DBBE84;">Enquire About H001</a>
-        <a href="#enquire" style="display: inline-flex; align-items: center; height: 54px; padding: 0 32px; border-radius: 4px; border: 1px solid rgba(242,241,238,0.28); color: #F2F1EE; font-size: 15px; font-weight: 500;" style-hover="border-color: rgba(242,241,238,0.6);">WhatsApp Us</a>
+  <section id="final-cta" style="position: relative; overflow: hidden; padding: clamp(60px, 8vw, 124px) clamp(20px, 4vw, 72px) clamp(44px, 5vw, 84px); background: linear-gradient(180deg, #0B0D0F 0%, #0E151A 100%);">
+    <div style="position: absolute; top: 8%; left: 50%; transform: translateX(-50%); width: min(980px, 120%); height: 680px; background: radial-gradient(ellipse at 50% 38%, rgba(72,150,190,0.26) 0%, rgba(201,169,106,0.12) 28%, rgba(11,13,15,0) 70%); pointer-events: none;"></div>
+    <div style="position: relative; max-width: 1120px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: clamp(28px, 5vw, 76px); align-items: center;">
+      <div>
+        <p style="margin: 0 0 18px; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #C9A96A;">Final step</p>
+        <h2 style="margin: 0; font-family: 'Sora', sans-serif; font-weight: 300; font-size: clamp(42px, 6.4vw, 88px); line-height: 0.98; letter-spacing: -0.055em;">Upgrade the way <span style="font-weight: 650; color: #FFFFFF;">you drink water</span></h2>
+        <p style="margin: 24px 0 0; max-width: 58ch; font-size: clamp(16px, 1.35vw, 20px); line-height: 1.68; color: rgba(242,241,238,0.68);">Purified water, hydrogen-rich water and instant heating in one intelligent system — with WaterSource support to confirm the right package for your home.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px; margin: 34px 0 0;">
+          <a href="#enquire" style="display: inline-flex; align-items: center; justify-content: center; min-width: 190px; height: 56px; padding: 0 32px; border-radius: 4px; background: #C9A96A; color: #14100A; font-size: 15px; font-weight: 700;" style-hover="background: #DBBE84;">Claim Promotion Details</a>
+          <a href="#enquire" style="display: inline-flex; align-items: center; justify-content: center; min-width: 164px; height: 56px; padding: 0 32px; border-radius: 4px; border: 1px solid rgba(242,241,238,0.28); color: #F2F1EE; font-size: 15px; font-weight: 600;" style-hover="border-color: rgba(242,241,238,0.6);">WhatsApp Us</a>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px; margin: 28px 0 0; color: rgba(242,241,238,0.58); font-size: 14px; line-height: 1.5;">
+          <span style="padding: 9px 12px; background: rgba(255,255,255,0.045); border: 1px solid rgba(242,241,238,0.1);">S$2,888 promotion</span>
+          <span style="padding: 9px 12px; background: rgba(255,255,255,0.045); border: 1px solid rgba(242,241,238,0.1);">Save S$500</span>
+          <span style="padding: 9px 12px; background: rgba(255,255,255,0.045); border: 1px solid rgba(242,241,238,0.1);">1-year on-site warranty</span>
+        </div>
+      </div>
+      <div style="position: relative; min-height: 520px; display: grid; place-items: end center;">
+        <div style="position: absolute; bottom: 0; width: min(100%, 380px); height: 62%; background: linear-gradient(180deg, rgba(201,169,106,0.18), rgba(72,150,190,0.08)); border: 1px solid rgba(201,169,106,0.24);"></div>
+        <img src="assets/h001-front-tall.png" alt="WaterSource H001 alkaline hydrogen-rich water purifier, front view" width="589" height="981" style="position: relative; width: min(100%, 360px); height: auto; filter: drop-shadow(0 42px 70px rgba(0,0,0,0.68));" />
       </div>
     </div>
-    <img src="assets/h001-front-tall.png" alt="WaterSource H001 alkaline hydrogen-rich water purifier, front view" width="589" height="981" style="position: relative; margin: clamp(24px, 4vw, 48px) auto 0; width: min(100%, 420px); height: auto; filter: drop-shadow(0 40px 60px rgba(0,0,0,0.6));" />
   </section>
 
   <footer style="border-top: 1px solid rgba(242,241,238,0.12); padding: clamp(32px, 4vw, 56px) clamp(20px, 4vw, 72px);">
@@ -735,6 +999,8 @@
         <a href="#hydrogen" style="color: rgba(242,241,238,0.6);">Technology</a>
         <a href="#filtration" style="color: rgba(242,241,238,0.6);">Filtration</a>
         <a href="#specifications" style="color: rgba(242,241,238,0.6);">Specifications</a>
+        <a href="#who-for" style="color: rgba(242,241,238,0.6);">Who it's for</a>
+        <a href="#trust" style="color: rgba(242,241,238,0.6);">Trust</a>
         <a href="#faq" style="color: rgba(242,241,238,0.6);">FAQ</a>
         <a href="#enquire" style="color: rgba(242,241,238,0.6);">Enquire</a>
       </nav>
@@ -783,17 +1049,17 @@ class Component extends DCLogic {
 
   faqData() {
     return [
-      ['What is the WaterSource H001?', 'The H001 is an alkaline hydrogen-rich water purifier. It purifies tap water through three filter stages, generates hydrogen-rich water using an independent electrolysis module and the SuperMix gas-liquid mixing system, and heats water on demand in three seconds across six temperature stages.'],
-      ['What filtration system does it use?', 'Three filter stages providing four layers of purification: a PAC composite filter, a 200G high-flux reverse osmosis membrane, and a natural trace mineralized carbon rod filter.'],
-      ['What is hydrogen-rich water?', 'Hydrogen-rich water is drinking water with hydrogen gas dissolved into it. In the H001 the hydrogen is generated on board from water that has already been purified.'],
+      ['What is included in the H001 promotion?', 'The promotion highlights the H001 unit at S$2,888, with three-stage filtration, hydrogen-rich water generation, 3-second heating and a 1-year on-site warranty. WaterSource should confirm current validity, availability and installation details when you enquire.'],
+      ['Why does H001 cost more than a normal water purifier?', 'H001 combines functions that are often separate: reverse osmosis purification, hydrogen-rich water generation, instant heating, temperature selection and tank UVC sterilization. The page positions the value as one complete daily water system rather than only a basic purifier.'],
+      ['Is installation required?', 'The H001 connects to a tap water supply and runs on 220V~/50Hz mains power. WaterSource can confirm whether your kitchen setup is suitable and explain the installation arrangement before purchase.'],
+      ['What filtration system does it use?', 'Three filter stages provide four layers of purification: a PAC composite filter, a 200G high-flux reverse osmosis membrane and a natural trace mineralized carbon rod filter.'],
+      ['What is hydrogen-rich water?', 'Hydrogen-rich water is drinking water with hydrogen gas dissolved into it. In the H001, hydrogen is generated on board from water that has already been purified.'],
       ['How is hydrogen-rich water produced?', 'An independent electrolysis module electrolyses purified water to generate hydrogen. The SuperMix gas-liquid mixing system then shears that hydrogen into micro- and sub-micron bubbles in a confined high-speed water flow and dissolves it into the drinking water under pressure.'],
       ['How fast does the H001 heat water?', 'Third-generation rare-earth thick-film heating brings water to temperature in three seconds, heating on demand rather than storing and reheating hot water.'],
       ['What temperature options are available?', 'Six stages, each with its own key on the panel: Normal, Warm, Milk, Coffee, Tea and Boiling.'],
       ['Does it use UVC sterilization?', 'Yes. A built-in UVC LED sterilizes inside the water tank and shows a visual indication on the panel when it is running.'],
       ['How often do the filters need replacing?', 'Based on the manufacturer material: PAC composite filter 6–12 months, 200G RO membrane 12–24 months, and natural trace mineralized carbon rod filter 6–12 months. Actual life depends on local water quality and usage.'],
-      ['How does the machine indicate filter replacement?', 'The filter-life indicator stays unlit in normal use. At 80% of a filter\u2019s service life it flashes orange, and once the filter is due it stays lit orange. Filters are quick-connect and can be installed yourself, and the Filter Reset key clears the counter afterwards.'],
-      ['Can I dispense a measured amount of water?', 'Yes. Quantitative dispensing offers 150 ml, 300 ml and 1000 ml presets, selected with the Small Cup and Big Cup keys.'],
-      ['Is installation required?', 'The H001 connects to a tap water supply and runs on 220V~/50Hz mains power. Installation arrangements for your home are confirmed by WaterSource when you enquire.']
+      ['Can I ask about payment options or a product walkthrough?', 'Yes. The enquiry form and WhatsApp CTA are designed for low-friction questions about package details, installation suitability, promotion availability, payment options and whether a product walkthrough can be arranged.']
     ];
   }
 
@@ -846,6 +1112,7 @@ class Component extends DCLogic {
         return {
           q: q,
           a: a,
+          no: String(i + 1).padStart(2, '0'),
           expanded: open ? 'true' : 'false',
           toggle: () => this.setState({ open: open ? -1 : i }),
           iconStyle: 'flex: none; font-family: Manrope, sans-serif; font-size: 26px; font-weight: 400; line-height: 1; color: #C9A96A; transform: rotate(' + (open ? '45deg' : '0deg') + '); transition: transform 0.25s ease;',

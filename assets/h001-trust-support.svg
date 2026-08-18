@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="480" viewBox="0 0 720 480" role="img" aria-labelledby="title desc">
+  <title id="title">H001 warranty and after-sales support</title>
+  <desc id="desc">Premium service support scene with warranty shield, filter reminders, and customer support message cards.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#0B0D0F"/>
+      <stop offset="0.62" stop-color="#11171C"/>
+      <stop offset="1" stop-color="#18242B"/>
+    </linearGradient>
+    <radialGradient id="cyan" cx="74%" cy="18%" r="62%">
+      <stop offset="0" stop-color="#6FD2F0" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#6FD2F0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="720" height="480" fill="url(#bg)"/>
+  <rect width="720" height="480" fill="url(#cyan)"/>
+  <path d="M360 86l112 42v78c0 76-44 126-112 166-68-40-112-90-112-166v-78l112-42z" fill="#C9A96A" fill-opacity="0.2" stroke="#C9A96A" stroke-opacity="0.55" stroke-width="3"/>
+  <path d="M322 216l28 28 60-76" fill="none" stroke="#6FD2F0" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="70" y="118" width="170" height="112" rx="22" fill="#F2F1EE" fill-opacity="0.08" stroke="#F2F1EE" stroke-opacity="0.14"/>
+  <path d="M104 154h88M104 186h54" stroke="#F2F1EE" stroke-opacity="0.54" stroke-width="8" stroke-linecap="round"/>
+  <rect x="484" y="146" width="166" height="134" rx="22" fill="#F2F1EE" fill-opacity="0.08" stroke="#F2F1EE" stroke-opacity="0.14"/>
+  <path d="M520 184h82M520 216h58M520 248h94" stroke="#F2F1EE" stroke-opacity="0.54" stroke-width="8" stroke-linecap="round"/>
+  <rect x="122" y="300" width="476" height="56" rx="28" fill="#6FD2F0" fill-opacity="0.12" stroke="#6FD2F0" stroke-opacity="0.34"/>
+  <path d="M188 328h344" stroke="#6FD2F0" stroke-width="8" stroke-linecap="round" opacity="0.7"/>
+  <text x="72" y="430" fill="#F2F1EE" fill-opacity="0.58" font-family="Manrope, Arial" font-size="18">Warranty and support confidence</text>
+</svg>
