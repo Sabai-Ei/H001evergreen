@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+  <title id="title">Family daily routine</title>
+  <desc id="desc">Premium placeholder illustration for the H001 landing page.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B0D0F"/>
+      <stop offset="0.55" stop-color="#111A20"/>
+      <stop offset="1" stop-color="#1B1510"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="35%" r="65%">
+      <stop offset="0" stop-color="#6FD2F0" stop-opacity="0.34"/>
+      <stop offset="0.52" stop-color="#C9A96A" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#0B0D0F" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="640" height="420" fill="url(#bg)"/>
+  <rect width="640" height="420" fill="url(#glow)"/>
+  <circle cx="92" cy="78" r="140" fill="#C9A96A" opacity="0.08"/>
+  <circle cx="548" cy="346" r="164" fill="#6FD2F0" opacity="0.09"/>
+  <circle cx="190" cy="142" r="34" fill="#F2F1EE" opacity="0.9"/><circle cx="252" cy="150" r="28" fill="#C9A96A" opacity="0.82"/><circle cx="310" cy="166" r="22" fill="#6FD2F0" opacity="0.76"/><path d="M150 270c28-52 92-72 146-52s85 68 102 118" stroke="#F2F1EE" stroke-width="18" stroke-linecap="round" fill="none" opacity="0.34"/><rect x="460" y="98" width="96" height="250" rx="30" fill="#F2F1EE" opacity="0.9"/><rect x="492" y="132" width="32" height="92" rx="16" fill="#C9A96A" opacity="0.88"/><circle cx="508" cy="284" r="34" fill="#6FD2F0" opacity="0.42"/>
+  <path d="M0 390C116 354 218 354 330 380s206 20 310-28v68H0Z" fill="#F2F1EE" opacity="0.06"/>
+</svg>
