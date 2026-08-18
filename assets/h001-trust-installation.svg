@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="480" viewBox="0 0 720 480" role="img" aria-labelledby="title desc">
+  <title id="title">Demo placeholder for H001 installation support</title>
+  <desc id="desc">Kitchen countertop setup scene showing H001 placement check, water connection marks, and support checklist.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F5F4F1"/>
+      <stop offset="1" stop-color="#E6DFD2"/>
+    </linearGradient>
+    <radialGradient id="gold" cx="23%" cy="19%" r="58%">
+      <stop offset="0" stop-color="#C9A96A" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#C9A96A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="720" height="480" fill="url(#bg)"/>
+  <rect width="720" height="480" fill="url(#gold)"/>
+  <rect x="52" y="338" width="616" height="62" rx="8" fill="#14171A" fill-opacity="0.1"/>
+  <rect x="96" y="128" width="148" height="216" rx="28" fill="#FFFFFF" stroke="#14171A" stroke-opacity="0.1"/>
+  <rect x="207" y="128" width="106" height="216" rx="24" fill="#C9A96A"/>
+  <circle cx="260" cy="180" r="19" fill="#14171A" fill-opacity="0.65"/>
+  <rect x="241" y="224" width="38" height="82" rx="19" fill="#14171A" fill-opacity="0.44"/>
+  <path d="M260 244c20 22 20 42 0 64" stroke="#6FD2F0" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+  <rect x="390" y="112" width="214" height="236" rx="26" fill="#FFFFFF" stroke="#14171A" stroke-opacity="0.1"/>
+  <text x="422" y="158" fill="#9A7F45" font-family="Manrope, Arial" font-size="15" font-weight="700" letter-spacing="2">CHECKLIST</text>
+  <g stroke="#14171A" stroke-opacity="0.62" stroke-width="8" stroke-linecap="round">
+    <path d="M434 202h108"/><path d="M434 246h132"/><path d="M434 290h90"/>
+  </g>
+  <g fill="none" stroke="#6FD2F0" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M404 198l10 10 18-24"/><path d="M404 242l10 10 18-24"/><path d="M404 286l10 10 18-24"/>
+  </g>
+  <text x="72" y="430" fill="#14171A" fill-opacity="0.56" font-family="Manrope, Arial" font-size="18">Installation / placement image placeholder</text>
+</svg>
