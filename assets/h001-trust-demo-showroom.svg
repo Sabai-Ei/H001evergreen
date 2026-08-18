@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="720" height="480" viewBox="0 0 720 480" role="img" aria-labelledby="title desc">
-  <title id="title">Demo placeholder for H001 showroom consultation</title>
+  <title id="title">H001 product walkthrough and consultation</title>
   <desc id="desc">Premium dark showroom scene with a WaterSource H001 unit, consultation table, and soft gold and cyan accents.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
@@ -26,5 +26,5 @@
   <path d="M490 158h68M490 180h86M490 202h54" stroke="#F2F1EE" stroke-opacity="0.55" stroke-width="8" stroke-linecap="round"/>
   <rect x="366" y="286" width="256" height="66" rx="33" fill="#C9A96A" fill-opacity="0.22" stroke="#C9A96A" stroke-opacity="0.38"/>
   <path d="M420 319h148" stroke="#C9A96A" stroke-width="10" stroke-linecap="round"/>
-  <text x="72" y="430" fill="#F2F1EE" fill-opacity="0.58" font-family="Manrope, Arial" font-size="18">Demo / showroom image placeholder</text>
+  <text x="72" y="430" fill="#F2F1EE" fill-opacity="0.58" font-family="Manrope, Arial" font-size="18">Product walkthrough experience</text>
 </svg>

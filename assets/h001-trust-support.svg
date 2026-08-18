@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="720" height="480" viewBox="0 0 720 480" role="img" aria-labelledby="title desc">
-  <title id="title">Demo placeholder for H001 after-sales support</title>
+  <title id="title">H001 warranty and after-sales support</title>
   <desc id="desc">Premium service support scene with warranty shield, filter reminders, and customer support message cards.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="1" x2="1" y2="0">
@@ -22,5 +22,5 @@
   <path d="M520 184h82M520 216h58M520 248h94" stroke="#F2F1EE" stroke-opacity="0.54" stroke-width="8" stroke-linecap="round"/>
   <rect x="122" y="300" width="476" height="56" rx="28" fill="#6FD2F0" fill-opacity="0.12" stroke="#6FD2F0" stroke-opacity="0.34"/>
   <path d="M188 328h344" stroke="#6FD2F0" stroke-width="8" stroke-linecap="round" opacity="0.7"/>
-  <text x="72" y="430" fill="#F2F1EE" fill-opacity="0.58" font-family="Manrope, Arial" font-size="18">Warranty / support image placeholder</text>
+  <text x="72" y="430" fill="#F2F1EE" fill-opacity="0.58" font-family="Manrope, Arial" font-size="18">Warranty and support confidence</text>
 </svg>
