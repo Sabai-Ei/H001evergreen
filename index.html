@@ -65,8 +65,8 @@
     #who-for > div:first-of-type,
     #comparison > div > div:first-child,
     #comparison > div > div:nth-child(3),
-    #trust > div > div:first-child,
-    #trust > div > div:last-child {
+    #confidence > div > div:first-child,
+    #confidence > div > div:last-child {
       grid-template-columns: 1fr !important;
     }
     #top div[style*="min-height: 520px"],
@@ -91,8 +91,8 @@
     #comparison [role="list"] { grid-template-columns: 1fr !important; }
     #comparison [aria-label="Comparison decision rows"] > div { grid-template-columns: 1fr !important; gap: 10px !important; }
     #comparison [aria-label="Comparison decision rows"] > div > p:first-child { border-bottom: 1px solid rgba(242,241,238,0.08); padding-bottom: 10px !important; }
-    #trust [aria-label="Real customer reviews carousel"] article { min-height: 500px !important; padding: 24px 20px 48px !important; }
-    #trust [aria-label="Real customer reviews carousel"] h3 { max-width: 100% !important; font-size: clamp(24px, 7vw, 32px) !important; letter-spacing: -0.035em !important; }
+    #confidence [aria-label="Real customer reviews carousel"] article { min-height: 500px !important; padding: 24px 20px 48px !important; }
+    #confidence [aria-label="Real customer reviews carousel"] h3 { max-width: 100% !important; font-size: clamp(24px, 7vw, 32px) !important; letter-spacing: -0.035em !important; }
     #enquire { background: #0B0D0F !important; }
     .h001-offer-main { grid-template-columns: 1fr !important; }
     #enquire a[href*="wa.me"] { width: 100% !important; }
@@ -135,7 +135,7 @@
       <a href="#benefits" style="color: rgba(242,241,238,0.7);">Benefits</a>
       <a href="#comparison" style="color: rgba(242,241,238,0.7);">Compare</a>
       <a href="#who-for" style="color: rgba(242,241,238,0.7);">Who It's For</a>
-      <a href="#trust" style="color: rgba(242,241,238,0.7);">Trust</a>
+      <a href="#confidence" style="color: rgba(242,241,238,0.7);">Confidence</a>
       <a href="#specifications" style="color: rgba(242,241,238,0.7);">Specifications</a>
       <a href="#faq" style="color: rgba(242,241,238,0.7);">FAQ</a>
     </nav>
@@ -882,7 +882,7 @@
     </div>
   </section>
 
-  <section id="trust" style="position: relative; overflow: hidden; padding: clamp(64px, 8vw, 136px) clamp(20px, 4vw, 72px); background: #0B0D0F; border-top: 1px solid rgba(242,241,238,0.1); border-bottom: 1px solid rgba(242,241,238,0.1);">
+  <section id="confidence" style="position: relative; overflow: hidden; padding: clamp(64px, 8vw, 136px) clamp(20px, 4vw, 72px); background: #0B0D0F; border-top: 1px solid rgba(242,241,238,0.1); border-bottom: 1px solid rgba(242,241,238,0.1);">
     <div style="position: absolute; inset: -18% -12% auto auto; width: min(760px, 86vw); height: min(760px, 86vw); background: radial-gradient(circle, rgba(111,210,240,0.16) 0%, rgba(11,13,15,0) 68%); pointer-events: none;"></div>
     <div style="position: absolute; inset: auto auto -28% -16%; width: min(720px, 82vw); height: min(720px, 82vw); background: radial-gradient(circle, rgba(201,169,106,0.14) 0%, rgba(11,13,15,0) 68%); pointer-events: none;"></div>
     <div style="position: relative; max-width: 1240px; margin: 0 auto;">
@@ -919,7 +919,7 @@
 
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: clamp(18px, 2.5vw, 28px); align-items: stretch; margin-bottom: clamp(30px, 4vw, 54px);">
         <article style="border: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.035); overflow: hidden;">
-          <img src="assets/h001-trust-demo-showroom.svg" alt="H001 product walkthrough and consultation scene" width="720" height="480" style="width: 100%; height: auto;" />
+          <img src="assets/h001-confidence-showroom.svg" alt="H001 product walkthrough and consultation scene" width="720" height="480" style="width: 100%; height: auto;" />
           <div style="padding: clamp(22px, 2.8vw, 32px);">
             <p style="margin: 0 0 10px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A96A;">See before deciding</p>
             <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: clamp(22px, 2.1vw, 30px); font-weight: 500; letter-spacing: -0.025em;">Experience the daily routine</h3>
@@ -927,7 +927,7 @@
           </div>
         </article>
         <article style="border: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.035); overflow: hidden;">
-          <img src="assets/h001-trust-installation.svg" alt="H001 installation and countertop placement checking" width="720" height="480" style="width: 100%; height: auto;" />
+          <img src="assets/h001-confidence-installation.svg" alt="H001 installation and countertop placement checking" width="720" height="480" style="width: 100%; height: auto;" />
           <div style="padding: clamp(22px, 2.8vw, 32px);">
             <p style="margin: 0 0 10px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: #6FD2F0;">Clear setup expectations</p>
             <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: clamp(22px, 2.1vw, 30px); font-weight: 500; letter-spacing: -0.025em;">Confirm fit and installation</h3>
@@ -935,7 +935,7 @@
           </div>
         </article>
         <article style="border: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.035); overflow: hidden;">
-          <img src="assets/h001-trust-support.svg" alt="H001 warranty and after-sales support" width="720" height="480" style="width: 100%; height: auto;" />
+          <img src="assets/h001-confidence-support.svg" alt="H001 warranty and after-sales support" width="720" height="480" style="width: 100%; height: auto;" />
           <div style="padding: clamp(22px, 2.8vw, 32px);">
             <p style="margin: 0 0 10px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A96A;">After-sales confidence</p>
             <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: clamp(22px, 2.1vw, 30px); font-weight: 500; letter-spacing: -0.025em;">Warranty and maintenance support</h3>
@@ -962,7 +962,7 @@
               <div>
                 <p aria-label="5 out of 5 stars" style="margin: 0 0 24px; color: #F5C84B; letter-spacing: 0.18em; font-size: 18px;">★★★★★</p>
                 <p style="margin: 0 0 16px; font-size: 42px; line-height: 0.7; color: #6FD2F0; font-family: 'Sora', sans-serif;">“</p>
-                <h3 style="margin: 0 0 16px; max-width: 20ch; font-family: 'Sora', sans-serif; font-size: clamp(28px, 3vw, 44px); line-height: 1.04; letter-spacing: -0.04em; font-weight: 500; color: #F2F1EE;">Our family trusts the WaterSource Hydrogen Minerals Functional Purifier daily.</h3>
+                <h3 style="margin: 0 0 16px; max-width: 20ch; font-family: 'Sora', sans-serif; font-size: clamp(28px, 3vw, 44px); line-height: 1.04; letter-spacing: -0.04em; font-weight: 500; color: #F2F1EE;">Our family uses the WaterSource Hydrogen Minerals Functional Purifier daily.</h3>
                 <p style="margin: 0; max-width: 64ch; font-size: clamp(16px, 1.3vw, 18px); line-height: 1.72; color: rgba(242,241,238,0.68);">Wendy shared that her family uses it every day and appreciates a cleaner, more comfortable drinking-water routine for the whole household.</p>
                 <p aria-hidden="true" style="position: absolute; right: clamp(24px, 4vw, 46px); bottom: 82px; margin: 0; font-size: clamp(48px, 5vw, 72px); line-height: 0.7; color: rgba(201,169,106,0.48); font-family: 'Sora', sans-serif;">”</p>
               </div>
@@ -1148,7 +1148,7 @@
         <a href="#specifications" style="color: rgba(242,241,238,0.6);">Specifications</a>
         <a href="#comparison" style="color: rgba(242,241,238,0.6);">Compare</a>
         <a href="#who-for" style="color: rgba(242,241,238,0.6);">Who it's for</a>
-        <a href="#trust" style="color: rgba(242,241,238,0.6);">Trust</a>
+        <a href="#confidence" style="color: rgba(242,241,238,0.6);">Confidence</a>
         <a href="#faq" style="color: rgba(242,241,238,0.6);">FAQ</a>
         <a href="https://wa.me/?text=Hi%20WaterSource%2C%20I%27m%20interested%20in%20the%20H001%20launch%20offer.%20Please%20share%20the%20package%20details%2C%20installation%20suitability%20and%20payment%20options." target="_blank" rel="noopener" style="color: rgba(242,241,238,0.6);">Enquire</a>
       </nav>
