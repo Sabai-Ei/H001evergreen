@@ -30,11 +30,11 @@
     100% { transform: translateX(0%); }
   }
   html, body { max-width: 100%; overflow-x: hidden; }
-  :root { --h001-nav-height: 82px; }
+  :root { --h001-nav-height: 75px; }
   .h001-nav-spacer { height: var(--h001-nav-height); }
   section[id], footer { scroll-margin-top: calc(var(--h001-nav-height) + 16px); }
   .h001-offer-main { display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(280px, 0.88fr); gap: clamp(24px, 5vw, 68px); align-items: start; }
-  @media (max-width: 1180px) and (min-width: 761px) { :root { --h001-nav-height: 108px; } }
+  @media (max-width: 1180px) and (min-width: 761px) { :root { --h001-nav-height: 75px; } header nav { gap: 12px !important; font-size: 12px !important; } header > div a { padding: 0 18px !important; font-size: 13px !important; } }
   @media (max-width: 900px) { #h001-sticky-cta[data-on="1"] { display: flex !important; } }
   .h001-benefits-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
   @media (max-width: 1020px) { .h001-benefits-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
@@ -49,7 +49,6 @@
     header nav { display: none !important; }
     header > div { width: 100% !important; display: grid !important; grid-template-columns: 1fr !important; gap: 10px !important; }
     header > div a { width: 100% !important; height: auto !important; min-height: 42px !important; padding: 0 10px !important; font-size: 13px !important; line-height: 1.25 !important; text-align: center !important; white-space: normal !important; }
-    header > div a:nth-child(2) { display: none !important; }
     section { padding-left: 16px !important; padding-right: 16px !important; }
     #top { padding-top: 38px !important; }
     #top p[style*="border-radius: 999px"] { width: 100% !important; white-space: normal !important; overflow-wrap: anywhere !important; }
@@ -103,7 +102,6 @@
   }
   @media (max-width: 420px) {
     header > div { grid-template-columns: 1fr !important; }
-    header > div a:nth-child(2) { display: none !important; }
     #h001-sticky-cta a { max-width: 46vw !important; white-space: normal !important; text-align: center !important; justify-content: center !important; }
   }
   @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
@@ -127,9 +125,9 @@
 </helmet>
 <div style="font-family: 'Manrope', system-ui, sans-serif; background: #0B0D0F; color: #F2F1EE;">
 
-  <header style="display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 18px clamp(20px, 4vw, 72px); border-bottom: 1px solid rgba(201,169,106,0.22); position: fixed; top: 0; left: 0; right: 0; width: 100%; background: rgba(11,13,15,0.92); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); z-index: 1000;">
+  <header style="display: flex; align-items: center; justify-content: space-between; gap: clamp(14px, 2vw, 24px); padding: 16px clamp(18px, 3vw, 56px); border-bottom: 1px solid rgba(201,169,106,0.22); position: fixed; top: 0; left: 0; right: 0; width: 100%; background: rgba(11,13,15,0.92); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); z-index: 1000;">
     <a href="#top" style="display: flex; align-items: center; flex: none;"><img src="assets/logo-watersource.png" alt="WaterSource — Life in Every Drop" style="height: 34px; width: auto; filter: brightness(0) invert(1);" /></a>
-    <nav aria-label="Section navigation" style="display: flex; flex-wrap: wrap; gap: 8px 26px; font-size: 14px;">
+    <nav aria-label="Section navigation" style="display: flex; flex: 1 1 auto; flex-wrap: nowrap; justify-content: center; gap: clamp(12px, 1.45vw, 22px); font-size: 13px; white-space: nowrap;">
       <a href="#overview" style="color: rgba(242,241,238,0.7);">Overview</a>
       <a href="#science" style="color: rgba(242,241,238,0.7);">Wellness</a>
       <a href="#hydrogen" style="color: rgba(242,241,238,0.7);">Technology</a>
@@ -142,8 +140,7 @@
       <a href="#faq" style="color: rgba(242,241,238,0.7);">FAQ</a>
     </nav>
     <div style="display: flex; align-items: center; flex: none; gap: 10px;">
-      <a href="https://wa.me/?text=Hi%20WaterSource%2C%20I%27m%20interested%20in%20the%20H001%20launch%20offer.%20Please%20share%20the%20package%20details%2C%20installation%20suitability%20and%20payment%20options." target="_blank" rel="noopener" style="display: inline-flex; align-items: center; justify-content: center; height: 44px; padding: 0 22px; border-radius: 4px; background: #C9A96A; color: #14100A; font-size: 14px; font-weight: 600;" style-hover="background: #DBBE84;">WhatsApp WaterSource</a>
-      <a href="https://wa.me/?text=Hi%20WaterSource%2C%20I%27m%20interested%20in%20the%20H001%20launch%20offer.%20Please%20share%20the%20package%20details%2C%20installation%20suitability%20and%20payment%20options." target="_blank" rel="noopener" style="display: inline-flex; align-items: center; justify-content: center; height: 44px; padding: 0 22px; border-radius: 4px; border: 1px solid rgba(242,241,238,0.28); color: #F2F1EE; font-size: 14px; font-weight: 500;" style-hover="border-color: rgba(242,241,238,0.6);">WhatsApp WaterSource</a>
+      <a href="https://wa.me/?text=Hi%20WaterSource%2C%20I%27m%20interested%20in%20the%20H001%20launch%20offer.%20Please%20share%20the%20package%20details%2C%20installation%20suitability%20and%20payment%20options." target="_blank" rel="noopener" style="display: inline-flex; align-items: center; justify-content: center; height: 42px; padding: 0 22px; border-radius: 4px; background: #C9A96A; color: #14100A; font-size: 14px; font-weight: 700; white-space: nowrap;" style-hover="background: #DBBE84;">WhatsApp WaterSource</a>
     </div>
   </header>
   <div class="h001-nav-spacer" aria-hidden="true"></div>
