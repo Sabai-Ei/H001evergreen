@@ -66,7 +66,10 @@
     #comparison > div > div:first-child,
     #comparison > div > div:nth-child(3),
     #confidence > div > div:first-child,
-    #confidence > div > div:last-child {
+    #confidence > div > div:last-child,
+    #problem > div[style*="max-width"] > div:first-child,
+    #problem > div[style*="max-width"] > div:nth-child(2),
+    #problem [role="list"] {
       grid-template-columns: 1fr !important;
     }
     #top div[style*="min-height: 520px"],
@@ -180,35 +183,55 @@
 
 
   <section id="problem" style="position: relative; overflow: hidden; padding: clamp(56px, 7vw, 104px) clamp(20px, 4vw, 72px); background: #0B0D0F; border-bottom: 1px solid rgba(242,241,238,0.1);">
-    <div style="position: absolute; inset: -18% auto auto -12%; width: min(620px, 78vw); height: min(620px, 78vw); background: radial-gradient(circle, rgba(201,169,106,0.12) 0%, rgba(11,13,15,0) 68%); pointer-events: none;"></div>
+    <div style="position: absolute; inset: -18% auto auto -12%; width: min(620px, 78vw); height: min(620px, 78vw); background: radial-gradient(circle, rgba(201,169,106,0.13) 0%, rgba(11,13,15,0) 68%); pointer-events: none;"></div>
+    <div style="position: absolute; inset: auto -16% -24% auto; width: min(620px, 76vw); height: min(620px, 76vw); background: radial-gradient(circle, rgba(111,210,240,0.12) 0%, rgba(11,13,15,0) 68%); pointer-events: none;"></div>
     <div style="position: relative; max-width: 1240px; margin: 0 auto;">
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr)); gap: clamp(28px, 5vw, 76px); align-items: end; margin-bottom: clamp(28px, 4vw, 52px);">
+      <div style="display: grid; grid-template-columns: minmax(0, 0.94fr) minmax(320px, 1.06fr); gap: clamp(28px, 5vw, 76px); align-items: end; margin-bottom: clamp(28px, 4vw, 52px);">
         <div>
-          <p style="margin: 0 0 16px; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #C9A96A;">The daily water problem</p>
-          <h2 style="margin: 0; font-family: 'Sora', sans-serif; font-weight: 300; font-size: clamp(32px, 4.2vw, 56px); line-height: 1.08; letter-spacing: -0.03em;">Filtered water alone may not solve the <span style="font-weight: 600;">whole routine</span></h2>
+          <p style="margin: 0 0 16px; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #C9A96A;">Beyond ordinary filtered water</p>
+          <h2 style="margin: 0; font-family: 'Sora', sans-serif; font-weight: 300; font-size: clamp(32px, 4.2vw, 56px); line-height: 1.08; letter-spacing: -0.03em;">Filtration gives you cleaner water. <span style="font-weight: 600;">Hydrogen enrichment gives your water a greater wellness purpose.</span></h2>
         </div>
-        <p style="margin: 0; font-size: clamp(16px, 1.2vw, 18px); line-height: 1.7; color: rgba(242,241,238,0.68);">Most homes and offices do not struggle with only one water issue. They need cleaner drinking water, convenient hot water, better daily hydration habits and a system that feels easy to maintain.</p>
+        <div style="display: grid; gap: 18px;">
+          <p style="margin: 0; font-size: clamp(16px, 1.2vw, 18px); line-height: 1.7; color: rgba(242,241,238,0.72);">Most water purifiers focus only on what they remove. WaterSource takes the next step — enriching purified water with dissolved molecular hydrogen to support everyday hydration, vitality, recovery and antioxidant defence.</p>
+          <p style="margin: 0; font-size: clamp(15px, 1.12vw, 17px); line-height: 1.72; color: rgba(242,241,238,0.62);">That means H001 is not just solving a water problem. It is designed to upgrade the whole drinking routine — cleaner source water, hydrogen-rich wellness hydration and instant temperature control from one premium system.</p>
+        </div>
       </div>
+
+      <div style="display: grid; grid-template-columns: minmax(0, 0.96fr) minmax(300px, 1.04fr); gap: clamp(22px, 3vw, 34px); align-items: stretch; margin-bottom: clamp(26px, 4vw, 48px);">
+        <div style="padding: clamp(22px, 3vw, 34px); border: 1px solid rgba(201,169,106,0.28); background: linear-gradient(135deg, rgba(201,169,106,0.12), rgba(111,210,240,0.055));">
+          <p style="margin: 0 0 14px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A96A;">More than dispensed water</p>
+          <h3 style="margin: 0; font-family: 'Sora', sans-serif; font-size: clamp(24px, 2.7vw, 36px); line-height: 1.1; letter-spacing: -0.03em; font-weight: 500; color: #F2F1EE;">H001 turns everyday drinking water into a wellness-focused routine.</h3>
+        </div>
+        <div role="list" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px;">
+          <div role="listitem" style="display: flex; gap: 10px; align-items: flex-start; padding: 14px 16px; border: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.045);"><span aria-hidden="true" style="color: #6FD2F0; font-weight: 800;">✓</span><span style="font-size: 14px; line-height: 1.55; color: rgba(242,241,238,0.76);">Enriches water with dissolved molecular hydrogen</span></div>
+          <div role="listitem" style="display: flex; gap: 10px; align-items: flex-start; padding: 14px 16px; border: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.045);"><span aria-hidden="true" style="color: #6FD2F0; font-weight: 800;">✓</span><span style="font-size: 14px; line-height: 1.55; color: rgba(242,241,238,0.76);">Provides hydrogen-rich hydration for wellness-focused routines</span></div>
+          <div role="listitem" style="display: flex; gap: 10px; align-items: flex-start; padding: 14px 16px; border: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.045);"><span aria-hidden="true" style="color: #C9A96A; font-weight: 800;">✓</span><span style="font-size: 14px; line-height: 1.55; color: rgba(242,241,238,0.76);">Supports the body’s natural antioxidant defences</span></div>
+          <div role="listitem" style="display: flex; gap: 10px; align-items: flex-start; padding: 14px 16px; border: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.045);"><span aria-hidden="true" style="color: #C9A96A; font-weight: 800;">✓</span><span style="font-size: 14px; line-height: 1.55; color: rgba(242,241,238,0.76);">Helps the body manage exercise-related oxidative stress</span></div>
+          <div role="listitem" style="display: flex; gap: 10px; align-items: flex-start; padding: 14px 16px; border: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.045);"><span aria-hidden="true" style="color: #6FD2F0; font-weight: 800;">✓</span><span style="font-size: 14px; line-height: 1.55; color: rgba(242,241,238,0.76);">Supports an active lifestyle and everyday recovery</span></div>
+          <div role="listitem" style="display: flex; gap: 10px; align-items: flex-start; padding: 14px 16px; border: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.045);"><span aria-hidden="true" style="color: #6FD2F0; font-weight: 800;">✓</span><span style="font-size: 14px; line-height: 1.55; color: rgba(242,241,238,0.76);">Delivers more than conventional filtered or temperature-controlled water</span></div>
+        </div>
+      </div>
+
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); border-top: 1px solid rgba(242,241,238,0.12); border-left: 1px solid rgba(242,241,238,0.12);">
         <article style="padding: clamp(22px, 3vw, 34px); border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);">
-          <p style="margin: 0 0 12px; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #6FD2F0;">Normal purifiers</p>
-          <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: 24px; font-weight: 500; letter-spacing: -0.02em;">Often filter only</h3>
-          <p style="margin: 0; font-size: 15px; line-height: 1.65; color: rgba(242,241,238,0.62);">A standard purifier can improve water quality, but it usually does not add hydrogen-rich water or provide instant hot water for daily use.</p>
+          <p style="margin: 0 0 12px; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #6FD2F0;">Purification only</p>
+          <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: 24px; font-weight: 500; letter-spacing: -0.02em;">Cleaner is only step one</h3>
+          <p style="margin: 0; font-size: 15px; line-height: 1.65; color: rgba(242,241,238,0.62);">A standard purifier can improve source water, but it usually stops before hydrogen enrichment, temperature control and visible maintenance confidence.</p>
         </article>
         <article style="padding: clamp(22px, 3vw, 34px); border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);">
-          <p style="margin: 0 0 12px; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #6FD2F0;">Bottled routines</p>
-          <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: 24px; font-weight: 500; letter-spacing: -0.02em;">Cost and clutter add up</h3>
-          <p style="margin: 0; font-size: 15px; line-height: 1.65; color: rgba(242,241,238,0.62);">Buying bottled water or bottled hydrogen water can become inconvenient, storage-heavy and expensive over time.</p>
+          <p style="margin: 0 0 12px; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #6FD2F0;">Bottled hydrogen water</p>
+          <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: 24px; font-weight: 500; letter-spacing: -0.02em;">Fresh matters more</h3>
+          <p style="margin: 0; font-size: 15px; line-height: 1.65; color: rgba(242,241,238,0.62);">Bottled routines can become expensive and storage-heavy, while hydrogen-rich water is best positioned as something made fresh for everyday use.</p>
         </article>
         <article style="padding: clamp(22px, 3vw, 34px); border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);">
-          <p style="margin: 0 0 12px; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #6FD2F0;">Kettles & dispensers</p>
-          <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: 24px; font-weight: 500; letter-spacing: -0.02em;">Waiting breaks the flow</h3>
-          <p style="margin: 0; font-size: 15px; line-height: 1.65; color: rgba(242,241,238,0.62);">Tea, coffee, milk and warm water still need a separate kettle or dispenser, adding extra devices and more waiting.</p>
+          <p style="margin: 0 0 12px; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #6FD2F0;">Separate hot water devices</p>
+          <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: 24px; font-weight: 500; letter-spacing: -0.02em;">Convenience should be built in</h3>
+          <p style="margin: 0; font-size: 15px; line-height: 1.65; color: rgba(242,241,238,0.62);">Tea, coffee, milk and warm water should not require a separate kettle or dispenser when one system can purify, enrich and heat on demand.</p>
         </article>
         <article style="padding: clamp(22px, 3vw, 34px); border-right: 1px solid rgba(242,241,238,0.12); border-bottom: 1px solid rgba(242,241,238,0.12); background: rgba(242,241,238,0.025);">
-          <p style="margin: 0 0 12px; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #6FD2F0;">Daily confidence</p>
-          <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: 24px; font-weight: 500; letter-spacing: -0.02em;">Maintenance is easy to forget</h3>
-          <p style="margin: 0; font-size: 15px; line-height: 1.65; color: rgba(242,241,238,0.62);">Families and workplaces need visible hygiene, filter reminders and simple upkeep, not another water appliance that is difficult to track.</p>
+          <p style="margin: 0 0 12px; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #6FD2F0;">Ongoing confidence</p>
+          <h3 style="margin: 0 0 12px; font-family: 'Sora', sans-serif; font-size: 24px; font-weight: 500; letter-spacing: -0.02em;">The routine must stay easy</h3>
+          <p style="margin: 0; font-size: 15px; line-height: 1.65; color: rgba(242,241,238,0.62);">Families and workplaces need visible hygiene, filter-life reminders and simple upkeep so the system remains easy to trust after installation.</p>
         </article>
       </div>
     </div>
