@@ -30,11 +30,16 @@
     100% { transform: translateX(0%); }
   }
   html, body { max-width: 100%; overflow-x: hidden; }
+  :root { --h001-nav-height: 82px; }
+  .h001-nav-spacer { height: var(--h001-nav-height); }
+  section[id], footer { scroll-margin-top: calc(var(--h001-nav-height) + 16px); }
+  @media (max-width: 1180px) and (min-width: 761px) { :root { --h001-nav-height: 108px; } }
   @media (max-width: 900px) { #h001-sticky-cta[data-on="1"] { display: flex !important; } }
   .h001-benefits-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
   @media (max-width: 1020px) { .h001-benefits-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   @media (max-width: 640px) { .h001-benefits-grid { grid-template-columns: 1fr; } }
   @media (max-width: 760px) {
+    :root { --h001-nav-height: 113px; }
     *, *::before, *::after { min-width: 0 !important; }
     body { padding-bottom: 82px; }
     header { display: grid !important; grid-template-columns: 1fr !important; align-items: start !important; gap: 12px !important; padding: 14px 16px !important; }
@@ -119,7 +124,7 @@
 </helmet>
 <div style="font-family: 'Manrope', system-ui, sans-serif; background: #0B0D0F; color: #F2F1EE;">
 
-  <header style="display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 18px clamp(20px, 4vw, 72px); border-bottom: 1px solid rgba(201,169,106,0.22); position: sticky; top: 0; background: rgba(11,13,15,0.88); backdrop-filter: blur(16px); z-index: 40;">
+  <header style="display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 18px clamp(20px, 4vw, 72px); border-bottom: 1px solid rgba(201,169,106,0.22); position: fixed; top: 0; left: 0; right: 0; width: 100%; background: rgba(11,13,15,0.92); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); z-index: 1000;">
     <a href="#top" style="display: flex; align-items: center; flex: none;"><img src="assets/logo-watersource.png" alt="WaterSource — Life in Every Drop" style="height: 34px; width: auto; filter: brightness(0) invert(1);" /></a>
     <nav aria-label="Section navigation" style="display: flex; flex-wrap: wrap; gap: 8px 26px; font-size: 14px;">
       <a href="#overview" style="color: rgba(242,241,238,0.7);">Overview</a>
@@ -138,6 +143,7 @@
       <a href="https://wa.me/?text=Hi%20WaterSource%2C%20I%27m%20interested%20in%20the%20H001%20launch%20offer.%20Please%20share%20the%20package%20details%2C%20installation%20suitability%20and%20payment%20options." target="_blank" rel="noopener" style="display: inline-flex; align-items: center; justify-content: center; height: 44px; padding: 0 22px; border-radius: 4px; border: 1px solid rgba(242,241,238,0.28); color: #F2F1EE; font-size: 14px; font-weight: 500;" style-hover="border-color: rgba(242,241,238,0.6);">WhatsApp WaterSource</a>
     </div>
   </header>
+  <div class="h001-nav-spacer" aria-hidden="true"></div>
 
   <section id="top" style="position: relative; overflow: hidden; padding: clamp(44px, 6vw, 88px) clamp(20px, 4vw, 72px) 0;">
     <div style="position: absolute; top: -10%; left: 52%; transform: translateX(-50%); width: min(1180px, 135%); height: 820px; background: radial-gradient(ellipse at 50% 36%, rgba(72,150,190,0.34) 0%, rgba(30,60,80,0.17) 42%, rgba(11,13,15,0) 72%); pointer-events: none;"></div>
