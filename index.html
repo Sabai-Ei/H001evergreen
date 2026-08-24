@@ -394,10 +394,7 @@
 </section>
 
   <section id="hygiene" style="padding: clamp(56px, 8vw, 128px) clamp(20px, 4vw, 72px);">
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(28px, 5vw, 72px); align-items: center;">
-      <div style="position: relative; border: 1px solid rgba(242,241,238,0.12); background: #06080A; overflow: hidden;">
-        <img src="assets/h001-visual-window.png" alt="Close-up of the H001 front visualization window, where Water Source hydrogen-rich water generation and the UVC indication can be seen" style="width: 100%; height: auto;" />
-      </div>
+    <div style="max-width: 820px; margin: 0 auto;">
       <div>
         <p style="margin: 0 0 16px; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #C9A96A;">Clean water, clean system</p>
         <h2 style="margin: 0 0 20px; font-family: 'Sora', sans-serif; font-weight: 300; font-size: clamp(32px, 4.2vw, 56px); line-height: 1.06; letter-spacing: -0.03em;">Hygiene you can <span style="font-weight: 600;">see working</span></h2>
@@ -510,7 +507,6 @@
         <img src="assets/h001-side.png" alt="WaterSource H001 water purifier, side profile showing the depth of the cabinet and the dispensing nozzle" style="{{ stage2 }}" />
         <img src="assets/h001-rear.png" alt="WaterSource H001 water purifier, rear view showing the water inlet and outlet connections" style="{{ stage3 }}" />
         <img src="assets/control-panel.png" alt="H001 touch control panel with status display, temperature keys, cup-size keys, child lock, intelligent wash and filter reset" style="{{ stage4 }}" />
-        <img src="assets/h001-visual-window.png" alt="H001 dispensing area and Water Source hydrogen visualization window in close-up" style="{{ stage5 }}" />
       </div>
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 12px;">
         <button type="button" onClick="{{ pick0 }}" aria-pressed="{{ on0 }}" style="{{ thumb0 }}" style-hover="border-color: rgba(20,23,26,0.4);">
@@ -533,10 +529,7 @@
           <img src="assets/control-panel.png" alt="" style="height: 88px; width: auto; margin: 0 auto 10px;" />
           <span style="display: block; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: #4C5259;">Control panel</span>
         </button>
-        <button type="button" onClick="{{ pick5 }}" aria-pressed="{{ on5 }}" style="{{ thumb5 }}" style-hover="border-color: rgba(20,23,26,0.4);">
-          <img src="assets/h001-visual-window.png" alt="" style="height: 88px; width: auto; margin: 0 auto 10px;" />
-          <span style="display: block; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: #4C5259;">Dispensing</span>
-        </button>
+
       </div>
     </div>
     <p class="h001-disclaimer">Disclaimer : Individual results may vary. Please consult your physician for medical advice.</p>
@@ -1070,8 +1063,7 @@ class Component extends DCLogic {
       { label: 'Front', src: 'assets/h001-front-display.png', alt: 'WaterSource H001 water purifier, front view showing the status display, temperature keys and Water Source hydrogen visualization window', caption: 'Front view with status display' },
       { label: 'Side', src: 'assets/h001-side.png', alt: 'WaterSource H001 water purifier, side profile showing the depth of the cabinet and the dispensing nozzle', caption: 'Side profile' },
       { label: 'Rear', src: 'assets/h001-rear.png', alt: 'WaterSource H001 water purifier, rear view showing the water inlet and outlet connections', caption: 'Rear with water connections' },
-      { label: 'Control panel', src: 'assets/control-panel.png', alt: 'H001 touch control panel with status display, temperature keys, cup-size keys, child lock, intelligent wash and filter reset', caption: 'Touch control panel' },
-      { label: 'Dispensing', src: 'assets/h001-visual-window.png', alt: 'H001 dispensing area and Water Source hydrogen visualization window in close-up', caption: 'Dispensing area and visualization window' }
+      { label: 'Control panel', src: 'assets/control-panel.png', alt: 'H001 touch control panel with status display, temperature keys, cup-size keys, child lock, intelligent wash and filter reset', caption: 'Touch control panel' }
     ];
   }
 
