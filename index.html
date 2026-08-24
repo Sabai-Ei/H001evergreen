@@ -771,7 +771,7 @@
               </button>
             </h3>
             <div style="{{ f.panelStyle }}">
-              <p style="margin: -8px 72px 28px clamp(58px, 6vw, 76px); max-width: 78ch; font-size: 16px; line-height: 1.75; color: rgba(242,241,238,0.66);">{{ f.a }}</p>
+              <p style="margin: -8px 72px 28px clamp(58px, 6vw, 76px); max-width: 78ch; font-size: 16px; line-height: 1.75; color: rgba(242,241,238,0.66); white-space: pre-line;">{{ f.a }}</p>
             </div>
           </div>
         </sc-for>
@@ -898,8 +898,24 @@ class Component extends DCLogic {
   faqData() {
     return [
       ['If hydrogen water is so good, why don’t hospitals use it?', 'That’s a very common question. In fact, hydrogen therapy is already being researched and used in Japan and other countries. For example, studies by Japanese scientist Dr. Shigeo Ohta have shown that hydrogen has selective antioxidant properties. In hospitals, hydrogen is mainly used in forms such as: Hydrogen inhalation (for stroke or ischemia research), and hydrogen-rich saline (in clinical trials). However, for something to become a standard hospital treatment, it usually takes: 10–20 years of clinical trials, regulatory approvals, and integration into medical systems. So it’s not that it doesn’t work — it’s still in the medical adoption phase. Hospitals focus on treatment. Hydrogen water is more about daily prevention and supporting the body.'],
-      ['Are there any side effects?', 'Hydrogen is one of the safest molecules in nature, and the body naturally produces hydrogen in the gut. Research so far has not shown toxicity or known side effects from molecular hydrogen at studied levels. The key reason often discussed in research is that hydrogen works as a selective antioxidant, helping neutralize harmful free radicals such as hydroxyl radicals without interfering with beneficial reactive species in the body. Hydrogen water is not a drug; it is a wellness approach based on a natural molecule the body is already familiar with.'],
-      ['Can people taking medication drink Water Source hydrogen-rich water?', 'Generally, hydrogen water is considered safe because hydrogen is not a drug and is not generally known to chemically interfere with medications. Its wellness role is to help support the body by addressing oxidative stress and inflammation pathways discussed in research. However, hydrogen water is not a replacement for medication. Medication addresses a diagnosed condition, while hydrogen water supports the body\'s daily wellness environment. If you are under medical care, pregnant, or managing a serious condition, consult your physician for personal advice.'],
+      ['Are there any side effects?', `Answer:
+Hydrogen is actually one of the safest molecules in nature.
+• Our body naturally produces hydrogen in the gut
+• Research so far shows no toxicity and no known side effects
+The key reason is:
+👉 Hydrogen works as a selective antioxidant
+This means:
+• It only neutralizes harmful free radicals (like hydroxyl radicals)
+• It does NOT interfere with beneficial reactive species in the body
+But it’s not a drug—it’s a natural molecule your body is already familiar with.`],
+      ['Can people taking medication drink hydrogen water?', `Answer:
+Yes, generally it is safe.
+• Hydrogen is not a drug, so it does not chemically interfere with medications
+• Its role is to help reduce oxidative stress and inflammation
+In many cases, this may actually help support the body during recovery.
+⚠️ Important to position correctly:
+Hydrogen water is not a replacement for medication — it is a supportive wellness approach.
+Medication addresses the condition, while hydrogen supports the body’s environment.`],
       ['Hydrogen dissipates quickly. If I bring it to work for 8–12 hours, is it still effective?', 'Yes, hydrogen dissipates over time, but the question is not zero or full; it is how much remains. Retention depends on the container, temperature and starting concentration. An open cup loses hydrogen quickly, while a sealed high-barrier bottle can retain hydrogen for hours. Heat speeds up loss. Practical advice: prepare it in the morning, use a well-sealed bottle, choose aluminum when possible, and drink within 4–6 hours for higher freshness and effectiveness. Fresh preparation is always best, but as long as some hydrogen remains, there is still potential wellness benefit.'],
       ['Is this a medical diagnosis?', 'No. This is not a medical diagnostic service. It is designed for general wellness awareness and should not replace medical advice, diagnosis or treatment from a qualified healthcare professional.'],
       ['Is the AI-powered health check safe?', 'Yes. The AI-powered health check is non-invasive and does not involve needles or radiation. It is intended to provide general wellness awareness and help you compare before-and-after trends.'],
