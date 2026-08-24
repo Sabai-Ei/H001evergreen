@@ -136,7 +136,7 @@
 {"@type":"Question","name":"What filtration system does the H001 use?","acceptedAnswer":{"@type":"Answer","text":"Three filter stages providing four layers of purification: a PAC composite filter, a 200G high-flux reverse osmosis membrane, and a natural trace mineralized carbon rod filter."}},
 {"@type":"Question","name":"How is Water Source hydrogen-rich water produced?","acceptedAnswer":{"@type":"Answer","text":"An independent electrolysis module electrolyses purified water to generate Water Source hydrogen. The SuperMix gas-liquid mixing system then shears the Water Source hydrogen into micro- and sub-micron bubbles in a confined high-speed water flow and dissolves it into the drinking water under pressure."}},
 {"@type":"Question","name":"How fast does the H001 heat water?","acceptedAnswer":{"@type":"Answer","text":"Third-generation rare-earth thick-film heating brings water to temperature in three seconds, heating on demand rather than storing and reheating hot water."}},
-{"@type":"Question","name":"What temperature options are available?","acceptedAnswer":{"@type":"Answer","text":"Six temperature stages, selected on the touch panel: Normal, Warm, Milk, Coffee, Tea and Boiling."}},
+{"@type":"Question","name":"What temperature options are available?","acceptedAnswer":{"@type":"Answer","text":"Six temperature stages, selected on the touch panel: 25°C Normal, 50°C Warm, 48°C Milk, 85°C Coffee, 90°C Tea and 100°C Boiling."}},
 {"@type":"Question","name":"Does the H001 use UVC sterilization?","acceptedAnswer":{"@type":"Answer","text":"Yes. A built-in UVC LED sterilizes inside the water tank and shows a visual indication on the panel when it is active."}},
 {"@type":"Question","name":"How often do the filters need replacing?","acceptedAnswer":{"@type":"Answer","text":"Based on the manufacturer material: PAC composite filter 6–12 months, 200G RO membrane 12–24 months, and natural trace mineralized carbon rod filter 6–12 months."}},
 {"@type":"Question","name":"How does the H001 indicate filter replacement?","acceptedAnswer":{"@type":"Answer","text":"The filter-life indicator stays unlit in normal use. At 80% of a filter's service life it flashes orange, and once the filter is due it stays lit orange."}},
@@ -438,7 +438,7 @@
         </div>
         <div style="padding: 20px 0; border-top: 1px solid rgba(20,23,26,0.14);">
           <h3 style="margin: 0 0 6px; font-family: 'Sora', sans-serif; font-size: 18px; font-weight: 500;">Six temperature keys</h3>
-          <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4C5259;">Normal, Warm, Milk, Coffee, Tea and Hot, each selected directly rather than through a menu.</p>
+          <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4C5259;">25°C Normal, 50°C Warm, 48°C Milk, 85°C Coffee, 90°C Tea and 100°C Boiling, each selected directly rather than through a menu.</p>
         </div>
         <div style="padding: 20px 0; border-top: 1px solid rgba(20,23,26,0.14);">
           <h3 style="margin: 0 0 6px; font-family: 'Sora', sans-serif; font-size: 18px; font-weight: 500;">Small Cup and Big Cup</h3>
@@ -1055,12 +1055,12 @@ class Component extends DCLogic {
 
   temps() {
     return [
-      { name: 'Normal', use: 'Room-temperature drinking water through the day.' },
-      { name: 'Warm', use: 'Warm water, including honey water.' },
-      { name: 'Milk', use: 'Milk preparation at a settled temperature.' },
-      { name: 'Coffee', use: 'Brewing coffee without boiling it.' },
-      { name: 'Tea', use: 'Green tea and other leaf teas.' },
-      { name: 'Boiling', use: 'Boiling water on demand, in three seconds.' }
+      { name: '25°C Normal', use: 'The healthiest hydrogen-rich mineral water.' },
+      { name: '50°C Warm', use: 'Warm hydrogen water to start an energetic day in the morning.' },
+      { name: '48°C Milk', use: 'Hydrogen-rich, healthier milk for your beloved baby reduces hormone sensitivity.' },
+      { name: '85°C Coffee', use: 'For barista-grade coffee.' },
+      { name: '90°C Tea', use: 'For premium tea.' },
+      { name: '100°C Boiling', use: 'For boiling mineral water.' }
     ];
   }
 
@@ -1084,7 +1084,7 @@ class Component extends DCLogic {
       ['What is Water Source hydrogen-rich water?', 'Water Source Hydrogen-rich water is drinking water with Water Source hydrogen gas dissolved into it. In the H001, Water Source hydrogen is generated on board from water that has already been purified.'],
       ['How is Water Source hydrogen-rich water produced?', 'An independent electrolysis module electrolyses purified water to generate Water Source hydrogen. The SuperMix gas-liquid mixing system then shears that Water Source hydrogen into micro- and sub-micron bubbles in a confined high-speed water flow and dissolves it into the drinking water under pressure.'],
       ['How fast does the H001 heat water?', 'Third-generation rare-earth thick-film heating brings water to temperature in three seconds, heating on demand rather than storing and reheating hot water.'],
-      ['What temperature options are available?', 'Six stages, each with its own key on the panel: Normal, Warm, Milk, Coffee, Tea and Boiling.'],
+      ['What temperature options are available?', 'Six stages, each with its own key on the panel: 25°C Normal, 50°C Warm, 48°C Milk, 85°C Coffee, 90°C Tea and 100°C Boiling.'],
       ['Does it use UVC sterilization?', 'Yes. A built-in UVC LED sterilizes inside the water tank and shows a visual indication on the panel when it is running.'],
       ['How often do the filters need replacing?', 'Based on the manufacturer material: PAC composite filter 6–12 months, 200G RO membrane 12–24 months, and natural trace mineralized carbon rod filter 6–12 months. Actual life depends on local water quality and usage.'],
       ['Can I ask about payment options or a product walkthrough?', 'Yes. The WhatsApp CTA is designed for low-friction questions about package details, installation suitability, promotion availability, payment options and whether a product walkthrough can be arranged.']
