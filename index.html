@@ -65,19 +65,18 @@
     .h001-menu-button span { display: block; width: 21px; height: 2px; border-radius: 999px; background: currentColor; pointer-events: none; box-shadow: 0 0 10px rgba(111,210,240,0.18); }
     .h001-floating-menu-button { display: none !important; }
     .h001-mobile-menu-overlay { position: fixed; inset: 0; background: rgba(5,7,8,0.48); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); opacity: 0; pointer-events: none; transition: opacity 0.24s ease; z-index: 1001; }
-    .h001-mobile-menu { display: flex !important; flex-direction: column; gap: 9px; position: fixed; top: 0; left: 0; width: min(64vw, 330px); min-width: 282px !important; height: 100vh; padding: 24px 24px 30px; background: #FBFAF6; color: #14100A; transform: translateX(-104%); transition: transform 0.28s ease; box-shadow: 28px 0 80px rgba(0,0,0,0.38); z-index: 1002; }
-    .h001-mobile-menu-header { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-bottom: 18px; }
-    .h001-mobile-menu-logo { height: 42px; width: auto; filter: brightness(0) saturate(100%) !important; opacity: 0.88; }
+    .h001-mobile-menu { display: flex !important; flex-direction: column; gap: 9px; position: fixed; top: 0; left: 0; width: min(64vw, 330px); min-width: 282px !important; height: 100vh; padding: 24px 24px 30px; background: #FBFAF6; color: #14100A; transform: translateX(-104%); transition: transform 0.28s ease; box-shadow: 28px 0 80px rgba(0,0,0,0.38); z-index: 1006; }
+    .h001-mobile-menu-header { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-bottom: 28px; }
+    .h001-mobile-menu-logo { height: 50px; width: auto; max-width: 148px; object-fit: contain; filter: brightness(0) saturate(100%) !important; opacity: 0.92; }
     .h001-mobile-menu-close { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border: 0; border-radius: 0; color: #14100A; cursor: pointer; background: transparent; padding: 0; }
     .h001-mobile-menu-close svg { width: 25px; height: 25px; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; }
-    .h001-mobile-menu a { color: rgba(38,59,56,0.90) !important; display: flex; align-items: center; justify-content: space-between; min-height: 48px; padding: 0 4px; border-radius: 12px; font-size: 16px; font-weight: 700; letter-spacing: 0.015em; text-transform: uppercase; }
-    .h001-mobile-menu a.h001-mobile-menu-home { color: #14100A !important; font-size: 17px; padding-top: 2px; }
-    .h001-mobile-menu a.h001-mobile-menu-featured { margin: 4px 0 2px; padding: 0 16px; border: 1px solid rgba(20,16,10,0.08); background: #FFFFFF; box-shadow: 0 8px 22px rgba(20,16,10,0.05); }
-    .h001-mobile-menu a:hover { background: rgba(201,169,106,0.12); color: #14100A !important; }
-    .h001-mobile-menu a.h001-mobile-menu-cta { justify-content: center; min-height: 54px; margin-top: 12px; padding: 0 16px; border-radius: 9px; background: #078C8F; color: #FFFFFF !important; text-transform: uppercase; letter-spacing: 0.01em; font-size: 16px; box-shadow: 0 14px 34px rgba(7,140,143,0.24); }
+    .h001-mobile-menu a { color: rgba(38,59,56,0.90) !important; display: flex; align-items: center; justify-content: space-between; min-height: 48px; padding: 0 8px; border: 1px solid transparent; border-radius: 12px; font-size: 16px; font-weight: 700; letter-spacing: 0.015em; text-transform: uppercase; box-shadow: none; background: transparent; }
+    .h001-mobile-menu a:hover, .h001-mobile-menu a:active { background: rgba(201,169,106,0.12); border-color: rgba(201,169,106,0.18); color: #14100A !important; }
+    .h001-mobile-menu a.h001-mobile-menu-cta { justify-content: center; min-height: 54px; margin-top: 12px; padding: 0 14px; border-radius: 9px; background: #C9A96A; border-color: #C9A96A; color: #14100A !important; text-transform: uppercase; letter-spacing: 0.005em; font-size: 14px; white-space: nowrap; box-shadow: 0 14px 34px rgba(201,169,106,0.24); }
+    .h001-mobile-menu a.h001-mobile-menu-cta:hover, .h001-mobile-menu a.h001-mobile-menu-cta:active { background: #DBBE84; border-color: #DBBE84; color: #14100A !important; }
     .h001-menu-open .h001-mobile-menu-overlay { display: block !important; opacity: 1; pointer-events: auto; }
     .h001-menu-open .h001-mobile-menu { transform: translateX(0); }
-    .h001-menu-open .h001-menu-button { opacity: 0; pointer-events: none; }
+    .h001-menu-open header > a, .h001-menu-open .h001-menu-button { opacity: 0; pointer-events: none; }
     section { padding-left: 16px !important; padding-right: 16px !important; }
     #top { padding-top: 38px !important; }
     #top p[style*="border-radius: 999px"] { width: 100% !important; white-space: normal !important; overflow-wrap: anywhere !important; }
@@ -178,8 +177,8 @@
         <img class="h001-mobile-menu-logo" src="assets/logo-watersource.png" alt="WaterSource" />
         <button class="h001-mobile-menu-close" type="button" aria-label="Close menu" onClick="{{ menuClose }}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" /></svg></button>
       </div>
-      <a class="h001-mobile-menu-home" href="#top" onClick="{{ menuClose }}">Home</a>
-      <a class="h001-mobile-menu-featured" href="#science" onClick="{{ menuClose }}">Wellness</a>
+      <a href="#top" onClick="{{ menuClose }}">Home</a>
+      <a href="#science" onClick="{{ menuClose }}">Wellness</a>
       <a href="#benefits" onClick="{{ menuClose }}">Benefits</a>
       <a href="#comparison" onClick="{{ menuClose }}">Compare</a>
       <a href="#who-for" onClick="{{ menuClose }}">Who It's For</a>
