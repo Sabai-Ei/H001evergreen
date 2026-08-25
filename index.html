@@ -50,16 +50,29 @@
   @media (max-width: 1180px) and (min-width: 761px) { :root { --h001-nav-height: 75px; } header nav { gap: 12px !important; font-size: 12px !important; } header > div a { padding: 0 18px !important; font-size: 13px !important; } }
   @media (max-width: 900px) { #h001-sticky-cta[data-on="1"] { display: flex !important; } }
   @media (max-width: 980px) and (min-width: 761px) { .h001-evidence-grid { grid-template-columns: 1fr !important; } .h001-h2-benefits { --orbit-x: min(350px, 36vw); --orbit-y: 270px; min-height: 660px; } .h001-benefit-node { width: 194px; min-height: 56px; font-size: 10.8px; gap: 8px; padding: 9px 10px; } .h001-benefit-icon { width: 34px; height: 34px; padding: 7px; } .h001-h2-glass { width: min(290px, 31vw); } }
-  @media (max-width: 760px) {
-    :root { --h001-nav-height: 113px; }
+  .h001-menu-toggle, .h001-menu-button, .h001-mobile-menu, .h001-mobile-menu-overlay, .h001-mobile-footer-contact { display: none; }
+  @media (max-width: 900px) {
+    :root { --h001-nav-height: 68px; }
     *, *::before, *::after { min-width: 0 !important; }
-    body { padding-bottom: 82px; }
-    header { display: grid !important; grid-template-columns: 1fr !important; align-items: start !important; gap: 12px !important; padding: 14px 16px !important; }
-    header > a { width: max-content !important; }
-    header > a img { height: 30px !important; }
-    header nav { display: none !important; }
-    header > div { width: 100% !important; display: grid !important; grid-template-columns: 1fr !important; gap: 10px !important; }
-    header > div a { width: 100% !important; height: auto !important; min-height: 42px !important; padding: 0 10px !important; font-size: 13px !important; line-height: 1.25 !important; text-align: center !important; white-space: normal !important; }
+    body { padding-bottom: 74px; }
+    header { display: flex !important; align-items: center !important; justify-content: space-between !important; gap: 14px !important; padding: 13px 16px !important; }
+    header > a { width: max-content !important; position: relative !important; z-index: 1003 !important; }
+    header > a img { height: 34px !important; }
+    header nav, header > div { display: none !important; }
+    .h001-menu-button { display: inline-flex !important; align-items: center; justify-content: center; flex-direction: column; gap: 5px; width: 44px; height: 44px; border-radius: 50%; border: 1px solid rgba(242,241,238,0.2); background: rgba(242,241,238,0.04); color: #F2F1EE; cursor: pointer; position: relative; z-index: 1003; appearance: none; padding: 0; }
+    .h001-menu-button span { display: block; width: 20px; height: 2px; border-radius: 999px; background: currentColor; }
+    .h001-menu-button svg { width: 23px; height: 23px; stroke: currentColor; stroke-width: 2; stroke-linecap: round; }
+    .h001-mobile-menu-overlay { position: fixed; inset: 0; background: rgba(5,7,8,0.46); backdrop-filter: blur(7px); -webkit-backdrop-filter: blur(7px); opacity: 0; pointer-events: none; transition: opacity 0.24s ease; z-index: 1001; }
+    .h001-mobile-menu { display: flex !important; flex-direction: column; gap: 6px; position: fixed; top: 0; left: 0; width: min(76vw, 330px); height: 100vh; padding: 22px 22px 28px; background: #F8F5ED; color: #14100A; transform: translateX(-104%); transition: transform 0.28s ease; box-shadow: 28px 0 80px rgba(0,0,0,0.36); z-index: 1002; }
+    .h001-mobile-menu-header { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-bottom: 22px; }
+    .h001-mobile-menu-logo { height: 42px; width: auto; filter: none !important; }
+    .h001-mobile-menu-close { display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 38px; border: 1px solid rgba(20,16,10,0.14); border-radius: 50%; color: #14100A; cursor: pointer; }
+    .h001-mobile-menu-close svg { width: 20px; height: 20px; stroke: currentColor; stroke-width: 2; stroke-linecap: round; }
+    .h001-mobile-menu a { color: rgba(20,16,10,0.82) !important; display: flex; align-items: center; justify-content: space-between; min-height: 46px; padding: 0 14px; border-radius: 10px; font-size: 15px; font-weight: 700; letter-spacing: 0.02em; text-transform: uppercase; }
+    .h001-mobile-menu a:hover { background: rgba(201,169,106,0.14); color: #14100A !important; }
+    .h001-mobile-menu a.h001-mobile-menu-cta { justify-content: center; min-height: 52px; margin-top: 14px; border-radius: 4px; background: #C9A96A; color: #14100A !important; text-transform: none; letter-spacing: 0; font-size: 16px; }
+    .h001-menu-toggle:checked ~ .h001-mobile-menu-overlay, .h001-menu-open .h001-mobile-menu-overlay { display: block !important; opacity: 1; pointer-events: auto; }
+    .h001-menu-toggle:checked ~ .h001-mobile-menu, .h001-menu-open .h001-mobile-menu { transform: translateX(0); }
     section { padding-left: 16px !important; padding-right: 16px !important; }
     #top { padding-top: 38px !important; }
     #top p[style*="border-radius: 999px"] { width: 100% !important; white-space: normal !important; overflow-wrap: anywhere !important; }
@@ -118,14 +131,21 @@
     #enquire { background: #0B0D0F !important; }
     .h001-offer-main { grid-template-columns: 1fr !important; }
     #enquire a[href*="wa.me"] { width: 100% !important; }
-    #h001-sticky-cta { gap: 10px !important; padding: 10px 14px !important; }
-    #h001-sticky-cta > div { min-width: 0 !important; }
-    #h001-sticky-cta a { flex: 0 0 auto !important; height: 44px !important; padding: 0 14px !important; font-size: 13px !important; white-space: nowrap !important; }
+    footer { padding: 34px 24px 28px !important; }
+    footer > div { display: grid !important; grid-template-columns: 1fr !important; justify-content: start !important; gap: 24px !important; }
+    footer img { height: 48px !important; margin-bottom: 18px !important; }
+    footer p { max-width: 100% !important; font-size: 16px !important; line-height: 1.65 !important; }
+    footer nav[aria-label="Footer navigation"] { display: none !important; }
+    .h001-mobile-footer-contact { display: grid !important; gap: 14px; padding-top: 2px; }
+    .h001-mobile-footer-contact h3 { margin: 0; padding-left: 12px; border-left: 3px solid #C9A96A; font-family: 'Sora', sans-serif; font-size: 16px; line-height: 1.3; color: #F2F1EE; }
+    .h001-mobile-footer-contact a { display: inline-flex; align-items: center; justify-content: center; width: 100%; min-height: 48px; border-radius: 4px; background: #C9A96A; color: #14100A !important; font-size: 15px; font-weight: 700; }
+    #h001-sticky-cta { justify-content: center !important; gap: 0 !important; padding: 10px 14px !important; }
+    #h001-sticky-cta > div { display: none !important; }
+    #h001-sticky-cta a { width: 100% !important; max-width: 340px !important; justify-content: center !important; flex: 0 1 340px !important; height: 48px !important; padding: 0 16px !important; font-size: 15px !important; white-space: nowrap !important; }
   }
   @media (max-width: 420px) {
     .h001-benefit-orbit { grid-template-columns: 1fr !important; }
-    header > div { grid-template-columns: 1fr !important; }
-    #h001-sticky-cta a { max-width: 46vw !important; white-space: normal !important; text-align: center !important; justify-content: center !important; }
+    #h001-sticky-cta a { max-width: 100% !important; white-space: normal !important; text-align: center !important; justify-content: center !important; }
   }
   @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
 </style>
@@ -149,6 +169,23 @@
     <div style="display: flex; align-items: center; flex: none; gap: 10px;">
       <a href="https://wa.me/6588391764?text=Hi%20WaterSource%2C%20I%27m%20interested%20in%20the%20H001%20launch%20offer.%20Please%20share%20the%20package%20details%2C%20installation%20suitability%20and%20payment%20options." target="_blank" rel="noopener" style="display: inline-flex; align-items: center; justify-content: center; height: 42px; padding: 0 22px; border-radius: 4px; background: #C9A96A; color: #14100A; font-size: 14px; font-weight: 700; white-space: nowrap;" style-hover="background: #DBBE84;">WhatsApp WaterSource</a>
     </div>
+    <input class="h001-menu-toggle" id="h001-menu-toggle" type="checkbox" aria-hidden="true" />
+    <button class="h001-menu-button" type="button" aria-label="Open menu" onclick="document.body.classList.add('h001-menu-open')"><span></span><span></span><span></span></button>
+    <label class="h001-mobile-menu-overlay" for="h001-menu-toggle" aria-label="Close menu" onclick="document.body.classList.remove('h001-menu-open')"></label>
+    <aside class="h001-mobile-menu" aria-label="Mobile navigation">
+      <div class="h001-mobile-menu-header">
+        <img class="h001-mobile-menu-logo" src="assets/logo-watersource.png" alt="WaterSource" />
+        <button class="h001-mobile-menu-close" type="button" aria-label="Close menu" onclick="document.body.classList.remove('h001-menu-open'); document.getElementById('h001-menu-toggle').checked=false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" /></svg></button>
+      </div>
+      <a href="#science" onclick="document.body.classList.remove('h001-menu-open'); document.getElementById('h001-menu-toggle').checked=false">Wellness</a>
+      <a href="#benefits" onclick="document.body.classList.remove('h001-menu-open'); document.getElementById('h001-menu-toggle').checked=false">Benefits</a>
+      <a href="#comparison" onclick="document.body.classList.remove('h001-menu-open'); document.getElementById('h001-menu-toggle').checked=false">Compare</a>
+      <a href="#who-for" onclick="document.body.classList.remove('h001-menu-open'); document.getElementById('h001-menu-toggle').checked=false">Who It's For</a>
+      <a href="#confidence" onclick="document.body.classList.remove('h001-menu-open'); document.getElementById('h001-menu-toggle').checked=false">Testimonials</a>
+      <a href="#specifications" onclick="document.body.classList.remove('h001-menu-open'); document.getElementById('h001-menu-toggle').checked=false">Specifications</a>
+      <a href="#faq" onclick="document.body.classList.remove('h001-menu-open'); document.getElementById('h001-menu-toggle').checked=false">FAQ</a>
+      <a class="h001-mobile-menu-cta" href="https://wa.me/6588391764?text=Hi%20WaterSource%2C%20I%27m%20interested%20in%20the%20H001%20launch%20offer.%20Please%20share%20the%20package%20details%2C%20installation%20suitability%20and%20payment%20options." target="_blank" rel="noopener">WhatsApp WaterSource</a>
+    </aside>
   </header>
   <div class="h001-nav-spacer" aria-hidden="true"></div>
 
@@ -819,6 +856,10 @@
         <a href="#faq" style="color: rgba(242,241,238,0.6);">FAQ</a>
         <a href="https://wa.me/6588391764?text=Hi%20WaterSource%2C%20I%27m%20interested%20in%20the%20H001%20launch%20offer.%20Please%20share%20the%20package%20details%2C%20installation%20suitability%20and%20payment%20options." target="_blank" rel="noopener" style="color: rgba(242,241,238,0.6);">Enquire</a>
       </nav>
+      <div class="h001-mobile-footer-contact">
+        <h3>Get in Touch</h3>
+        <a href="https://wa.me/6588391764?text=Hi%20WaterSource%2C%20I%27m%20interested%20in%20the%20H001%20launch%20offer.%20Please%20share%20the%20package%20details%2C%20installation%20suitability%20and%20payment%20options." target="_blank" rel="noopener">WhatsApp WaterSource</a>
+      </div>
     </div>
   </footer>
 
