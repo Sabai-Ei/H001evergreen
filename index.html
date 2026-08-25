@@ -100,6 +100,11 @@
     #specifications table, #specifications tbody, #specifications tr, #specifications th, #specifications td { display: block !important; width: 100% !important; }
     #specifications th { padding: 16px 0 4px !important; border-bottom: 0 !important; }
     #specifications td { padding: 0 0 16px !important; }
+    #who-for .h001-who-intro { grid-template-columns: 1fr !important; text-align: center !important; align-items: center !important; gap: 18px !important; }
+    #who-for .h001-who-intro > div,
+    #who-for .h001-who-intro > p { max-width: 680px !important; margin-left: auto !important; margin-right: auto !important; }
+    #who-for .h001-who-intro p,
+    #who-for .h001-who-intro h2 { text-align: center !important; }
     #who-for > div[style*="repeat(auto-fit, minmax(min(100%, 420px)"] { grid-template-columns: 1fr !important; }
     #confidence [aria-label="Real customer reviews carousel"] article { min-height: 500px !important; padding: 24px 20px 48px !important; }
     #confidence [aria-label="Real customer reviews carousel"] h3 { max-width: 100% !important; font-size: clamp(24px, 7vw, 32px) !important; letter-spacing: -0.035em !important; }
@@ -504,8 +509,8 @@
       <p style="margin: 0 0 16px; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #C9A96A;">Technical specifications</p>
       <h2 style="margin: 0; font-family: 'Sora', sans-serif; font-weight: 300; font-size: clamp(32px, 4.2vw, 56px); line-height: 1.08; letter-spacing: -0.03em;">H001 <span style="font-weight: 600;">at a glance</span></h2>
     </div>
-    <table style="width: 100%; border-collapse: collapse; font-size: 16px;">
-      <caption style="text-align: left; padding-bottom: 16px; font-size: 14px; color: rgba(242,241,238,0.5);">WaterSource H001 — product parameters as stated in the manufacturer documentation.</caption>
+    <p style="margin: 0 0 16px; width: 100%; max-width: 620px; font-size: 14px; line-height: 1.7; color: rgba(242,241,238,0.5);">WaterSource H001 — product parameters as stated in the manufacturer documentation.</p>
+    <table aria-label="WaterSource H001 product parameters" style="width: 100%; border-collapse: collapse; font-size: 16px;">
       <tbody>
         <tr><th scope="row" style="text-align: left; font-weight: 500; padding: 16px 24px 16px 0; border-top: 1px solid rgba(242,241,238,0.12); color: rgba(242,241,238,0.6); width: 42%;">Product name</th><td style="padding: 16px 0; border-top: 1px solid rgba(242,241,238,0.12);">Alkaline Water Source Hydrogen-Rich Water Purifier</td></tr>
         <tr><th scope="row" style="text-align: left; font-weight: 500; padding: 16px 24px 16px 0; border-top: 1px solid rgba(242,241,238,0.12); color: rgba(242,241,238,0.6);">Product model</th><td style="padding: 16px 0; border-top: 1px solid rgba(242,241,238,0.12);">H001</td></tr>
@@ -547,7 +552,7 @@
   <section id="who-for" style="position: relative; overflow: hidden; background: #F5F4F1; color: #14171A; padding: clamp(64px, 8vw, 136px) clamp(20px, 4vw, 72px);">
     <div style="position: absolute; inset: -22% auto auto -14%; width: min(700px, 82vw); height: min(700px, 82vw); background: radial-gradient(circle, rgba(201,169,106,0.18) 0%, rgba(245,244,241,0) 68%); pointer-events: none;"></div>
     <div style="position: absolute; inset: auto -14% -26% auto; width: min(760px, 86vw); height: min(760px, 86vw); background: radial-gradient(circle, rgba(111,210,240,0.18) 0%, rgba(245,244,241,0) 68%); pointer-events: none;"></div>
-    <div style="position: relative; display: grid; grid-template-columns: minmax(0, 0.95fr) minmax(280px, 0.55fr); gap: clamp(28px, 5vw, 72px); align-items: end; margin-bottom: clamp(32px, 5vw, 64px);">
+    <div class="h001-who-intro" style="position: relative; display: grid; grid-template-columns: minmax(0, 0.95fr) minmax(280px, 0.55fr); gap: clamp(28px, 5vw, 72px); align-items: end; margin-bottom: clamp(32px, 5vw, 64px);">
       <div>
         <p style="margin: 0 0 16px; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #9A7F45;">Who is this for?</p>
         <h2 style="margin: 0; font-family: 'Sora', sans-serif; font-weight: 300; font-size: clamp(34px, 4.6vw, 64px); line-height: 1.04; letter-spacing: -0.04em;">Made for people who want a better water routine</h2>
