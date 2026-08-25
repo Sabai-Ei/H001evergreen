@@ -31,17 +31,17 @@
   .h001-premium-heading { color: #F2F1EE; text-shadow: 0 18px 64px rgba(111,210,240,0.16); }
   .h001-heading-gradient { display: inline; font-weight: 700; background: linear-gradient(100deg, #F6E8C0 0%, #C9A96A 35%, #F2F1EE 58%, #6FD2F0 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
   .h001-disclaimer { max-width: 1240px; margin: clamp(20px, 3vw, 34px) auto 0; font-size: 16px; line-height: 1.65; color: currentColor; opacity: 0.64; }
+
+  .h001-testimonial-section { position: relative; overflow: hidden; padding: clamp(64px, 8vw, 136px) clamp(20px, 4vw, 72px); background: #0B0D0F; border-top: 1px solid rgba(242,241,238,0.1); border-bottom: 1px solid rgba(242,241,238,0.1); }
+  .h001-testimonial-shell { position: relative; overflow: hidden; max-width: 1120px; margin: 0 auto; border: 1px solid rgba(242,241,238,0.13); background: linear-gradient(135deg, rgba(255,255,255,0.07), rgba(255,255,255,0.025)); box-shadow: 0 28px 80px rgba(0,0,0,0.26); }
+  .h001-testimonial-card { position: relative; width: 100%; flex: 0 0 100%; display: grid; grid-template-columns: minmax(280px, 0.42fr) minmax(0, 0.58fr); min-height: 560px; }
+  .h001-testimonial-media { position: relative; min-height: 560px; background: rgba(255,255,255,0.06); overflow: hidden; }
+  .h001-testimonial-media img { width: 100%; height: 100%; min-height: 560px; object-fit: contain; object-position: center; background: rgba(5,7,8,0.74); }
+  .h001-testimonial-copy { position: relative; padding: clamp(28px, 4.4vw, 58px); display: grid; align-content: space-between; gap: 28px; }
+  .h001-testimonial-quote { margin: 0; font-size: clamp(16px, 1.32vw, 18px); line-height: 1.74; color: rgba(242,241,238,0.74); white-space: pre-line; }
+  .h001-testimonial-byline { display: grid; gap: 5px; padding-left: 16px; border-left: 2px solid rgba(201,169,106,0.66); }
   @keyframes h001-rise { 0% { transform: translateY(14px); opacity: 0; } 60% { opacity: 0.9; } 100% { transform: translateY(-46px); opacity: 0; } }
   @keyframes h001-sweep { 0% { transform: translateX(-100%); } 100% { transform: translateX(100%); } }
-  @keyframes h001-testimonial-slide {
-    0%, 12% { transform: translateX(0%); }
-    16.6%, 28.6% { transform: translateX(-100%); }
-    33.2%, 45.2% { transform: translateX(-200%); }
-    49.8%, 61.8% { transform: translateX(-300%); }
-    66.4%, 78.4% { transform: translateX(-400%); }
-    83%, 95% { transform: translateX(-500%); }
-    100% { transform: translateX(0%); }
-  }
   html, body { max-width: 100%; overflow-x: hidden; }
   :root { --h001-nav-height: 75px; }
   .h001-nav-spacer { height: var(--h001-nav-height); }
@@ -93,8 +93,6 @@
     #who-for > div:first-of-type,
     #comparison > div > div:first-child,
     #comparison > div > div:nth-child(3),
-    #confidence > div > div:first-child,
-    #confidence > div > div:last-child,
     #problem > div[style*="max-width"] > div:first-child,
     #problem > div[style*="max-width"] > div:nth-child(2),
     #problem [role="list"] {
@@ -123,8 +121,11 @@
     #who-for .h001-who-intro p,
     #who-for .h001-who-intro h2 { text-align: center !important; }
     #who-for > div[style*="repeat(auto-fit, minmax(min(100%, 420px)"] { grid-template-columns: 1fr !important; }
-    #confidence [aria-label="Real customer reviews carousel"] article { min-height: 500px !important; padding: 24px 20px 48px !important; }
-    #confidence [aria-label="Real customer reviews carousel"] h3 { max-width: 100% !important; font-size: clamp(24px, 7vw, 32px) !important; letter-spacing: -0.035em !important; }
+    .h001-testimonial-card { grid-template-columns: 1fr !important; min-height: auto !important; }
+    .h001-testimonial-media { min-height: 300px !important; }
+    .h001-testimonial-media img { min-height: 300px !important; height: 300px !important; }
+    .h001-testimonial-copy { padding: 24px 20px 52px !important; }
+    .h001-testimonial-copy h3 { max-width: 100% !important; font-size: clamp(24px, 7vw, 32px) !important; letter-spacing: -0.035em !important; }
     .h001-h2-benefits { min-height: auto !important; display: flex !important; flex-direction: column !important; gap: 18px !important; }
     .h001-h2-benefits::before, .h001-h2-benefits::after, .h001-benefit-node::after { display: none !important; }
     .h001-h2-glass { position: relative !important; left: auto !important; top: auto !important; transform: none !important; width: min(78vw, 320px) !important; margin: 0 auto !important; }
@@ -655,89 +656,106 @@
     <p class="h001-disclaimer">Disclaimer : Individual results may vary. Please consult your physician for medical advice.</p>
 </section>
 
-  <section id="confidence" style="position: relative; overflow: hidden; padding: clamp(64px, 8vw, 136px) clamp(20px, 4vw, 72px); background: #0B0D0F; border-top: 1px solid rgba(242,241,238,0.1); border-bottom: 1px solid rgba(242,241,238,0.1);">
+  <section id="confidence" class="h001-testimonial-section">
     <div style="position: absolute; inset: -18% -12% auto auto; width: min(760px, 86vw); height: min(760px, 86vw); background: radial-gradient(circle, rgba(111,210,240,0.16) 0%, rgba(11,13,15,0) 68%); pointer-events: none;"></div>
     <div style="position: absolute; inset: auto auto -28% -16%; width: min(720px, 82vw); height: min(720px, 82vw); background: radial-gradient(circle, rgba(201,169,106,0.14) 0%, rgba(11,13,15,0) 68%); pointer-events: none;"></div>
     <div style="position: relative; max-width: 1240px; margin: 0 auto;">
       <div style="max-width: 840px; margin: 0 auto clamp(30px, 5vw, 58px); text-align: center;">
         <p style="margin: 0 0 16px; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #C9A96A;">Customer testimonials</p>
         <h2 style="margin: 0 0 18px; font-family: 'Sora', sans-serif; font-weight: 300; font-size: clamp(34px, 4.8vw, 66px); line-height: 1.04; letter-spacing: -0.04em; color: #F2F1EE;">Real stories from WaterSource customers.</h2>
-        <p style="margin: 0 auto; max-width: 680px; font-size: clamp(16px, 1.25vw, 18px); line-height: 1.72; color: rgba(242,241,238,0.66);">Hear how families and everyday users make WaterSource hydrogen-rich water part of a cleaner, more comfortable daily drinking-water routine.</p>
+        <p style="margin: 0 auto; max-width: 700px; font-size: clamp(16px, 1.25vw, 18px); line-height: 1.72; color: rgba(242,241,238,0.66);">Hear how customers made WaterSource alkaline, acidic and hydrogen-rich water part of their everyday wellness routines.</p>
       </div>
 
-      <div aria-label="Real customer reviews carousel" style="position: relative; overflow: hidden; max-width: 980px; margin: 0 auto; border: 1px solid rgba(242,241,238,0.13); background: linear-gradient(135deg, rgba(255,255,255,0.07), rgba(255,255,255,0.025)); box-shadow: 0 28px 80px rgba(0,0,0,0.26);">
-
-          <div style="position: absolute; inset: 0; background: radial-gradient(circle at 12% 18%, rgba(111,210,240,0.15), transparent 34%), radial-gradient(circle at 86% 88%, rgba(201,169,106,0.16), transparent 38%); pointer-events: none;"></div>
-          <div style="{{ testimonialTrackStyle }}">
-            <article style="position: relative; width: 100%; flex: 0 0 100%; padding: clamp(24px, 4vw, 46px); min-height: 430px; display: grid; align-content: space-between; gap: 28px;">
-              <div>
-                <p aria-label="5 out of 5 stars" style="margin: 0 0 24px; color: #F5C84B; letter-spacing: 0.18em; font-size: 18px;">★★★★★</p>
-                <p style="margin: 0 0 16px; font-size: 42px; line-height: 0.7; color: #6FD2F0; font-family: 'Sora', sans-serif;">“</p>
-                <h3 style="margin: 0 0 16px; max-width: 18ch; font-family: 'Sora', sans-serif; font-size: clamp(28px, 3vw, 44px); line-height: 1.04; letter-spacing: -0.04em; font-weight: 500; color: #F2F1EE;">Drinking WaterSource hydrogen-rich water supports my daily routine.</h3>
-                <p style="margin: 0; max-width: 64ch; font-size: clamp(16px, 1.3vw, 18px); line-height: 1.72; color: rgba(242,241,238,0.68);">Leo shared that after making WaterSource hydrogen-rich water part of his daily intake, he felt it helped him stay consistent with hydration and everyday wellness habits.</p>
-                <p aria-hidden="true" style="position: absolute; right: clamp(24px, 4vw, 46px); bottom: 82px; margin: 0; font-size: clamp(48px, 5vw, 72px); line-height: 0.7; color: rgba(201,169,106,0.48); font-family: 'Sora', sans-serif;">”</p>
+      <div aria-label="Real customer reviews carousel" class="h001-testimonial-shell">
+        <div style="position: absolute; inset: 0; background: radial-gradient(circle at 12% 18%, rgba(111,210,240,0.15), transparent 34%), radial-gradient(circle at 86% 88%, rgba(201,169,106,0.16), transparent 38%); pointer-events: none;"></div>
+        <div style="{{ testimonialTrackStyle }}">
+            <article class="h001-testimonial-card">
+              <div class="h001-testimonial-media">
+                <img src="assets/testimonials/mdm-jiang-pei-ling-eczema-before-after.jpg" alt="Mdm Jiang Pei Ling customer testimonial photo for WaterSource" width="1280" height="720" loading="lazy" />
               </div>
-              <footer style="display: grid; gap: 4px; padding-left: 16px; border-left: 2px solid rgba(201,169,106,0.66);"><strong style="display: block; font-size: 17px; color: #F2F1EE;">Leo</strong><span style="font-size: 14px; color: rgba(242,241,238,0.50);">WaterSource Hydrogen-rich water user</span></footer>
-            </article>
-            <article style="position: relative; width: 100%; flex: 0 0 100%; padding: clamp(24px, 4vw, 46px); min-height: 430px; display: grid; align-content: space-between; gap: 28px;">
-              <div>
-                <p aria-label="5 out of 5 stars" style="margin: 0 0 24px; color: #F5C84B; letter-spacing: 0.18em; font-size: 18px;">★★★★★</p>
-                <p style="margin: 0 0 16px; font-size: 42px; line-height: 0.7; color: #6FD2F0; font-family: 'Sora', sans-serif;">“</p>
-                <h3 style="margin: 0 0 16px; max-width: 20ch; font-family: 'Sora', sans-serif; font-size: clamp(28px, 3vw, 44px); line-height: 1.04; letter-spacing: -0.04em; font-weight: 500; color: #F2F1EE;">Our family uses the WaterSource Hydrogen Minerals Functional Purifier daily.</h3>
-                <p style="margin: 0; max-width: 64ch; font-size: clamp(16px, 1.3vw, 18px); line-height: 1.72; color: rgba(242,241,238,0.68);">Wendy shared that her family uses it every day and appreciates a cleaner, more comfortable drinking-water routine for the whole household.</p>
-                <p aria-hidden="true" style="position: absolute; right: clamp(24px, 4vw, 46px); bottom: 82px; margin: 0; font-size: clamp(48px, 5vw, 72px); line-height: 0.7; color: rgba(201,169,106,0.48); font-family: 'Sora', sans-serif;">”</p>
+              <div class="h001-testimonial-copy">
+                <div>
+                  <p aria-label="5 out of 5 stars" style="margin: 0 0 24px; color: #F5C84B; letter-spacing: 0.18em; font-size: 18px;">★★★★★</p>
+                  <p style="margin: 0 0 16px; font-size: 42px; line-height: 0.7; color: #6FD2F0; font-family: 'Sora', sans-serif;">“</p>
+                  <h3 style="margin: 0 0 18px; max-width: 22ch; font-family: 'Sora', sans-serif; font-size: clamp(28px, 3vw, 44px); line-height: 1.04; letter-spacing: -0.04em; font-weight: 500; color: #F2F1EE;">A household eczema experience after switching to WaterSource alkaline water.</h3>
+                  <p class="h001-testimonial-quote">In year 2000, my husband had eczema and was under oral medication and applied external cream prescribed by the doctor.
+The eczema condition did not improve and due to the itchy and scaly skin, there was skin tear and scarring due to scratching.
+September of 2010, I purchased a Watersource alkaline ionizer and after using the product, my husband eczema condition improved so much that medication can be stopped and the scar disappear.</p>
+                  <p aria-hidden="true" style="position: absolute; right: clamp(24px, 4vw, 46px); bottom: 88px; margin: 0; font-size: clamp(48px, 5vw, 72px); line-height: 0.7; color: rgba(201,169,106,0.48); font-family: 'Sora', sans-serif;">”</p>
+                </div>
+                <footer class="h001-testimonial-byline"><strong style="display: block; font-size: 17px; color: #F2F1EE;">Mdm Jiang Pei Ling</strong><span style="font-size: 14px; color: rgba(242,241,238,0.50);">WaterSource alkaline water customer</span></footer>
               </div>
-              <footer style="display: grid; gap: 4px; padding-left: 16px; border-left: 2px solid rgba(201,169,106,0.66);"><strong style="display: block; font-size: 17px; color: #F2F1EE;">Wendy Yap</strong><span style="font-size: 14px; color: rgba(242,241,238,0.50);">Family customer</span></footer>
             </article>
-            <article style="position: relative; width: 100%; flex: 0 0 100%; padding: clamp(24px, 4vw, 46px); min-height: 430px; display: grid; align-content: space-between; gap: 28px;">
-              <div>
-                <p aria-label="5 out of 5 stars" style="margin: 0 0 24px; color: #F5C84B; letter-spacing: 0.18em; font-size: 18px;">★★★★★</p>
-                <p style="margin: 0 0 16px; font-size: 42px; line-height: 0.7; color: #6FD2F0; font-family: 'Sora', sans-serif;">“</p>
-                <h3 style="margin: 0 0 16px; max-width: 20ch; font-family: 'Sora', sans-serif; font-size: clamp(28px, 3vw, 44px); line-height: 1.04; letter-spacing: -0.04em; font-weight: 500; color: #F2F1EE;">Our mood feels much better, especially when waking up.</h3>
-                <p style="margin: 0; max-width: 64ch; font-size: clamp(16px, 1.3vw, 18px); line-height: 1.72; color: rgba(242,241,238,0.68);">Jeremy and Yean shared that they made H2 water part of their first-week routine and felt more alert, active and mobile through the day.</p>
-                <p aria-hidden="true" style="position: absolute; right: clamp(24px, 4vw, 46px); bottom: 82px; margin: 0; font-size: clamp(48px, 5vw, 72px); line-height: 0.7; color: rgba(201,169,106,0.48); font-family: 'Sora', sans-serif;">”</p>
+            <article class="h001-testimonial-card">
+              <div class="h001-testimonial-media">
+                <img src="assets/testimonials/kelvin-kuan-testimonial.jpg" alt="Kelvin Kuan customer testimonial photo for WaterSource" width="1280" height="720" loading="lazy" />
               </div>
-              <footer style="display: grid; gap: 4px; padding-left: 16px; border-left: 2px solid rgba(201,169,106,0.66);"><strong style="display: block; font-size: 17px; color: #F2F1EE;">Jeremy Loh &amp; Yean Cheong</strong><span style="font-size: 14px; color: rgba(242,241,238,0.50);">WaterSource Hydrogen water users</span></footer>
-            </article>
-            <article style="position: relative; width: 100%; flex: 0 0 100%; padding: clamp(24px, 4vw, 46px); min-height: 430px; display: grid; align-content: space-between; gap: 28px;">
-              <div>
-                <p aria-label="5 out of 5 stars" style="margin: 0 0 24px; color: #F5C84B; letter-spacing: 0.18em; font-size: 18px;">★★★★★</p>
-                <p style="margin: 0 0 16px; font-size: 42px; line-height: 0.7; color: #6FD2F0; font-family: 'Sora', sans-serif;">“</p>
-                <h3 style="margin: 0 0 16px; max-width: 20ch; font-family: 'Sora', sans-serif; font-size: clamp(28px, 3vw, 44px); line-height: 1.04; letter-spacing: -0.04em; font-weight: 500; color: #F2F1EE;">My kids are much better in their daily wellness routine.</h3>
-                <p style="margin: 0; max-width: 64ch; font-size: clamp(16px, 1.3vw, 18px); line-height: 1.72; color: rgba(242,241,238,0.68);">Jacinta shared that since having the water filter at home, her household feels more confident about daily hydration and family self-care.</p>
-                <p aria-hidden="true" style="position: absolute; right: clamp(24px, 4vw, 46px); bottom: 82px; margin: 0; font-size: clamp(48px, 5vw, 72px); line-height: 0.7; color: rgba(201,169,106,0.48); font-family: 'Sora', sans-serif;">”</p>
+              <div class="h001-testimonial-copy">
+                <div>
+                  <p aria-label="5 out of 5 stars" style="margin: 0 0 24px; color: #F5C84B; letter-spacing: 0.18em; font-size: 18px;">★★★★★</p>
+                  <p style="margin: 0 0 16px; font-size: 42px; line-height: 0.7; color: #6FD2F0; font-family: 'Sora', sans-serif;">“</p>
+                  <h3 style="margin: 0 0 18px; max-width: 22ch; font-family: 'Sora', sans-serif; font-size: clamp(28px, 3vw, 44px); line-height: 1.04; letter-spacing: -0.04em; font-weight: 500; color: #F2F1EE;">Better everyday hydration and energy after starting alkaline water.</h3>
+                  <p class="h001-testimonial-quote">I came to know about WaterSource ionizer from a friend, Sarah Ng, and I’m thankful to her. She’s a businesswoman and has many businesses. I was often intrigued by her energy level for I always felt fatigued and tired even though I only have one business to run. I remembered her asking me if I was dehydrated. I told her actually I drank a lot of water but I still felt thirsty and my lips were often dry. After I started on alkaline water, in 5 weeks, I was able to feel the difference. I felt more hydrated as the small micro-clustered water could easily and quickly be absorbed by my body. My energy level has risen and I’m less lethargic and tired. I could also feel my lips are now less dry. Thanks to Sarah, thanks to WaterSource!</p>
+                  <p aria-hidden="true" style="position: absolute; right: clamp(24px, 4vw, 46px); bottom: 88px; margin: 0; font-size: clamp(48px, 5vw, 72px); line-height: 0.7; color: rgba(201,169,106,0.48); font-family: 'Sora', sans-serif;">”</p>
+                </div>
+                <footer class="h001-testimonial-byline"><strong style="display: block; font-size: 17px; color: #F2F1EE;">Kelvin Kuan</strong><span style="font-size: 14px; color: rgba(242,241,238,0.50);">WaterSource alkaline water customer</span></footer>
               </div>
-              <footer style="display: grid; gap: 4px; padding-left: 16px; border-left: 2px solid rgba(201,169,106,0.66);"><strong style="display: block; font-size: 17px; color: #F2F1EE;">Jacinta Lee</strong><span style="font-size: 14px; color: rgba(242,241,238,0.50);">Parent and household user</span></footer>
             </article>
-            <article style="position: relative; width: 100%; flex: 0 0 100%; padding: clamp(24px, 4vw, 46px); min-height: 430px; display: grid; align-content: space-between; gap: 28px;">
-              <div>
-                <p aria-label="5 out of 5 stars" style="margin: 0 0 24px; color: #F5C84B; letter-spacing: 0.18em; font-size: 18px;">★★★★★</p>
-                <p style="margin: 0 0 16px; font-size: 42px; line-height: 0.7; color: #6FD2F0; font-family: 'Sora', sans-serif;">“</p>
-                <h3 style="margin: 0 0 16px; max-width: 20ch; font-family: 'Sora', sans-serif; font-size: clamp(28px, 3vw, 44px); line-height: 1.04; letter-spacing: -0.04em; font-weight: 500; color: #F2F1EE;">I have been using WaterSource for almost 10 years.</h3>
-                <p style="margin: 0; max-width: 64ch; font-size: clamp(16px, 1.3vw, 18px); line-height: 1.72; color: rgba(242,241,238,0.68);">Dr Toh shared that WaterSource has been part of her own and client-facing water routines, with clean water and customer support as important reasons for staying with the brand.</p>
-                <p aria-hidden="true" style="position: absolute; right: clamp(24px, 4vw, 46px); bottom: 82px; margin: 0; font-size: clamp(48px, 5vw, 72px); line-height: 0.7; color: rgba(201,169,106,0.48); font-family: 'Sora', sans-serif;">”</p>
+            <article class="h001-testimonial-card">
+              <div class="h001-testimonial-media">
+                <img src="assets/testimonials/josephine-cheong-testimonial.jpg" alt="Josephine Cheong customer testimonial photo for WaterSource" width="1280" height="720" loading="lazy" />
               </div>
-              <footer style="display: grid; gap: 4px; padding-left: 16px; border-left: 2px solid rgba(201,169,106,0.66);"><strong style="display: block; font-size: 17px; color: #F2F1EE;">Dr Toh S.C.</strong><span style="font-size: 14px; color: rgba(242,241,238,0.50);">Natural health practitioner</span></footer>
-            </article>
-            <article style="position: relative; width: 100%; flex: 0 0 100%; padding: clamp(24px, 4vw, 46px); min-height: 430px; display: grid; align-content: space-between; gap: 28px;">
-              <div>
-                <p aria-label="5 out of 5 stars" style="margin: 0 0 24px; color: #F5C84B; letter-spacing: 0.18em; font-size: 18px;">★★★★★</p>
-                <p style="margin: 0 0 16px; font-size: 42px; line-height: 0.7; color: #6FD2F0; font-family: 'Sora', sans-serif;">“</p>
-                <h3 style="margin: 0 0 16px; max-width: 20ch; font-family: 'Sora', sans-serif; font-size: clamp(28px, 3vw, 44px); line-height: 1.04; letter-spacing: -0.04em; font-weight: 500; color: #F2F1EE;">The latest 9090 model WaterSource machine impresses me most.</h3>
-                <p style="margin: 0; max-width: 64ch; font-size: clamp(16px, 1.3vw, 18px); line-height: 1.72; color: rgba(242,241,238,0.68);">Sharon shared that the touchscreen controls are easy to use, the front-access twin filters make changes convenient, and her family enjoys the clear, tasty water.</p>
-                <p aria-hidden="true" style="position: absolute; right: clamp(24px, 4vw, 46px); bottom: 82px; margin: 0; font-size: clamp(48px, 5vw, 72px); line-height: 0.7; color: rgba(201,169,106,0.48); font-family: 'Sora', sans-serif;">”</p>
+              <div class="h001-testimonial-copy">
+                <div>
+                  <p aria-label="5 out of 5 stars" style="margin: 0 0 24px; color: #F5C84B; letter-spacing: 0.18em; font-size: 18px;">★★★★★</p>
+                  <p style="margin: 0 0 16px; font-size: 42px; line-height: 0.7; color: #6FD2F0; font-family: 'Sora', sans-serif;">“</p>
+                  <h3 style="margin: 0 0 18px; max-width: 22ch; font-family: 'Sora', sans-serif; font-size: clamp(28px, 3vw, 44px); line-height: 1.04; letter-spacing: -0.04em; font-weight: 500; color: #F2F1EE;">A personal dry-eye experience after adding WaterSource alkaline water.</h3>
+                  <p class="h001-testimonial-quote">I have dry eye and cornea tear, diagnosed by my doctor. I have been using eye drops for many years till I was recommended to WaterSource. After drinking the alkaline water for just a few months, I realized I don’t need eye drops anymore.
+It’s just natural healing!</p>
+                  <p aria-hidden="true" style="position: absolute; right: clamp(24px, 4vw, 46px); bottom: 88px; margin: 0; font-size: clamp(48px, 5vw, 72px); line-height: 0.7; color: rgba(201,169,106,0.48); font-family: 'Sora', sans-serif;">”</p>
+                </div>
+                <footer class="h001-testimonial-byline"><strong style="display: block; font-size: 17px; color: #F2F1EE;">Josephine Cheong</strong><span style="font-size: 14px; color: rgba(242,241,238,0.50);">WaterSource alkaline water customer</span></footer>
               </div>
-              <footer style="display: grid; gap: 4px; padding-left: 16px; border-left: 2px solid rgba(201,169,106,0.66);"><strong style="display: block; font-size: 17px; color: #F2F1EE;">Sharon</strong><span style="font-size: 14px; color: rgba(242,241,238,0.50);">9090NT customer</span></footer>
             </article>
-          </div>
-          <div aria-label="Choose testimonial" style="position: absolute; left: clamp(24px, 4vw, 46px); right: clamp(24px, 4vw, 46px); bottom: 22px; display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px;">
-            <sc-for list="{{ testimonialDots }}" as="dot" hint-placeholder-count="6">
-              <button type="button" onClick="{{ dot.select }}" aria-label="Show testimonial {{ dot.no }}" aria-pressed="{{ dot.pressed }}" style="{{ dot.style }}"></button>
-            </sc-for>
-          </div>
+            <article class="h001-testimonial-card">
+              <div class="h001-testimonial-media">
+                <img src="assets/testimonials/mr-philip-lim-testimonial.jpg" alt="Mr Philip Lim customer testimonial photo for WaterSource" width="1280" height="720" loading="lazy" />
+              </div>
+              <div class="h001-testimonial-copy">
+                <div>
+                  <p aria-label="5 out of 5 stars" style="margin: 0 0 24px; color: #F5C84B; letter-spacing: 0.18em; font-size: 18px;">★★★★★</p>
+                  <p style="margin: 0 0 16px; font-size: 42px; line-height: 0.7; color: #6FD2F0; font-family: 'Sora', sans-serif;">“</p>
+                  <h3 style="margin: 0 0 18px; max-width: 22ch; font-family: 'Sora', sans-serif; font-size: clamp(28px, 3vw, 44px); line-height: 1.04; letter-spacing: -0.04em; font-weight: 500; color: #F2F1EE;">A family roadshow purchase that became part of a daily wellness routine.</h3>
+                  <p class="h001-testimonial-quote">I looked like a healthy and gentle person, so I never suspected that I had a nervous system problem, even though my hands had been trembling for years. It felt awkward whenever I tried to hold a piece of paper or light objects. But my wife never gave up hope and kept asking around, wishing for a miracle. She bought a WaterSource Ionizer system from a roadshow. I felt a real improvement after drinking the water for a couple of months. Now, I am able to control my hands. I feel very happy and surprised.</p>
+                  <p aria-hidden="true" style="position: absolute; right: clamp(24px, 4vw, 46px); bottom: 88px; margin: 0; font-size: clamp(48px, 5vw, 72px); line-height: 0.7; color: rgba(201,169,106,0.48); font-family: 'Sora', sans-serif;">”</p>
+                </div>
+                <footer class="h001-testimonial-byline"><strong style="display: block; font-size: 17px; color: #F2F1EE;">Mr Philip Lim</strong><span style="font-size: 14px; color: rgba(242,241,238,0.50);">WaterSource Ionizer customer</span></footer>
+              </div>
+            </article>
+            <article class="h001-testimonial-card">
+              <div class="h001-testimonial-media">
+                <img src="assets/testimonials/ivy-testimonial-before-after.jpg" alt="Ivy customer testimonial photo for WaterSource" width="1280" height="720" loading="lazy" />
+              </div>
+              <div class="h001-testimonial-copy">
+                <div>
+                  <p aria-label="5 out of 5 stars" style="margin: 0 0 24px; color: #F5C84B; letter-spacing: 0.18em; font-size: 18px;">★★★★★</p>
+                  <p style="margin: 0 0 16px; font-size: 42px; line-height: 0.7; color: #6FD2F0; font-family: 'Sora', sans-serif;">“</p>
+                  <h3 style="margin: 0 0 18px; max-width: 22ch; font-family: 'Sora', sans-serif; font-size: clamp(28px, 3vw, 44px); line-height: 1.04; letter-spacing: -0.04em; font-weight: 500; color: #F2F1EE;">A sensitive-skin and complexion experience using alkaline and acidic water.</h3>
+                  <p class="h001-testimonial-quote">In the past, my face was full of pimples, which was the biggest problem for my face. My employer then told me to try drinking alkaline water and wash my face with acidic water. Month after month, my pimples started to lessen. After about 6 months, my pimples were gone! It was amazing! I thought there was no remedy at all! I tried many types of medications for my pimples but to no avail. Alkaline water is indeed the best and safe way, even for people who have sensitive skin.</p>
+                  <p aria-hidden="true" style="position: absolute; right: clamp(24px, 4vw, 46px); bottom: 88px; margin: 0; font-size: clamp(48px, 5vw, 72px); line-height: 0.7; color: rgba(201,169,106,0.48); font-family: 'Sora', sans-serif;">”</p>
+                </div>
+                <footer class="h001-testimonial-byline"><strong style="display: block; font-size: 17px; color: #F2F1EE;">Ivy</strong><span style="font-size: 14px; color: rgba(242,241,238,0.50);">WaterSource alkaline and acidic water customer</span></footer>
+              </div>
+            </article>
         </div>
+        <div aria-label="Choose testimonial" style="position: absolute; left: clamp(24px, 4vw, 46px); right: clamp(24px, 4vw, 46px); bottom: 22px; display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px;">
+          <sc-for list="{{ testimonialDots }}" as="dot" hint-placeholder-count="5">
+            <button type="button" onClick="{{ dot.select }}" aria-label="Show testimonial {{ dot.no }}" aria-pressed="{{ dot.pressed }}" style="{{ dot.style }}"></button>
+          </sc-for>
+        </div>
+      </div>
     </div>
-    <p class="h001-disclaimer">Disclaimer : Individual results may vary. Please consult your physician for medical advice.</p>
+    <p class="h001-disclaimer">Disclaimer : Individual results may vary. Please consult your physician for medical advice. Testimonials reflect individual customer experiences and are not intended as medical claims.</p>
 </section>
 
   <section id="enquire" style="position: relative; overflow: hidden; background: #0B0D0F; color: #F2F1EE; padding: clamp(56px, 8vw, 128px) clamp(20px, 4vw, 72px);">
@@ -853,7 +871,7 @@
         <a href="#specifications" style="color: rgba(242,241,238,0.6);">Specifications</a>
         <a href="#comparison" style="color: rgba(242,241,238,0.6);">Compare</a>
         <a href="#who-for" style="color: rgba(242,241,238,0.6);">Who it's for</a>
-        <a href="#confidence" style="color: rgba(242,241,238,0.6);">Confidence</a>
+        <a href="#confidence" style="color: rgba(242,241,238,0.6);">Testimonials</a>
         <a href="#faq" style="color: rgba(242,241,238,0.6);">FAQ</a>
         <a href="https://wa.me/6588391764?text=Hi%20WaterSource%2C%20I%27m%20interested%20in%20the%20H001%20launch%20offer.%20Please%20share%20the%20package%20details%2C%20installation%20suitability%20and%20payment%20options." target="_blank" rel="noopener" style="color: rgba(242,241,238,0.6);">Enquire</a>
       </nav>
@@ -879,7 +897,6 @@ class Component extends DCLogic {
     this.state = { temp: 0, view: 0, open: props.faqFirstOpen === false ? -1 : 0, testimonial: 0, menuOpen: false };
   }
 
-
   componentDidMount() {
     this.testimonialTimer = setInterval(() => this.nextTestimonial(), 5200);
   }
@@ -889,7 +906,7 @@ class Component extends DCLogic {
   }
 
   nextTestimonial() {
-    this.setState({ testimonial: (this.state.testimonial + 1) % 6 });
+    this.setState({ testimonial: (this.state.testimonial + 1) % 5 });
   }
 
   pickTestimonial(index) {
@@ -945,7 +962,6 @@ It is designed for general wellness awareness.`],
     const tempBtn = (active) => 'appearance: none; cursor: pointer; text-align: left; font: inherit; padding: 22px clamp(18px, 2.4vw, 28px); border: none; border-right: 1px solid rgba(20,23,26,0.14); border-bottom: 1px solid rgba(20,23,26,0.14); border-left: 3px solid ' + (active ? '#9A7F45' : 'transparent') + '; background: ' + (active ? '#FFFFFF' : '#FBFAF8') + ';';
     const viewBtn = (active) => 'appearance: none; cursor: pointer; text-align: center; font: inherit; padding: 16px 10px; background: ' + (active ? '#FFFFFF' : 'transparent') + '; border: 1px solid ' + (active ? '#14171A' : 'rgba(20,23,26,0.14)') + ';';
     const testimonialDot = (active) => 'appearance: none; cursor: pointer; display: block; width: 100%; height: 4px; padding: 0; border: 0; border-radius: 999px; background: ' + (active ? '#C9A96A' : 'rgba(242,241,238,0.22)') + '; opacity: ' + (active ? '1' : '0.72') + '; transition: background 0.2s ease, opacity 0.2s ease, transform 0.2s ease;';
-
     let views = this.views();
     if (this.props.detailView === 'Control panel first') {
       views = views.slice(4, 5).concat(views.slice(0, 4), views.slice(5));
@@ -987,7 +1003,7 @@ It is designed for general wellness awareness.`],
       pick5: () => this.setState({ view: 5 }),
       viewCaption: active.caption,
       testimonialTrackStyle: 'position: relative; display: flex; transform: translateX(-' + (this.state.testimonial * 100) + '%); transition: transform 0.65s ease;',
-      testimonialDots: [0, 1, 2, 3, 4, 5].map((i) => ({
+      testimonialDots: [0, 1, 2, 3, 4].map((i) => ({
         no: String(i + 1),
         pressed: this.state.testimonial === i ? 'true' : 'false',
         style: testimonialDot(this.state.testimonial === i),
