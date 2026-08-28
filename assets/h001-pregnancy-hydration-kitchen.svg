@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 853" role="img" aria-label="Pregnant woman in a premium home kitchen preparing drinking water with the H001 countertop appliance">
+  <defs>
+    <linearGradient id="wall" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f7efe3"/>
+      <stop offset="0.55" stop-color="#efe0cd"/>
+      <stop offset="1" stop-color="#d8c0a5"/>
+    </linearGradient>
+    <linearGradient id="counter" x1="0" x2="1">
+      <stop offset="0" stop-color="#f7f2e8"/>
+      <stop offset="1" stop-color="#cfb69a"/>
+    </linearGradient>
+    <linearGradient id="device" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#202328"/>
+      <stop offset="1" stop-color="#050607"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#e6c98a"/>
+      <stop offset="1" stop-color="#b88b45"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="42%" r="60%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.74"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="22" stdDeviation="24" flood-color="#4b3827" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+  <rect width="1280" height="853" fill="url(#wall)"/>
+  <rect y="530" width="1280" height="323" fill="url(#counter)"/>
+  <rect x="76" y="92" width="1128" height="438" rx="28" fill="#fff7ec" opacity="0.38"/>
+  <rect x="92" y="128" width="300" height="262" rx="18" fill="#d4b995" opacity="0.42"/>
+  <rect x="438" y="118" width="650" height="34" rx="17" fill="#b89262" opacity="0.24"/>
+  <rect x="496" y="174" width="410" height="18" rx="9" fill="#b89262" opacity="0.20"/>
+  <circle cx="238" cy="224" r="60" fill="#f1d0ab" opacity="0.48"/>
+  <circle cx="1110" cy="250" r="82" fill="#b4c39a" opacity="0.28"/>
+  <path d="M1068 320c18-72 42-116 76-146 15 62 4 112-30 153" fill="#6f8b68" opacity="0.72"/>
+  <path d="M1134 334c-4-80 13-136 50-176 26 62 22 121-12 176" fill="#829a70" opacity="0.68"/>
+  <ellipse cx="640" cy="548" rx="548" ry="146" fill="url(#glow)"/>
+
+  <!-- H001-style countertop appliance -->
+  <g filter="url(#shadow)" transform="translate(744 258)">
+    <rect x="0" y="0" width="174" height="330" rx="22" fill="url(#device)"/>
+    <rect x="52" y="28" width="72" height="266" rx="9" fill="url(#gold)"/>
+    <rect x="64" y="58" width="48" height="62" rx="5" fill="#273c54"/>
+    <rect x="76" y="138" width="24" height="96" rx="12" fill="#101215"/>
+    <path d="M88 154v50" stroke="#d8b76b" stroke-width="8" stroke-linecap="round"/>
+    <path d="M88 154l-18 18M88 154l18 18" stroke="#d8b76b" stroke-width="8" stroke-linecap="round"/>
+    <rect x="26" y="302" width="122" height="22" rx="11" fill="#0c0d0f"/>
+  </g>
+  <path d="M832 586c0 40-42 72-94 72s-94-32-94-72 42-72 94-72 94 32 94 72Z" fill="#ffffff" opacity="0.35"/>
+
+  <!-- Pregnant woman -->
+  <g filter="url(#shadow)" transform="translate(314 166)">
+    <circle cx="172" cy="78" r="48" fill="#8a5839"/>
+    <path d="M138 78c-4-44 24-74 64-64 42 11 54 50 42 86-20-12-44-12-72-4-14 4-24-2-34-18Z" fill="#3d2b22"/>
+    <path d="M114 172c20-45 54-70 94-68 54 4 96 48 110 116 24 114-32 224-124 224-96 0-146-102-110-214 7-22 17-41 30-58Z" fill="#f4c9ad"/>
+    <path d="M106 206c36-66 104-82 158-44 42 30 66 92 66 158 0 102-48 168-126 168-88 0-140-80-126-184 4-36 14-68 28-98Z" fill="#e7c7ad"/>
+    <path d="M108 214c36-74 106-94 162-52 32 24 55 66 63 116-56-34-132-27-185 18-23 20-45 24-67 12 4-34 13-65 27-94Z" fill="#f2dfd0"/>
+    <ellipse cx="236" cy="328" rx="78" ry="96" fill="#efd3bd"/>
+    <path d="M76 226c-58 42-82 102-72 180" fill="none" stroke="#f1c4a5" stroke-width="34" stroke-linecap="round"/>
+    <path d="M304 210c58 32 88 78 92 136" fill="none" stroke="#f1c4a5" stroke-width="32" stroke-linecap="round"/>
+    <path d="M366 344c68-6 112-20 140-54" fill="none" stroke="#f1c4a5" stroke-width="28" stroke-linecap="round"/>
+    <path d="M134 472h172l34 142H96l38-142Z" fill="#d8b38f"/>
+    <path d="M170 510h50v142h-74l24-142Zm62 0h50l36 142h-78l-8-142Z" fill="#6c6f74"/>
+  </g>
+
+  <!-- Glass and warm kitchen objects -->
+  <g transform="translate(980 504)" filter="url(#shadow)">
+    <path d="M20 28h76l-12 144H32L20 28Z" fill="#cfeff5" opacity="0.65" stroke="#ffffff" stroke-width="5"/>
+    <rect x="30" y="86" width="56" height="76" fill="#73c9dc" opacity="0.42"/>
+  </g>
+  <g transform="translate(170 582)">
+    <ellipse cx="92" cy="64" rx="90" ry="22" fill="#b98f5a" opacity="0.3"/>
+    <rect x="46" y="0" width="92" height="64" rx="10" fill="#f6eadc"/>
+    <path d="M138 22h28c18 0 18 28 0 28h-28" fill="none" stroke="#d7b894" stroke-width="8"/>
+  </g>
+</svg>
